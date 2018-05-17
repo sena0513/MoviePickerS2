@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+/* ----------Form----------------------------- */
+
+#form{
+   width: 100%;
+   float: left;
+}
+
+.wholepage{
+   width: 100%;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+/*--------------------------Navi부분----------------------*/
+.navi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .navi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .naviMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .naviImageDiv{
+         float: left;
+         width: 20px;
+         height: 18px;
+         margin-top: 11px;
+         margin-left: 12px;
+      }
+   
+         .naviImageDiv img{
+            width: 17px;
+            height: 15px;
+         }
+      
+      .naviSecondDiv{
+         float: left;
+         width: 60px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      	
+      .naviThirdDiv{
+         float: left;
+         width: 85px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+.contents{
+   width: 1052px;
+   margin: 0 auto;
+}
+
+/* ----------Top of top----------------------------- */
+
+.contents h1 {
+   height: 64px;
+   margin-top: 40px;
+}
+
+.movieChart_index {
+   height: 80px;
+   width: 1052px;
+}
+
+.movieChart {
+   float:left;
+   width: 1052px;
+}
+
+.movieChart_hr {
+    width: 1052px;
+    height: 3px;
+    margin-top: -30px;
+}
+
+.submenu {
+    float: right;
+    text-align: center;
+    width: 1052px;
+    height: 10px;
+}
+
+.submenu a {
+   width: 100%;
+   text-decoration: none;
+   color: black;
+}
+
+.submenu ui {
+   list-style: none;
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+}
+
+.submenu li {
+   list-style: none;
+   float: right;
+   width: 11%;
+   line-height: 50px;
+   text-decoration: none;
+}
+
+.movieChart_selectOption {
+   width:1025px;
+   height:15px;
+}
+
+/* ------------Contents form----------------------------- */
+
+#MovieSet1, #MovieSet2 {
+   float:left;
+   width:1052px;
+   height: 500px;
+   font-size:14px;
+   margin-left:20px;
+}
+
+.boxoffice_moviePoster {
+    width: 185px;
+    height: 260px;
+}
+
+#movieN {
+    float: left;
+    margin: 31px;
+    width: 195px;
+}
+
+#movieN.*{
+   float:left;
+   width: 5px;
+   height: 5px;
+   margin:30px;
+}
+
+#movieN2 {
+    float: left;
+    margin: 31px;
+    width: 18%;
+   position:relative;
+}
+
+#movieN2.*{
+   float:left;
+   width: 5px;
+   height: 5px;
+   margin:30px;
+}
+
+/* -----------------------------Movie Chart(API)----------------------------- */
+
+.thumb-image {
+    display: block;
+    position: relative;
+    border: 4px solid #4b464c;
+    height: 260px;
+    width:185px;
+}
+
+.boxoffice_agelim {
+   position: absolute;
+}
+
+.rank2 {
+    display: block;
+    width:185px;
+    height: 28px;
+    margin-bottom: 4px;
+    border: 4px solid #4b464c;
+    background: #333333;
+    color: #ffffff;
+    font-size: 19px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.rank {
+    display: block;
+    width:185px;
+    height: 28px;
+    margin-bottom: 4px;
+    border: 4px solid #282828;
+    background: #f9ac1e;
+    color: #282828;
+    font-size: 19px;
+    text-align: center;
+    line-height: 28px;
+}
+
+.nowshow {
+   float:left;
+} 
+
+.order {
+   float:right;   
+}
+
+.hidden {
+    font: 0/0 a;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    zoom: 1;
+}    
+
+.boxoffice_movieNm {
+   font-weight: bold;
+   margin-top:5px;
+   margin-bottom:5px;
+}
+
+.boxoffice_heart {
+   width: 25px;
+   float: left;
+}
+
+.grey_heart {
+   margin-top: 10px;
+   width: 8px;
+   height: 16px;
+   cursor: pointer;
+   outline: none;
+   border: 0;
+   
+}
+.pinkheart {
+	background-image: url(/../mvProject/res/image/movies/grey_heart.png);
+	background-repeat: no-repeat;
+	background-color: #fcfcf0;
+	border: 0;
+	outline: none;
+}
+
+.pinkheart_active{
+	background-image: url(/../mvProject/res/image/movies/pink_heart.png);
+	background-repeat: no-repeat;
+	background-color: #fcfcf0;
+	border: 0;
+	outline: none;
+}
+.pink_heart {
+	margin-top:10px;
+   width:30px;
+   height:41px;
+   cursor: pointer;
+}
+
+.movie_likeit {
+    width: 45px;
+    height: 20px;
+    margin-top: 7px;
+    margin-left: 7px;
+    border: 1px solid grey;
+    /* margin-left: 22px; */
+    border-radius: 4px;
+    font-size:12px;
+    float:left;
+    text-align: center;
+}
+
+.buyTicket_icon {
+   float:left;
+   width: 82px;
+    height: auto;
+    margin-top: 2px;
+    margin-left: 28px;
+}
+
+.buyTicket_icon button {
+   border: none;
+    background-color: #fcfcf0;
+    outline: none;
+}
+
+.ticketIcon {
+    float:left;
+   width: 70px;
+   cursor: pointer;
+}
+
+
+/* -----------------------------Advertise----------------------------- */
+
+#adimg {            /* 무비차트 3위 오른편에 있는 광고 */
+   width:190px;
+   margin-left:30px;
+   margin-top:30px;
+   
+}
+
+/* 하단광고 */
+
+.ad02 {
+   width:1052px;
+   height:150px;
+   float: left;
+}
+
+.adimg02 {
+   width:100%;
+   height:auto;
+   margin-top:30px;
+   
+}
+
+.ad03 {
+   width:1052px;
+   height:300px;
+   float: left;
+   
+}
+
+.adimg03 {
+   width:1052px;
+   height:auto;
+   
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session-management invalid-session-url="/user/loginPage">
+	<concurrency-control max-sessions="1" expired-url="/main/index" />
+</session-management> 

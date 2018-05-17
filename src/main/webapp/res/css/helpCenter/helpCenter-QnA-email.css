@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+#wrapper {
+   width: 100%;
+   height: auto;
+}
+
+.bodyWrapper {
+   width: 100%;
+   height: auto;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.helpCenterIndexNavi {
+   width: 100%;
+   height: 37px;
+   background-color: #e3e3da;
+}
+
+.helpCenterIndexNavi a {
+   color: black;
+   text-decoration: none;
+   display: block;
+}
+
+.helpCenterIndexMenuDiv {
+   width: 1052px;
+   height: 37px;
+   margin: 0 auto;
+}
+
+.helpCenterIndexImageDiv {
+   float: left;
+   width: 20px;
+   height: 18px;
+   margin-top: 11px;
+}
+
+.helpCenterIndexImageDiv img {
+   width: 17px;
+   height: 15px;
+}
+
+.helpCenterIndexNaviSecondDiv {
+   float: left;
+   width: 90px;
+   height: 22px;
+   margin-top: 10px;
+   margin-left: 15px;
+   font-size: 13px;
+}
+
+.helpCenterIndexNaviThirdDiv {
+   float: left;
+   width: 110px;
+   height: 22px;
+   margin-top: 10px;
+   font-size: 13px;
+}
+
+
+/* --------------컨텐츠------------------- */
+.content {
+   width: 1052px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+/* 왼쪽 사이드바 */
+.col-aside {
+   padding-top: 11px;
+   float: left;
+   width: 160px;
+   word-break: break-all;
+}
+
+.side_menu>ul {
+   padding: 0;
+   margin: 0;
+}
+
+.side_menu>ul>li {
+   padding: 0;
+   border-top: 1px solid #000000;
+   line-height: 100%;
+   display: list-item;
+   text-align: -webkit-match-parent;
+   display: list-item;
+}
+
+.side_menu>ul>li>a {
+   padding-top: 8px;
+   padding-bottom: 8px;
+   text-align: left;
+   width: 160px;
+   display: inline-block;
+   vertical-align: middle;
+   font-weight: bold;
+   color: black;
+}
+
+.side_menu>ul>li>a:hover {
+   background-color: #f9ac1e;
+}
+
+
+
+/* 디테일 */
+.col-detail {
+   float: left;
+   width: 892px;
+   box-sizing: border-box;
+   padding-bottom: 30px;
+   padding-top: 10px;
+}
+
+.customer_top {
+   padding: 0;
+   margin-left: 25px;
+}
+
+h2.title {
+   font-size: 16px;
+   font-weight: bold;
+   padding: 0;
+   margin-bottom: 0;
+}
+
+p.subTitle {
+   font-size: 14px;
+   margin: 3px;
+}
+
+/* 테이블 부분 */
+.table_area {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-left:15px;
+}
+
+p.table_info_txt {
+   padding: 0 12px;
+   line-height: 30px;
+   border-top: 1px solid #000000;
+   border-bottom:  1px solid black;
+   text-align: right;
+   margin: 0;
+   font-weight: bold;
+   background-color: #cecac4;
+}
+
+table.qna_table {
+   padding-top: 10px;
+   width: 877px;
+   border-bottom: 1px solid black;
+}
+
+tbody th {
+   line-height: 27px;
+   vertical-align: top;
+   padding: 15px 0px 15px 13px;
+   border-top: 1px solid #000000;
+   text-align: left;
+   font-weight: normal;
+}
+
+tbody td {
+   padding: 15px 5px;
+   text-align: left;
+   border-top: solid 1px #000000;
+   font-weight: bold;
+   line-height: 1.5em;
+   vertical-align: middle;
+}
+
+tr.txt_info td {
+   padding: 10px 0 60px 10px;
+   text-align: left;
+}
+
+.txt_info+tr th {
+   border-top: none;
+}
+
+.txt_info+tr td {
+   border-top: none;
+}
+
+ul.type_list {
+   display: inline-block;
+}
+
+ul.type_list li {
+   display: inline-block;
+   margin-right: 15px;
+   vertical-align: middle;
+}
+
+select {
+   padding: 3px 6px;
+   vertical-align: middle;
+   text-align:center;
+   border: 1px solid black;
+   background-color:#e7e4df;
+}
+
+ul.type_list {
+   margin: 0;
+   vertical-align: middle;
+   padding: 0;
+}
+
+.qna_table input[type="text"] {
+   width: 742px;
+   height: 30px;
+   background-color:#e7e4df;
+   vertical-align: middle;
+   border: 1px solid black;
+}
+
+textarea {
+   width: 742px;
+   height: 94px !important;
+   resize: none;
+   overflow:auto;
+   background-color:#e7e4df;
+   border: 1px solid black;
+}
+
+.table_btn_box {
+    margin-top: 30px;
+    text-align: center;
+    margin-right:  10px;
+    margin-left: 20px;
+    box-sizing:  border-box;
+}
+
+.table_btn_box input {
+    height: 27px;
+}

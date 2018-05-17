@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+#bodyWrapper {
+   width: 710px;
+   height: 417px;
+   float: left;
+}
+
+.writeGradeDiv {
+   width: 710px;
+   height: 413px;
+   margin: 0 auto;
+}
+
+.writeGradeSubjectDiv {
+   width: 706px;
+   height: 70px;
+   float: left;
+   background-color: #e7e4df;
+   border-style: solid;
+   border-color: white;
+   text-align: center;
+}
+
+.writeGradeSubjectDiv h2{
+   margin-left: 3px;
+   width: 707px;
+   height: 30px;   
+}
+
+.writeGradeMovieNameDiv {
+   width: 710px;
+   height: 80px;
+   float: left;
+   text-align: center;
+   background-color: #e7e4df;
+}
+
+.writeGradeMovieNameDiv h2{
+   width: 707px;
+   height: 30px;   
+}
+
+.realtimeAudienceDiv {
+   width: 710px;
+   height: 120px;
+   float: left;
+   background-color: #e7e4df;
+}
+
+.realtimeAudienceFirstDiv {
+   width: 223px;
+   height: 120px;
+   float: left;
+   margin-left: 20px;
+   border-style: solid;
+   border-color: #e7e4df;
+}
+
+   .realtimeAudienceFirstDiv img{
+      width: 215px;
+      height: 100px;
+      background-color: #e7e4df;
+   }
+
+   .realtimeAudienceFirstDiv button{
+      width: 225px;
+      height: 112px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      cursor: pointer;
+      background-color: #e7e4df;
+   }
+   
+   .realtimeAudienceFirstDiv button:active,
+   .realtimeAudienceFirstDiv button:focus {
+      
+      border: 0.1em solid #ff0000; /* here configure as your needs */
+   }
+
+.realtimeAudienceSecondDiv {
+   width: 160px;
+   height: 120px;
+   float: left;
+   margin-left: 35px;
+}
+
+.realtimeAudienceSecondDiv img {
+   width: 160px;
+   height: 120px;
+   text-align: center;
+   
+}
+
+.realtimeAudienceThirdDiv {
+   width: 223px;
+   height: 120px;
+   float: left;
+   margin-left: 35px;
+   border-style: solid;
+   border-color: #e7e4df;
+}
+
+.realtimeAudienceThirdDiv img {
+   width: 215px;
+   height: 100px;
+   text-align: center;
+   background-color: #e7e4df;
+}
+
+   .realtimeAudienceThirdDiv button{
+      width: 225px;
+      height: 112px;
+      border: 0;
+      margin: 0;
+      outline: 0;
+      cursor: pointer;
+      float: right;
+      background-color: #e7e4df;
+   }
+   
+      .realtimeAudienceThirdDiv button:active,
+      .realtimeAudienceThirdDiv button:focus {
+         border: 0.1em solid #ff0000; /* here configure as your needs */
+      }
+   
+   
+
+.showMessageDiv {
+   width: 710px;
+   height: 70px;
+   float: left;
+   background-color: #e7e4df
+}
+
+.showMessageDiv input[type="text"] {
+   width: 700px;
+   line-height: 60px;
+   font-size: 15px;
+   margin-left: 3px;
+}
+
+.inputShowMessageDiv {
+   width: 710px;
+   height: 100px;
+   margin-top: 50px;
+}
+
+.inputShowMessageConfirmDiv {
+   width: 710px;
+   height: 60px;
+}
+
+.operationRuleDiv {
+   width: 100px;
+   float: left;
+}
+
+.inputShowMessageConfirmButtonDiv {
+   width: 170px;
+   float: right;
+}
+
+.inputWordRestrict {
+   width: 75PX;
+   height: auto;
+   float: left;
+   margin-top: 18px;
+}
+
+.inputWordRestrict h3 {
+   width: 55px;
+   height: 25px;
+}
+
+.confirmButtonDiv {
+   width: 80px;
+   height: auto;
+   float: left;
+   margin-top: 15px;
+   margin-left: 15px;
+}
+
+.inputShowMessageConfirmButton {
+   width: 80px;
+   height: 30px;
+   font-size: 15px;
+   background-color: #ff0000;
+   color: white;
+   border-radius: 8px;
+   outline: none;
+   font-weight: bold;
+   border: 0;
+}
+
+.inputShowMessageConfirmButton:hover{
+   cursor: pointer;
+}
+
+.myClickState {
+  border-color: #ff0000;
+}

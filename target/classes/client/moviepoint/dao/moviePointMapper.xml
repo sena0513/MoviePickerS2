@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="moviePointSQL">
+	<select id="getMoviePoint" parameterType="java.util.Map" resultType="moviePoint">
+		select * from moviepoint where movienameforkr='${moviename}'
+	</select>
+	
+	<select id="getMoviePointseq" parameterType="java.util.Map" resultType="moviePoint">
+		select * from moviepoint where seq='${mv_seq}'
+	</select>
+	
+	<select id="getReviewList" parameterType="java.util.Map" resultType="review">
+			
+		<![CDATA[
+         select rn, rev_seq, mv_seq, movienameforkr, reviewcontents, reviewpoint, reviewgood, id, to_char(reviewdate, 'YYYY.MM.DD')as reviewdate,reportnumber from
+         (select rownum rn, tt.* from 
+         (select * from moviereview where mv_seq=${seq} and reportnumber < 1 order by rev_seq)tt
+         )where rn>=#{startNum} and rn<=#{endNum}         
+         ]]>
+	</select>
+	
+	<!-- 총 글 수 -->
+   <select id="getTotalReviewFromMv_seq" parameterType="java.util.Map" resultType="int">
+   <![CDATA[
+      select count(*) from moviereview where mv_seq=#{mv_seq} and reportnumber < 1
+      ]]>
+   </select>
+   
+   <select id="getReviewdata" parameterType="java.util.Map" resultType="review">
+   		select * from moviereview where movienameforkr=#{movienameforkr} and mv_seq=#{mv_seq} and id= #{id}
+   </select>
+   
+   <insert id="insertReivew" parameterType="java.util.Map">
+   		insert into moviereview (rev_seq,mv_seq,movienameforkr,reviewcontents,reviewpoint,id,reviewdate) values(rev_seq.nextval,#{mv_seq},#{movienameforkr},#{reviewcontents},#{reviewpoint},#{id},sysdate)
+   </insert>
+   
+   <update id="charmpointupdate" parameterType="java.util.Map">
+   		update moviereview set charmdirector=#{charmdirector},charmstory=#{charmstory},charmvisual=#{charmvisual},
+   		charmactor=#{charmactor},charmost=#{charmost} where rev_seq = #{rev_seq}
+   </update>
+   
+   <update id="updatemoviepoint">
+	   update moviepoint set 
+		CHARMDIRECTOR=(select avg(CHARMDIRECTOR) from moviereview where movienameforkr=#{movienameforkr}),
+		CHARMSTORY=(select avg(CHARMSTORY) from moviereview where movienameforkr=#{movienameforkr}),
+		CHARMVISUAL=(select avg(CHARMVISUAL) from moviereview where movienameforkr=#{movienameforkr}),
+		CHARMACTOR=(select avg(CHARMACTOR) from moviereview where movienameforkr=#{movienameforkr}),
+		CHARMOST=(select avg(CHARMOST) from moviereview where movienameforkr=#{movienameforkr})
+		where movienameforkr=#{movienameforkr}
+   </update>
+   
+   <select id="reviewcheck" parameterType="java.util.Map" resultType="review">
+   		select * from moviereview where movienameforkr=#{movienameforkr} and mv_seq=#{mv_seq} and id= #{id}
+   </select>
+   
+   <update id="modifyreviewcontents" parameterType="java.util.Map">
+   		update moviereview set reviewcontents =#{reviewcontents},reviewpoint=#{reviewpoint} where movienameforkr=#{movienameforkr} and mv_seq=#{mv_seq} and id= #{id}
+   </update>
+   <delete id="removereview" parameterType="java.util.Map">
+   		delete moviereview where movienameforkr=#{movienameforkr} and mv_seq=#{mv_seq} and id= #{id}
+   </delete>
+   <update id="reportreview" parameterType="java.util.Map">
+   		update moviereview set reportnumber = 1 where movienameforkr=#{movienameforkr} and mv_seq=#{mv_seq} and id= #{id}
+   </update>
+   <select id="myreview" parameterType="java.util.Map" resultType="review">
+   <![CDATA[
+      select rn, rev_seq,id,movienameforkr,reviewcontents,reviewdate from
+      (select rownum rn, tt.* from 
+      (select * from moviereview order by rev_seq desc)tt where id=#{id}
+      )where rn>=#{startNum} and rn<=#{endNum} and id=#{id}
+      ]]>
+   </select>
+   <select id="getmyreviewTotalA" parameterType="String" resultType="int">
+      select count(*) from moviereview where id = #{id}
+   </select>
+   <delete id="deletemyreview" parameterType="int">
+   	delete moviereview where rev_seq=#{rev_seq}
+   </delete>
+   
+   <update id="plusHeartToMovienameforkr" parameterType="java.util.Map">
+   update moviepoint set heart=heart+1 where movienameforkr= #{movienameforkr}
+   </update>
+   
+   <update id="minusHeartToMovienameforkr" parameterType="java.util.Map">
+   update moviepoint set heart=heart-1 where movienameforkr=#{movienameforkr}
+   </update>
+</mapper>

@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+#wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.bodyWrapper {
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.helpCenterIndexNavi {
+	width: 100%;
+	height: 37px;
+	background-color: #e3e3da;
+}
+
+.helpCenterIndexNavi a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.helpCenterIndexMenuDiv {
+	width: 1052px;
+	height: 37px;
+	margin: 0 auto;
+}
+
+.helpCenterIndexImageDiv {
+	float: left;
+	width: 20px;
+	height: 18px;
+	margin-top: 11px;
+}
+
+.helpCenterIndexImageDiv img {
+	width: 17px;
+	height: 15px;
+}
+
+.helpCenterIndexNaviSecondDiv {
+	float: left;
+	width: 90px;
+	height: 22px;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 13px;
+}
+
+.helpCenterIndexNaviThirdDiv {
+	float: left;
+	width: 100px;
+	height: 22px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+/* --------------컨텐츠------------------- */
+.content {
+	width: 1052px;
+	margin: 0 auto;
+	height: 370px;
+	box-sizing: border-box;
+}
+
+/* 왼쪽 사이드바 */
+.col-aside {
+	padding-top: 11px;
+	float: left;
+	width: 160px;
+	word-break: break-all;
+}
+
+.side_menu>ul {
+	padding: 0;
+	margin: 0;
+}
+
+.side_menu>ul>li {
+	padding: 0;
+	border-top: 1px solid #000000;
+	line-height: 100%;
+	display: list-item;
+	text-align: -webkit-match-parent;
+	display: list-item;
+}
+
+.side_menu>ul>li>a {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: left;
+	width: 160px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: bold;
+	color: black;
+}
+
+.side_menu>ul>li>a:hover {
+	background-color: #f9ac1e;
+}
+
+/* 디테일 */
+.col-detail {
+	float: left;
+	width: 892px;
+	box-sizing: border-box;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+.customer_top {
+	padding: 0;
+	margin-left: 25px;
+}
+
+h2.title {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+p.subTitle {
+	font-size: 14px;
+	margin: 3px;
+}
+
+.search_area {
+	padding: 0;
+	margin-left: 25px;
+	padding-top: 10px;
+}
+
+.search_area>input {
+	display: inline-block;
+	height: 25px;
+	line-height: 22px;
+	padding-left: 10px;
+	border: 1px solid #b5b5b5;
+}
+
+.search_area input[type="text"] {
+	width: 195px;
+	line-height: 0px;
+}
+
+.search_area>select {
+	font-size: 12px;
+	font-family: Verdana;
+	line-height: 27px;
+	height: 25px;
+	padding: 3px 5px;
+	border: 1px solid #b4b3aa;
+	vertical-align: middle;
+}
+
+.search_result {
+	padding: 0;
+	margin-top: 20px;
+	margin-left: 25px;
+	font-weight: bold;
+}
+
+.table_area {
+	padding: 0;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+.table_area th {
+	background-color: #cecac4;
+}
+
+.table_area>table {
+	width: 840px;
+	text-align: center;
+}
+
+.table_area>table a {
+	color: black;
+	text-align: center;
+}
+
+.table_area>table a:hover {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+td.title a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: box;
+    max-height:24px;
+    overflow:hidden;
+    vertical-align:top;
+    text-overflow: ellipsis;
+    word-break:break-all;
+    -webkit-box-orient:vertical; 
+    -webkit-line-clamp:1;
+    text-align:left;
+    font-size: 13px;
+}
+/* 페이징 처리 */
+.paging {
+	margin-left: 25px;
+	text-align: center;
+	width: 840px;
+	align-content: center;
+	margin-top: 15px;
+}
+
+.paging a {
+	font-weight: bold;
+	color: black;
+}
+
+.paging a:hover {
+	text-decoration: underline;
+	color: #ecac1e;
+}

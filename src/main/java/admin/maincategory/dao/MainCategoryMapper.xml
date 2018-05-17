@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AdminmaincategorySQL">
+
+   <insert id="maininsertcategory" parameterType="java.util.Map">
+      insert into maincategory values(maincategory_seq.nextval,#{imageslider1},#{imageslider2},#{imageslider3},
+      #{imageslider4},#{imageslider5},#{imageslider6},#{imageslider7},
+      #{imageslider8},#{trailermovie},#{trailermovieposter},#{event1},
+      #{event2},#{event3},#{event4},#{notice1},#{notice2},#{notice3},#{notice4},#{notice1date},
+      #{notice2date},#{notice3date},#{notice4date},#{notice5},#{notice6},#{notice5date},#{notice6date})
+   </insert>
+   
+   <update id="modifymaincategory" parameterType="java.util.Map">
+   		update maincategory set imageslider1=#{imageslider1},imageslider2=#{imageslider2},imageslider3=#{imageslider3},
+      imageslider4=#{imageslider4},imageslider5=#{imageslider5},imageslider6=#{imageslider6},imageslider7=#{imageslider7},
+      imageslider8=#{imageslider8},trailermovie=#{trailermovie},trailermovieposter=#{trailermovieposter},event1=#{event1},
+      event2=#{event2},event3=#{event3},event4=#{event4},notice1=#{notice1},
+      notice2=#{notice2},notice3=#{notice3},notice4=#{notice4},notice1date=#{notice1date},
+      notice2date=#{notice2date},notice3date=#{notice3date},notice4date=#{notice4date},
+      notice5=#{notice5},notice6=#{notice6},notice5date=#{notice5date},notice6date=#{notice6date} where seq=#{seq}
+   </update>
+   
+    
+    <select id="getalldate" resultType="Adminmaincategory">
+    	select * from maincategory
+    </select>
+   
+   <delete id="deletemaincategory" parameterType="String">
+   	  delete from maincategory where seq=#{seq}
+   </delete>
+</mapper>

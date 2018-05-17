@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="movieChartSQL">
+
+<select id="getAgelim" parameterType="java.util.Map" resultType="movieDTO">
+   select * from adminmovie where movienameforkr in 
+   ('${movienameforkr1}', '${movienameforkr2}', '${movienameforkr3}', '${movienameforkr4}', '${movienameforkr5}', '${movienameforkr6}', '${movienameforkr7}')
+   ORDER BY DECODE(movienameforkr, '${movienameforkr1}', 1, '${movienameforkr2}', 2, '${movienameforkr3}', 3, '${movienameforkr4}', 4, '${movienameforkr5}', 5, '${movienameforkr6}', 6, '${movienameforkr7}', 7)
+</select>
+
+
+</mapper>

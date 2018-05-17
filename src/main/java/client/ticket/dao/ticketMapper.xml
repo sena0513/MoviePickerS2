@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ticketSQL">
+
+   <insert id="makeTicketPayment1" parameterType="java.util.Map">
+      insert into ticketreservation
+   (ticketmoviecode,ticketmoviename,ticketmoviegrade,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,
+   ticketmovieseat1,
+   ticketmoviepeople,ticketmovieprice,id,pointplused,ticketmovieposter,selectedmovieseq)
+   values (#{ticketmoviecode}, #{ticketmoviename},#{ticketmoviegrade}, #{ticketmoviebranch},
+   #{ticketmoviescreen},to_timestamp(#{ticketmoviedate}, 'YYYY-MM-DD(Dy)HH24:MI'),
+   #{ticketmovieseat1},
+   #{ticketmoviepeople}, #{ticketmovieprice}, #{id}, #{pointPlused}, #{ticketmovieposter},#{ticketselectMovieSeq})
+   </insert>
+   <insert id="makeTicketPayment2" parameterType="java.util.Map">
+      insert into ticketreservation
+   (ticketmoviecode,ticketmoviename,ticketmoviegrade,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,
+   ticketmovieseat1,ticketmovieseat2,
+   ticketmoviepeople,ticketmovieprice,id,pointplused,ticketmovieposter,selectedmovieseq)
+   values (#{ticketmoviecode}, #{ticketmoviename},#{ticketmoviegrade}, #{ticketmoviebranch},
+   #{ticketmoviescreen},to_timestamp(#{ticketmoviedate}, 'YYYY-MM-DD(Dy)HH24:MI'),
+   #{ticketmovieseat1},#{ticketmovieseat2},
+   #{ticketmoviepeople}, #{ticketmovieprice}, #{id}, #{pointPlused},#{ticketmovieposter},#{ticketselectMovieSeq})
+   </insert>
+   <insert id="makeTicketPayment3" parameterType="java.util.Map">
+      insert into ticketreservation
+   (ticketmoviecode,ticketmoviename,ticketmoviegrade,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,
+   ticketmovieseat1,ticketmovieseat2,ticketmovieseat3,
+   ticketmoviepeople,ticketmovieprice,id,pointplused,ticketmovieposter,selectedmovieseq)
+   values (#{ticketmoviecode}, #{ticketmoviename},#{ticketmoviegrade}, #{ticketmoviebranch},
+   #{ticketmoviescreen},to_timestamp(#{ticketmoviedate}, 'YYYY-MM-DD(Dy)HH24:MI'),
+   #{ticketmovieseat1},#{ticketmovieseat2},#{ticketmovieseat3},
+   #{ticketmoviepeople}, #{ticketmovieprice}, #{id}, #{pointPlused},#{ticketmovieposter},#{ticketselectMovieSeq})
+   </insert>
+   <insert id="makeTicketPayment4" parameterType="java.util.Map">
+      insert into ticketreservation
+   (ticketmoviecode,ticketmoviename,ticketmoviegrade,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,
+   ticketmovieseat1,ticketmovieseat2,ticketmovieseat3,ticketmovieseat4,
+   ticketmoviepeople,ticketmovieprice,id,pointplused,ticketmovieposter,selectedmovieseq)
+   values (#{ticketmoviecode}, #{ticketmoviename},#{ticketmoviegrade}, #{ticketmoviebranch},
+   #{ticketmoviescreen},to_timestamp(#{ticketmoviedate}, 'YYYY-MM-DD(Dy)HH24:MI'),
+   #{ticketmovieseat1},#{ticketmovieseat2},#{ticketmovieseat3},#{ticketmovieseat4},
+   #{ticketmoviepeople}, #{ticketmovieprice}, #{id}, #{pointPlused},#{ticketmovieposter},#{ticketselectMovieSeq})
+   </insert>
+   <insert id="makeTicketPayment5" parameterType="java.util.Map">
+      insert into ticketreservation
+   (ticketmoviecode,ticketmoviename,ticketmoviegrade,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,
+   ticketmovieseat1,ticketmovieseat2,ticketmovieseat3,ticketmovieseat4,ticketmovieseat5,
+   ticketmoviepeople,ticketmovieprice,id,pointplused,ticketmovieposter,selectedmovieseq)
+   values (#{ticketmoviecode}, #{ticketmoviename},#{ticketmoviegrade}, #{ticketmoviebranch},
+   #{ticketmoviescreen},to_timestamp(#{ticketmoviedate}, 'YYYY-MM-DD(Dy)HH24:MI'),
+   #{ticketmovieseat1},#{ticketmovieseat2},#{ticketmovieseat3},#{ticketmovieseat4},#{ticketmovieseat5},
+   #{ticketmoviepeople}, #{ticketmovieprice}, #{id}, #{pointPlused},#{ticketmovieposter},#{ticketselectMovieSeq})
+   </insert>
+   
+   
+   <select id="getTheaterRegion" parameterType="int" resultType="String">
+      select theaterregion from timeschedule where seq=#{ticketselectMovieSeq}
+   </select>
+   
+   
+   <insert id="insertPointUsage1" parameterType="java.util.Map">
+      insert into usagehistory
+   (seq,id,moviename,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,ticketmovieregion,ticketmoviecode)
+   values(usagehistory_seq.nextval,#{id},
+   #{moviename},
+   #{ticketmoviebranch},#{ticketmoviescreen},
+   to_timestamp(#{ticketmoviedate},'YYYY/MM/DD(Dy)HH24:MI'),#{ticketmovieregion},#{ticketmoviecode})
+   </insert>
+   <insert id="insertPointUsage2" parameterType="java.util.Map">
+      insert into usagehistory
+   (seq,id,pointused,pointuseddate,moviename,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,ticketmovieregion,ticketmoviecode)
+   values(usagehistory_seq.nextval,#{id},#{usedPoint},to_date(sysdate,'YY/MM/DD'),
+   #{moviename},
+   #{ticketmoviebranch},#{ticketmoviescreen},
+   to_timestamp(#{ticketmoviedate},'YYYY/MM/DD(Dy)HH24:MI'),#{ticketmovieregion},#{ticketmoviecode})
+   </insert>
+   <insert id="insertPointUsage3" parameterType="java.util.Map">
+      insert into usagehistory
+   (seq,id,couponused,couponuseddate,moviename,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,ticketmovieregion,ticketmoviecode)
+   values(usagehistory_seq.nextval,#{id},
+   #{usedCoupon},to_date(sysdate,'YY/MM/DD'),#{moviename},
+   #{ticketmoviebranch},#{ticketmoviescreen},
+   to_timestamp(#{ticketmoviedate},'YYYY/MM/DD(Dy)HH24:MI'),#{ticketmovieregion},#{ticketmoviecode})
+   </insert>
+   <insert id="insertPointUsage4" parameterType="java.util.Map">
+      insert into usagehistory
+   (seq,id,pointused,pointuseddate,couponused,couponuseddate,moviename,ticketmoviebranch,ticketmoviescreen,ticketmoviedate,ticketmovieregion,ticketmoviecode)
+   values(usagehistory_seq.nextval,#{id},#{usedPoint},to_date(sysdate,'YY/MM/DD'),
+   #{usedCoupon},to_date(sysdate,'YY/MM/DD'),#{moviename},
+   #{ticketmoviebranch},#{ticketmoviescreen},
+   to_timestamp(#{ticketmoviedate},'YYYY/MM/DD(Dy)HH24:MI'),#{ticketmovieregion},#{ticketmoviecode})
+   </insert>
+   
+
+   <update id="updateUserPoints" parameterType="java.util.Map">
+      update member set memberpoint=(memberpoint-#{usedPoint}+#{pointPlused}) where id=#{id}
+   </update>
+
+
+   <update id="updateMovieSeat1" parameterType="java.util.Map">
+      update timeschedule set ${ticketmovieseat1}=1,totalseat=(totalseat-#{ticketmoviepeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="updateMovieSeat2" parameterType="java.util.Map">
+      update timeschedule set ${ticketmovieseat1}=1,${ticketmovieseat2}=1,totalseat=(totalseat-#{ticketmoviepeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="updateMovieSeat3" parameterType="java.util.Map">
+      update timeschedule set ${ticketmovieseat1}=1,${ticketmovieseat2}=1,${ticketmovieseat3}=1,totalseat=(totalseat-#{ticketmoviepeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="updateMovieSeat4" parameterType="java.util.Map">
+      update timeschedule set ${ticketmovieseat1}=1,${ticketmovieseat2}=1,${ticketmovieseat3}=1,${ticketmovieseat4}=1,totalseat=(totalseat-#{ticketmoviepeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="updateMovieSeat5" parameterType="java.util.Map">
+      update timeschedule set ${ticketmovieseat1}=1,${ticketmovieseat2}=1,${ticketmovieseat3}=1,${ticketmovieseat4}=1,${ticketmovieseat5}=1,totalseat=(totalseat-#{ticketmoviepeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+
+   
+   <select id="getUserPoint" parameterType="String" resultType="String">
+   select memberpoint from member where id=#{id}
+   </select>
+   
+   
+   
+   
+   
+     <select id="selectbarMovieName" parameterType="java.util.Map" resultType="movieDTO">
+       select distinct movienameforkr, movieagelimit, moviepostimg from adminmovie where movienameforkr=#{name}
+     </select>
+     
+     <select id="selectMovieSchedule" resultType="timeScheduleDTO">
+        select distinct playingmovie, theatermoviegrade from timeschedule where theaterdate > cast(current_timestamp as date) order by playingmovie asc
+     </select>
+     
+     <select id="selectMovieScheduleTheatre" resultType="timeScheduleDTO">
+        select distinct theaterbranch, theaterregion from timeschedule where theaterdate > cast(current_timestamp as date)
+     </select>
+     
+     <select id="selectMovieScheduleYear" resultType="ticketSchedulTimeDTO">
+        select distinct to_char(theaterdate, 'YYYY') as year from timeschedule where theaterdate > cast(current_timestamp as date) order by year asc
+     </select>
+     
+    <select id="selectMovieScheduleMonth" resultType="ticketSchedulTimeDTO">
+       SELECT distinct to_char(theaterdate, 'MM') as month, to_char(theaterdate, 'YYYY') as year FROM timeschedule where theaterdate > cast(current_timestamp as date) order by year asc
+    </select>
+      
+    <select id="selectMovieScheduleDay" resultType="ticketSchedulTimeDTO">
+       SELECT distinct to_char(theaterdate, 'DD') as day, to_char(theaterdate, 'Dy') as week, to_char(theaterdate, 'MM') as month, to_char(theaterdate, 'YYYY') as year, to_char(theaterdate, 'YYYY.MM.DD(Dy)') as theaterdate FROM timeschedule where theaterdate > cast(current_timestamp as date) order by theaterdate asc
+    </select>
+     
+     <select id="selectMovieScheduleTime" resultType="timeScheduleDTO" parameterType="java.util.Map">
+        select  distinct theaterscreen from timeschedule where theaterbranch=#{theaterbranch} and playingmovie=#{playingmovie} and to_char(theaterdate,'YYYY.MM.DD(Dy)')=#{theaterdate} order by theaterscreen asc
+     </select>
+     
+     <select id="selectSeatStatus" parameterType="java.util.Map" resultType="timeScheduleDTO">
+        select theaterdate, totalseat, a1, a2, a3, a4, a5, b1, b2, b3, b4, b5, c1, c2, c3, c4, c5, d1, d2, d3, d4, d5 from timeschedule where theaterbranch=#{tickettheaterbranch} and playingmovie=#{ticketplayingmovie} and to_char(theaterdate,'YYYY.MM.DD(Dy)')=#{tickettheaterdate} and to_char(theaterdate,'HH24:MI')=#{tickettheatertime} and theaterscreen=#{tickettheaterscreen}
+     </select>
+      
+      <select id="seatcheck1" parameterType="java.util.Map" resultType="timeScheduleDTO">
+         select * from timeschedule where playingmovie=#{ticketplayingmovie} and theaterbranch=#{tickettheaterbranch} and to_char(theaterdate, 'YYYY.MM.DD(Dy)') = #{tickettheaterdate} and theaterscreen=#{tickettheaterscreen} and to_char(theatertime, 'HH24:MI') = #{tickettheatertime} and ${ticketseats1} = '0'
+      </select>
+      
+      <select id="seatcheck2" parameterType="java.util.Map" resultType="timeScheduleDTO">
+         select * from timeschedule where playingmovie=#{ticketplayingmovie} and theaterbranch=#{tickettheaterbranch} and to_char(theaterdate, 'YYYY.MM.DD(Dy)') = #{tickettheaterdate} and theaterscreen=#{tickettheaterscreen} and to_char(theatertime, 'HH24:MI') = #{tickettheatertime} and ${ticketseats1} = '0' and ${ticketseats2} = '0'
+      </select>
+      
+      <select id="seatcheck3" parameterType="java.util.Map" resultType="timeScheduleDTO">
+         select * from timeschedule where playingmovie=#{ticketplayingmovie} and theaterbranch=#{tickettheaterbranch} and to_char(theaterdate, 'YYYY.MM.DD(Dy)') = #{tickettheaterdate} and theaterscreen=#{tickettheaterscreen} and to_char(theatertime, 'HH24:MI') = #{tickettheatertime} and ${ticketseats1} = '0' and ${ticketseats2} = '0' and ${ticketseats3} = '0'
+      </select>
+      
+      <select id="seatcheck4" parameterType="java.util.Map" resultType="timeScheduleDTO">
+         select * from timeschedule where playingmovie=#{ticketplayingmovie} and theaterbranch=#{tickettheaterbranch} and to_char(theaterdate, 'YYYY.MM.DD(Dy)') = #{tickettheaterdate} and theaterscreen=#{tickettheaterscreen} and to_char(theatertime, 'HH24:MI') = #{tickettheatertime} and ${ticketseats1} = '0' and ${ticketseats2} = '0' and ${ticketseats3} = '0' and ${ticketseats4} = '0'
+      </select>
+      
+      <select id="seatcheck5" parameterType="java.util.Map" resultType="timeScheduleDTO">
+         select * from timeschedule where playingmovie=#{ticketplayingmovie} and theaterbranch=#{tickettheaterbranch} and to_char(theaterdate, 'YYYY.MM.DD(Dy)') = #{tickettheaterdate} and theaterscreen=#{tickettheaterscreen} and to_char(theatertime, 'HH24:MI') = #{tickettheatertime} and ${ticketseats1} = '0' and ${ticketseats2} = '0' and ${ticketseats3} = '0' and ${ticketseats4} = '0' and ${ticketseats5} = '0'
+      </select>
+      
+      <select id="selectMovieScheduleScreenNTime" parameterType="java.util.Map" resultType="timeScheduleDTO">
+         select to_char(theaterdate, 'HH24:MI') as theaterdate, totalseat, theaterscreen, seq from timeschedule where theaterbranch=#{theaterbranch} and playingmovie=#{playingmovie} and to_char(theaterdate,'YYYY.MM.DD(Dy)')=#{theaterdate} order by theaterdate asc
+      </select>
+      
+      <select id="selectTheaterSeq" parameterType="String" resultType="String">
+   			select to_char(seq, '0000') from theaters where branch = #{theaterBranch} and pseq=0
+   		</select>
+   
+</mapper>

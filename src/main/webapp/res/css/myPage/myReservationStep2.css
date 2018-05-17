@@ -1,0 +1,954 @@
+@charset "UTF-8";
+
+.bodyWrapper {
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.helpCenterIndexNavi {
+	width: 100%;
+	height: 37px;
+	background-color: #e3e3da;
+}
+
+.helpCenterIndexNavi a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.helpCenterIndexMenuDiv {
+	width: 1052px;
+	height: 37px;
+	margin: 0 auto;
+}
+
+.helpCenterIndexImageDiv {
+	float: left;
+    width: 20px;
+    height: 18px;
+    margin-top: 11px;
+}
+
+.helpCenterIndexImageDiv img {
+	width: 17px;
+   	height: 15px;
+}
+
+.helpCenterIndexNaviSecondDiv {
+	float: left;
+	width: 115px;
+	height: 22px;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 13px;
+}
+
+.helpCenterIndexNaviThirdDiv {
+	float: left;
+	width: 185px;
+	height: 22px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+
+
+
+/* --------------- 맨위 프로필 부분 ----------  */
+
+.myCgvProfileContentsDiv {
+	width: 1052px;
+	height: 400px;
+	position: relative;
+}
+
+.myCgvProfileContentsDivImg {
+	width: 1052px;
+	height: 400px;
+	position: absolute;
+}
+
+.myCgvProfileFirstContents {
+	width: 970px;
+	height: 150px;
+	position: absolute;
+	margin-left: 40px;
+	margin-top: 40px;
+}
+
+.profileImageContents {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-left: 100px;
+}
+
+.profileImageContents img {
+	width: 120px;
+	height: 120px;
+}
+
+.secondMyCgvProfileRealContents {
+	width: 700px;
+	height: 150px;
+	float: left;
+}
+
+.profileNameDiv {
+	width: 700px;
+	height: 75px;
+}
+
+.firstNameDiv {
+	width: 120px;
+	height: 75px;
+	float: left;
+	text-align: center;
+}
+
+.secondNameDiv {
+	width: 185px;
+	height: 75px;
+	float: left;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.thirdNameDiv {
+	width: 70px;
+	height: 75px;
+	float: left;
+	margin-top: 5px;
+}
+
+.fourthNameDiv {
+	width: 175px;
+	height: 75px;
+	float: left;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.fifthNameDiv {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 20px;
+}
+
+.fifthNameDiv img {
+	width: 25px;
+	height: 25px;
+}
+
+.profileGradeDiv {
+	width: 500px;
+	height: 50px;
+	margin-left: 15px;
+}
+
+.memberShipContentsDiv {
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+/* ---------------------- 두번째 div부분 --------------------*/
+.myCgvProfileSecondContents {
+	width: 970px;
+	height: 165px;
+	position: absolute;
+	margin-top: 200px;
+	margin-left: 40px;
+}
+
+/* ------------  myCgvCouponDiv 부분------------- */
+.myCgvCouponDiv {
+	width: 450px;
+	height: 165px;
+	float: left;
+	margin-left: 20px;
+}
+
+.couponLabelDiv {
+	width: 340px;
+	height: 65px;
+	margin-left: 60px;
+}
+
+.couponLabelDiv img {
+	width: 340px;
+	height: auto;
+}
+
+.couponContentDiv {
+	width: 450px;
+	height: 100px;
+}
+
+.movieTicketLabel {
+	width: 150px;
+	height: 70px;
+	float: left;
+	margin-left: 63px;
+}
+
+.movieTicketCount {
+	width: 70px;
+	height: 25px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 120px;
+}
+/* -------------- myCgvOnePointDiv 부분 ----------- */
+.myCgvOnePointDiv {
+	width: 450px;
+	height: 165px;
+	float: left;
+	margin-left: 25px;
+}
+
+.onePointLabelDiv {
+	width: 340px;
+	height: 65px;
+	margin-left: 50px;
+}
+
+.onePointLabelDiv img {
+	width: 340px;
+	height: auto;
+}
+
+.onePointContentsDiv {
+	width: 450px;
+	height: 110px;
+}
+
+.possiblePoint {
+	width: 420px;
+	height: 50px;
+	margin-left: 20px;
+}
+
+.possiblePointLabel {
+	width: 200px;
+	height: 50px;
+	float: left;
+}
+
+.possiblePointValue {
+	width: 100px;
+	height: 50px;
+	float: left;
+	margin-left: 100px;
+}
+
+.vipCheckPoint {
+	width: 420px;
+	height: 50px;
+	margin-left: 20px;
+}
+
+.vipCheckPointLabel {
+	width: 200px;
+	height: 50px;
+	float: left;
+}
+
+.vipCheckPointValue {
+	width: 100px;
+	height: 50px;
+	float: left;
+	margin-left: 100px;
+}
+
+
+/*  ------------------ 왼쪽 메뉴 + 내가 짜야할 부분 ---------------- */
+.myReservationStep2_totalWrapper {
+	width: 1052px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.myReservationStep2_contentsWrapper {
+	width: 1052px;
+	height: auto;
+	border: 1px solid black;
+}
+
+.myReservationStep2Wrapper {
+	width: 892px;
+	height: auto;
+	margin-top: 35px;
+	padding-bottom: 35px;
+	float: left;
+}
+
+
+
+/* ---- body left 메뉴 --------  */
+.leftDiv {
+	width: 160px;
+	height: 344px;
+	float: left;
+	margin-top: 20px;
+}
+
+.leftDiv ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.leftDiv a{
+	text-decoration: none;
+	
+}
+
+.mvHome {
+	width: 160px;
+	height: 35px;
+	background-color: #232323;
+	color: white;
+	font-size: 24px;
+	text-align: center;
+}
+
+/*클릭하지않은 링크*/
+.mvHome a:link {
+	color: white;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.mvHome a:visited {
+	color: white;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.mvHome a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.myReservation {
+	margin-top: 18px;
+}
+
+/*클릭하지않은 링크*/
+.myReservation a:link {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.myReservation a:visited {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.myReservation a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.discountCoupon {
+	margin-top: 18px;
+}
+
+/*클릭하지않은 링크*/
+.discountCoupon a:link {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.discountCoupon a:visited {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.discountCoupon a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.mvPoint {
+	margin-top: 18px;
+}
+
+/*클릭하지않은 링크*/
+.mvPoint a:link {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.mvPoint a:visited {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.mvPoint a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.clientInfo {
+	margin-top: 18px;
+}
+
+/*클릭하지않은 링크*/
+.clientInfo a:link {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.clientInfo a:visited {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.clientInfo a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.inLineUlDivFirst {
+	width: 115px;
+	height: auto;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.editProfile {
+	margin-top: 18px;
+}
+
+/*클릭하지않은 링크*/
+.editProfile a:link {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.editProfile a:visited {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.editProfile a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.myInquiryList {
+	margin-top: 18px;
+}
+
+/*클릭하지않은 링크*/
+.myInquiryList a:link {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.myInquiryList a:visited {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.myInquiryList a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.watchMovieList {
+	margin-top: 18px;
+}
+
+/*클릭하지않은 링크*/
+.watchMovieList a:link {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*한번 클릭했거나 다녀간 링크*/
+.watchMovieList a:visited {
+	color: #232323;
+	/*    text-decoration: none; */
+}
+
+/*링크클릭하려고 마우스 가져다댈때*/
+.watchMovieList a:hover {
+	color: #f9ac1e;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+
+/* -------------- 중간탑 메뉴 세개 ------------- */
+.centerDiv {
+	width: 892px;
+	height: 344px;
+	float: left;
+}
+
+.firstDetailDiv {
+	width: 800px;
+	height: 170px;
+	float: left;
+	margin-left: 65px;
+	margin-top: 20px;
+	border: 1px solid black;
+}
+
+.wishListDiv {
+	width: 260px;
+	height: 150px;
+	float: left;
+	margin-top: 10px;
+	border-right: 1px solid #282828;
+}
+
+.wishListDiv ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;	
+}
+
+.wishListImage {
+	width: 150px;
+	height: 20px;
+	margin-left: 48px;
+}
+
+.wishListLabel {
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.wishListContents {
+	width: 200px;
+	height: 65px;
+	margin-top: 20px;
+	text-align: center;
+	margin-left: 20px;
+}
+
+
+.seeTheMovieDiv {
+	width: 260px;
+	height: 150px;
+	float: left;
+	margin-top: 10px;
+	border-right: 1px solid #282828;
+}
+
+.seeTheMovieDiv ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.seeTheMovieImage {
+	width: 150px;
+	height: 20px;
+	margin-left: 50px;
+}
+
+.seeTheMovieLabel {
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.seeTheMovieContents {
+	width: 200px;
+	height: 65px;
+	margin-top: 20px;
+	text-align: center;
+	margin-left: 20px;
+}
+
+.watchMovieDiv {
+	width: 260px;
+	height: 150px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.watchMovieDiv ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.watchMovieImage {
+	width: 150px;
+	height: 20px;
+	margin-left: 50px;
+}
+
+.watchMovieLabel {
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	margin-left: 50px;
+}
+
+.watchMovieContents {
+	width: 200px;
+	height: 65px;
+	margin-top: 20px;
+	text-align: center;
+	margin-left: 20px;
+}
+
+
+/* ------------------- 내가 진짜 짜야할 부분!! ----------------- */
+.myReservationReal_BodyWrapper{
+	width: 805px;
+	height: 1350px;
+	float: left;
+	margin-left: 65px;
+	margin-top: 50px;
+}
+
+/* --------- 예매코드 부분 ------------- */
+.movieReservationCodeWrapper {
+	width: 805px;
+	height: 20px;
+}
+.movieReservationCodeWrapper .movieCodeLabel {
+	width: 75px;
+	float: left;
+	font-weight: bold;
+}
+.movieReservationCodeWrapper .movieCodeLabel span {
+	width: 90px;
+	font-size: 18px;
+}
+.movieReservationCodeWrapper .movieCode {
+	width: 210px;
+	float: left;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.movieReservationCodeWrapper .movieCode span {
+	width: 210px;
+	font-size: 17px;	
+	color: #282828;
+}
+
+/* --------- 정화정보(중간) 부분 ------------- */
+.movieInfoWrapper {
+	width: 805px;
+	height: 240px;
+	border: 1px solid lightgray;
+	margin-top: 20px;
+}
+
+/* --------- 포스터 --------- */
+.poster {
+	width: 150px;
+	height: 220px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.poster img {
+	width: 150px;
+	height: 220px;
+}
+
+/* --------- 영화정보 Wrapper--------- */
+.movieDetailInfoWrapper {
+	width: 350px;
+	height: 221px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+/* --------- 영화 이름 --------- */
+.movieNameWrapper {
+	width: 350px;
+	height: 20px;
+	font-weight: bold;
+}
+.movieNameWrapper .movieNameLabel {
+	width: 70px;
+	height: 20px;
+	float: left;
+}
+.movieNameWrapper .movieNameLabel span {
+	width: 70px;
+	height: 20px;
+	font-size: 14px;
+}
+.movieNameWrapper .movieName {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.movieNameWrapper .movieName span {
+	width: 200px;
+	height: 20px;
+	font-size: 14px
+}
+
+/* --------- 극장 --------- */
+.movieBranchWrapper {
+	width: 350px;
+	height: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.movieBranchWrapper .movieBranchLabel {
+	width: 70px;
+	height: 20px;
+	float: left;
+}
+.movieBranchWrapper .movieBranchLabel span {
+	width: 70px;
+	height: 20px;
+	font-size: 14px;
+}
+.movieBranchWrapper .movieBranch {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.movieBranchWrapper .movieBranch span {
+	width: 200px;
+	height: 20px;
+	font-size: 14px
+}
+
+
+/* --------- 일시 --------- */
+.movieDateWrapper {
+	width: 350px;
+	height: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.movieDateWrapper .movieDateLabel {
+	width: 70px;
+	height: 20px;
+	float: left;
+}
+.movieDateWrapper .movieDateLabel span {
+	width: 70px;
+	height: 20px;
+	font-size: 14px;
+}
+.movieDateWrapper .movieDate {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.movieDateWrapper .movieDate span {
+	width: 200px;
+	height: 20px;
+	font-size: 14px
+}
+
+/* --------- 상영관 --------- */
+.movieScreenWrapper {
+	width: 350px;
+	height: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.movieScreenWrapper .movieScreenLabel {
+	width: 70px;
+	height: 20px;
+	float: left;
+}
+.movieScreenWrapper .movieScreenLabel span {
+	width: 70px;
+	height: 20px;
+	font-size: 14px;
+}
+.movieScreenWrapper .movieScreen {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.movieScreenWrapper .movieScreen span {
+	width: 200px;
+	height: 20px;
+	font-size: 14px
+}
+
+/* --------- 관람인원 --------- */
+.moviePeopleWrapper {
+	width: 350px;
+	height: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.moviePeopleWrapper .moviePeopleLabel {
+	width: 70px;
+	height: 20px;
+	float: left;
+}
+.moviePeopleWrapper .moviePeopleLabel span {
+	width: 70px;
+	height: 20px;
+	font-size: 14px;
+}
+.moviePeopleWrapper .moviePeople {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.moviePeopleWrapper .moviePeople span {
+	width: 200px;
+	height: 20px;
+	font-size: 14px
+}
+
+/* --------- 관람좌석 --------- */
+.movieSeatWrapper {
+	width: 350px;
+	height: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+.movieSeatWrapper .movieSeatLabel {
+	width: 70px;
+	height: 20px;
+	float: left;
+}
+.movieSeatWrapper .movieSeatLabel span {
+	width: 70px;
+	height: 20px;
+	font-size: 14px;
+}
+.movieSeatWrapper .movieSeat {
+	width: 200px;
+	height: 20px;
+	float: left;
+}
+.movieSeatWrapper .movieSeat span {
+	width: 200px;
+	height: 20px;
+	font-size: 14px
+}
+
+
+/* --------- 포인트 & 관람좌석 --------- */
+.showPointNPirceWrapper {
+	width: 220px;
+	float: right;
+	margin-top: 115px;
+	margin-right: 15px;
+	font-weight: bold;
+}
+
+.pointPlusedWrapper {
+	width: 210px;
+	height: 20px;
+	margin: 10px 10px 5px 10px;
+}
+.pointPlusedWrapper .pointPlusedLabel {
+	width: 100px;
+	height: 20px;
+	float: left;
+}
+.pointPlusedWrapper .pointPlusedLabel span {
+	width: 100px;
+	height: 20px;
+	font-size: 14px;
+}
+.pointPlusedWrapper .pointPlused {
+	width: 100px;
+	height: 20px;
+	text-align: right;
+	float: left;
+}
+.pointPlusedWrapper .pointPlused span {
+	width: 100px;
+	height: 20px;
+	text-align: right;
+	font-size: 14px
+}
+
+.moviePriceWrapper {
+	width: 210px;
+	height: 20px;
+	margin: 20px 10px 10px 10px;
+
+}
+.moviePriceWrapper .moviePriceLabel {
+	width: 100px;
+	height: 20px;
+	float: left;
+}
+.moviePriceWrapper .moviePriceLabel span {
+	width: 100px;
+	height: 20px;
+	font-size: 14px;
+}
+.moviePriceWrapper .moviePrice {
+	width: 100px;
+	height: 20px;
+	text-align: right;
+	float: left;
+}
+.moviePriceWrapper .moviePrice span {
+	width: 100px;
+	height: 20px;
+	text-align: right;
+	font-size: 14px
+}
+
+
+/* -------- 예매취소 버튼 구역 ---------------- */
+.buttonPlace {
+	width: 220px;
+	height: 36px;
+	margin-top: 13px;
+}
+	
+.buttonPlace input[type="button"] {
+	 width: 110px;
+     height: 35px;
+     outline: none; 
+     font-size: 14px;
+     border: 0px;
+     border-radius: 4px;
+     cursor: pointer;
+     float: right;
+     font-weight: bold;
+     background-color: #282828;
+     color: white;
+}

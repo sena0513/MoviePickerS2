@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+#wrapper {
+   width: 100%;
+   height: auto;
+}
+
+.bodyWrapper {
+   width: 100%;
+   height: auto;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.helpCenterIndexNavi {
+   width: 100%;
+   height: 37px;
+   background-color: #e3e3da;
+}
+
+.helpCenterIndexNavi a {
+   color: black;
+   text-decoration: none;
+   display: block;
+}
+
+.helpCenterIndexMenuDiv {
+   width: 1052px;
+   height: 37px;
+   margin: 0 auto;
+}
+
+.helpCenterIndexImageDiv {
+   float: left;
+   width: 20px;
+   height: 18px;
+   margin-top: 11px;
+}
+
+.helpCenterIndexImageDiv img {
+   width: 17px;
+   height: 15px;
+}
+
+.helpCenterIndexNaviSecondDiv {
+   float: left;
+   width: 90px;
+   height: 22px;
+   margin-top: 10px;
+   margin-left: 15px;
+   font-size: 13px;
+}
+
+.helpCenterIndexNaviThirdDiv {
+   float: left;
+   width: 75px;
+   height: 22px;
+   margin-top: 10px;
+   font-size: 13px;
+}
+
+/* --------------컨텐츠------------------- */
+.content {
+   width: 1052px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+/* 왼쪽 사이드바 */
+.col-aside {
+   padding-top: 11px;
+   float: left;
+   width: 160px;
+   word-break: break-all;
+}
+
+.side_menu>ul {
+   padding: 0;
+   margin: 0;
+}
+
+.side_menu>ul>li {
+   padding: 0;
+   border-top: 1px solid #000000;
+   line-height: 100%;
+   display: list-item;
+   text-align: -webkit-match-parent;
+   display: list-item;
+}
+
+.side_menu>ul>li>a {
+   padding-top: 8px;
+   padding-bottom: 8px;
+   text-align: left;
+   width: 160px;
+   display: inline-block;
+   vertical-align: middle;
+   font-weight: bold;
+   color: black;
+}
+
+.side_menu>ul>li>a:hover {
+   background-color: #f9ac1e;
+}
+
+/* 디테일 */
+.col-detail {
+   float: left;
+   width: 892px;
+   box-sizing: border-box;
+   padding-bottom: 30px;
+   padding-top: 10px;
+}
+
+.wrap-box {
+   padding-left: 10px;
+   width: 892px;
+   height: 260px;
+   box-sizing: border-box;
+}
+
+.qna_search {
+   width: 297px;
+   height: 260px;
+   float: left;
+   background-color: #f9ac1e;
+   text-align: center;
+   display: inline-block;
+}
+
+.search_box {
+   width: 280px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin: auto;
+}
+
+.search_box input {
+   height: 30px;
+   vertical-align: bottom;
+   padding-left: 10px;
+}
+
+.email_inquiry {
+   width: 297px;
+   height: 260px;
+   float: left;
+   background-color: #ffbf4a;
+   text-align: center;
+   display: inline-block;
+}
+
+p.qna_p {
+   font-size: 13px;
+   margin: 5;
+   color: black;
+   font-weight: 100;
+}
+
+span.qna_search_title, span.email_inquiry_title {
+   font-size: 22px;
+   color: black;
+   font-weight: bold;
+}
+
+.service_area {
+   width: 287px;
+   height: 260px;
+   float: left;
+   background-color: #ffda97;
+   text-align: center;
+   display: inline-block;
+}
+
+.service_title_div {
+   margin-top: 45px;
+}
+
+span.service_title {
+   font-size: 20px;
+   color: black;
+   font-weight: bold;
+}
+
+.service_list {
+   padding-top: 30px;
+   box-sizing: border-box;
+}
+
+.service_list a {
+   color: black;
+   font-weight: bold;
+}
+
+.service_list1 {
+   width: 200px;
+   padding: 15px;
+   border: 1px solid black;
+}
+
+.service_list2 {
+   margin: 10px;
+   width: 200px;
+   padding: 15px;
+   border: 1px solid black;
+}
+
+/* 공지사항 */
+.notice_area {
+   padding-top: 30px;
+   padding-left: 25px;
+   font-weight: bold;
+   font-size: 14px;
+   padding-bottom: 30px;
+}
+
+.notice_area .title {
+   font-size: 16px;
+   color: black;
+   font-weight: bold;
+}
+
+.title_div {
+   padding-top: 60px;
+   padding-bottom: 10px;
+}
+
+span.img {
+   display: block;
+   margin-bottom: 20px;
+}
+
+.notice_area .notice_list {
+   margin-top: 10px;
+   margin-left: -40px;
+}
+
+.notice_area .notice_list li {
+   padding-left: 5px;
+   font-weight: normal;
+}
+
+.notice_area .notice_list li a {
+   float: left;
+   overflow: hidden;
+   display: inline-block;
+   width: 750px;
+   color: #222;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   text-align: left;
+   text-decoration: none;
+}
+
+.notice_area .notice_list li a:hover {
+   text-decoration: underline;
+}
+
+.notice_area .notice_list .day {
+   color: #222;
+   font-size: 11px;
+}

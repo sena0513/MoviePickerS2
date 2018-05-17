@@ -1,0 +1,709 @@
+@charset "UTF-8";
+
+/* ----------Form----------------------------- */
+#form {
+   width: 100%;
+   float: left;
+}
+
+.wholepage {
+   width: 100%;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+/*--------------------------Navi부분----------------------*/
+.navi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .navi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .naviMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .naviImageDiv{
+         float: left;
+         width: 20px;
+         height: 18px;
+         margin-top: 11px;
+         margin-left: 12px;
+      }
+   
+         .naviImageDiv img{
+            width: 17px;
+            height: 15px;
+         }
+      
+      .naviSecondDiv{
+         float: left;
+         width: 60px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      	
+      .naviThirdDiv{
+         float: left;
+         width: 60px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+      
+      .naviFourthDiv{
+         float: left;
+         width: 120px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+
+.contents {
+   width: 1052px;
+   margin: 0 auto;
+}
+
+/* ----------Top of top----------------------------- */
+.contents h1 {
+   height: 80px;
+}
+
+.moviePoint_index {
+   height: 80px;
+   width: 1052px;
+}
+
+.movieChart {
+   float: left;
+   width: 1052px;
+}
+
+.moviePoint_hr {
+   /* color: black; */
+   /* background-color: black; */
+   width: 1052px;
+   height: 3px;
+   margin-top: -34px;
+}
+
+.submenu {
+   float: right;
+   text-align: center;
+   width: 1052px;
+   height: 10px;
+   color: #282828;
+}
+
+.submenu a {
+   width: 100%;
+   text-decoration: none;
+   color: #282828;
+}
+
+.submenu ui {
+   list-style: none;
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+}
+
+.submenu li {
+   list-style: none;
+   float: right;
+   width: 11%;
+   line-height: 50px;
+   text-decoration: none;
+}
+
+.movieChart_selectOption {
+   width: 1025px;
+   height: 15px;
+}
+
+/* ----------Movie Slide(Slick)----------------------------- */
+.movieSlide_slick {
+   width: 1052px;
+   height: 500px;
+}
+
+#slick_container {
+   display: grid;
+   width: 980px;
+   height: 400px;
+   /* padding: 10px; */
+   float: left;
+   background-color: #282828;
+}
+
+.row {
+   flaot: left;
+}
+
+.overlay {
+   flaot: left;
+}
+
+.slick_prev {
+   width: 36px;
+   height: 400px;
+   float: left;
+   background-color: #282828;
+   cursor: pointer;
+}
+
+
+.prev_movie {
+   margin-top: 200px;
+}
+
+.next_movie {
+   margin-top: 200px;
+}
+
+.slick_next {
+   width: 36px;
+   height: 400px;
+   float: left;
+   background-color: #282828;
+   cursor:pointer;
+}
+
+.slick-slider {
+   display: grid;
+   box-sizing: border-box;
+}
+
+.slick-dots {
+   box-sizing: border-box;
+   /* width:1052px;
+   height:10px; */
+   float: left;
+}
+
+/* .slick-dots {
+   bottom: -45px;
+   display: block;
+   width: 15%;
+   padding: 0;
+   list-style: none;
+   text-align: center;
+   margin-left: 50%; li { display : inline-block;
+   margin-right: 4px;
+   &.
+   slick-active
+   {
+   button
+   {
+   background-color
+   :
+   black;
+} */
+
+/* ---------ㅡslide : inside(movie elements)-----------------*/
+.movieN {
+   /* box-sizing: border-box; */
+   max-width: 185px;
+   height: 400px;
+   float: left;
+   margin: 10 30 10 30;
+   color: #ffffff;
+}
+
+.moviePoint_Posterdiv {
+   box-sizing: border-box;
+   width: 185px;
+   height: 260px;
+   border: 3px solid #f1f1f1;
+   border-radius: 5px;
+}
+
+.moviePoint_poster {
+   width: 100%;
+   height: aito;
+}
+
+.boxoffice_movieNm {
+   width: 185px;
+   font-weight: bold;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   color: #f9ac1e;
+}
+
+.boxoffice_salesShare {
+   width: 185px;
+   margin-bottom: 5px;
+   font-size: 13px;
+}
+
+.boxoffice_openDate {
+   width: 185px;
+   margin-bottom: 5px;
+   font-size: 13px;
+}
+
+.boxoffice_audiAcc {
+   width: 185px;
+   margin-bottom: 5px;
+   font-size: 13px;
+}
+
+.grey_heart {
+   margin-top: 10px;
+   width: 20px;
+   height: auto;
+}
+
+.boxoffice_heart {
+   float: left;
+   width: 28px;
+}
+
+.movie_likeit {
+   width: 45px;
+   height: 20px;
+   flaot: left;
+   margin-top: 7px;
+   border: 1px solid grey;
+   /* margin-left: 22px; */
+   border-radius: 4px;
+   font-size: 12px;
+   float: left;
+}
+
+.buyTicket_icon {
+   float: left;
+   width: 70px;
+   height: auto;
+   margin-top: 8px;
+   margin-left: 40px;
+}
+
+.ticketIcon {
+   float: left;
+   width: 70px;
+}
+
+/* ------------bar-------*/
+.movieDetail_bar {
+   width: 1052px;
+   height: 40px;
+}
+
+.bar_yellow {
+   width: 10px;
+   height: 40px;
+   background-color: #f9ac1e;
+   float: left;
+   color: black;
+   line-height: 40px;
+}
+
+
+.bar_black {
+   width: 1042px;
+    height: 40px;
+    background-color: #282828;
+    float: left;
+    color: white;
+    line-height: 40px;
+}
+
+.bar_black1 {
+   width: 286px;
+    height: 40px;
+    background-color: #282828;
+    float: left;
+    color: white;
+    line-height: 40px;
+}
+
+.bar_black2 {
+   width: 541px;
+    height: 40px;
+    background-color: #282828;
+    float: left;
+    color: white;
+    line-height: 40px;
+    font-size: 13px;
+    text-align: right;
+}
+
+.bar_black3 {
+   width: 215px;
+    height: 40px;
+    background-color: #282828;
+    float: left;
+    color: white;
+    line-height: 40px;
+}
+
+.writeGradeButton {
+   width: 90px;
+   height: 25px;
+   font-size: 15px;
+   background-color: #ed5021;
+   color: white;
+   border-radius: 8px;
+   border: 0;
+   outline: none;
+   font-weight: bold;
+   margin-top: 2px;
+   cursor: pointer;
+}
+
+.myGradeButton {
+   width: 90px;
+   height: 25px;
+   font-size: 15px;
+   background-color: #7e7f82;
+   color: white;
+   border-radius: 8px;
+   outline: none;
+   border: 0;
+   font-weight: bold;
+   margin-top: 2px;
+   cursor: pointer;
+}
+
+/* ----Golden egg & Point Chart    */
+#moviePoint_chart {
+   box-sizing: border-box;
+   border-top:1px solid #282828;
+   border-bottom:1px solid #282828;
+   width: 1052px;
+   height: 202px;
+   margin-top: 20px;
+}
+
+.moviePoint_body {
+   width: 1052px;
+   height: 200px;
+   box-sizing: border-box;
+}
+
+.moviePoint_body_left {
+   width: 800px;
+   height: 200px;
+   float: left;
+}
+
+.moviePoint_body_left_header {
+   width: 850px;
+   height: 20px;
+   font-size: 12px;
+}
+
+.body_left_bottom {
+   width: 852px;
+   height: 150px;
+}
+
+.body_left_bottom_1 {
+   width: 200px;
+   height: 150px;
+   float: left;
+}
+
+.egg_image {
+   width: 80px;
+    height: auto;
+    margin-left: 110px;
+    margin-top: 40px;
+}
+
+.body_left_bottom_2 {
+   width: 100px;
+    height: 100px;
+    float: left;
+    margin-top: 59px;
+    font-weight: bold;
+}
+
+.body_left_bottom_2_text {
+   width: 100px;
+    height: 100px;
+    font-size: 42px;   
+}
+
+.body_left_bottom_3 {
+   width: 500px;
+    height: 150px;
+    float: left;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.moviePoint_graph {
+   width: 200px;
+   height: 200px;
+   float: left;
+   background-color: white;
+}
+
+.body_left_bottom_3_text1 {
+   font-size: 30px;
+}
+
+.body_left_bottom_3_text2 {
+   font-size: 20px;
+}
+
+.body_left_bottom_3_text3 {
+   font-size: 15px;
+}
+
+/* ------------User's reviews-------*/
+#moviePoint_reviews {
+   width: 1052px;
+   height: 50px;
+   margin-top: 11px;
+   margin-left: 7px;
+}
+
+.moviePoint_review_box {
+   background-image : url(../../image/movies/reviewForm.png);
+   box-sizing: border-box;
+   width: 520px;
+   height: 220px;
+   float: left;
+   margin: 1px;
+}
+
+.moviePoint_reviewDetail {
+   box-sizing: border-box;
+   width: 475px;
+   height: 215px;
+   float: left;
+}
+
+.moviePoint_declare_icon {
+   box-sizing: border-box;
+   width: 40px;
+   height: 215px;
+   float: left;
+   margin-left: -7px;
+}
+
+.moviePoint_profileImg {
+   box-sizing: border-box;
+   width: 70px;
+   height: 70px;
+}
+
+.moviePoint_eggOrFry_N_profileImg {
+    margin-left: 180px;
+    position: relative;
+}
+
+.profile {
+   box-sizing: border-box;
+    width: 70px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.egg_stamp {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-top: 5px;
+    position: absolute;
+    margin-left: 42px;
+}
+
+.moviePoint_reviewerID {
+   width: 485px;
+    height: 25px;
+    margin-top: 5px;
+    margin-left: 19px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #282828;
+}
+
+.moviePoint_reviewer_Comment {
+   box-sizing: border-box;
+    width: 449px;
+    height: 80px;
+    font-size: 12px;
+    padding-left: 86px;
+    padding-right: 10px;
+    color: #282828;
+    text-align: center;
+}
+
+.moviePoint_dateAndLikeit {
+   box-sizing: border-box;
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    margin-left: 181px;
+}
+
+.moviePoint_reviewer_enrollDate {
+   box-sizing: border-box;
+    width: 86px;
+    height: 20px;
+    float: left;
+    font-size: 12px;
+    color: #282828;
+    margin-left: 60px;
+}
+
+.moviePoint_review_Likeit {
+    box-sizing: border-box;
+    width: 38px;
+    height: 30px;
+    float: left;
+}
+
+.declare_icon {
+   box-sizing: border-box;
+   widht: 40x;
+   height: 30px;
+   float: left;
+   margin-left: 14px;
+   margin-top: 5px;
+}
+
+.likeit_icon {
+    box-sizing: border-box;
+    height: 30px;
+    float: left;
+    margin-top: -10px;
+}
+
+.moviePoint_review_LikeitNum {
+   widht: 40px;
+   height: 40px;
+   font-size: 12px;
+   color: #282828;
+}
+
+#myChart {
+   background-color: #fcfcf0;
+}
+
+
+.moviePoint_review_navigator_wrapper {
+    width: 1052px;
+    height: 30px;
+    
+    float:left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.moviePoint_review_navigator {
+   width: 650px;
+    height: 25px;
+ 	margin-left: 180px;
+ 	background-color: white;
+ 	text-align: center;   
+}
+
+.moviePoint_review_navigator a:link{
+	color: #282828; text-decoration: none;
+}
+.moviePoint_review_navigator a:visited{
+	color: #f9ac1e; text-decoration: none;
+}
+.moviePoint_review_navigator a:hover{
+	color: #282828; text-decoration: underline;
+}
+
+
+.movieDetail_stealCut {
+   width:1052px;
+   height:400px;
+}
+.dropbtnreview {
+	padding : 0;
+	width:40px;
+	height:50px;
+	background:url("../image/movies/seeMoreIcon.png") no-repeat;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdownreview {
+   width: 40px;
+   height: 215px;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-contentreview{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 110px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: -110px;
+    margin-top: -51px;
+}
+
+.dropdown-contentreview a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #ddd}
+
+.show {display:block;}
+
+.gradeModifyButton{
+   width: 110px;
+   height: 40px;
+   border-radius: 6px;
+   outline: none;
+   background-color: #282828;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+}
+
+.gradeDeleteButton{
+   width: 107px;
+    height: 35;
+    border: 6px;
+    outline: none;
+    background-color: #282828;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    margin-left:2px;
+    cursor: pointer;
+}

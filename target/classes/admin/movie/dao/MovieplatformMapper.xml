@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="adminmovieSQL">
+   
+   <insert id="movieinsert" parameterType="java.util.Map">
+      insert into adminmovie values(adminmovie_seq.nextval,#{movienameforkr},#{movienameforeng},#{moviegenre},
+      #{movieactor},#{moviemaker},#{moviecontent},#{movierunningtime},
+      #{movieagelimit},to_date(#{moviedate},'YYYY/MM/DD'),#{moviemakecountry},#{moviepostimg},
+      #{moviesteelcutimg1},#{moviesteelcutimg2},#{moviesteelcutimg3},#{movietrailer})
+   </insert>
+   
+   <insert id="moviepointinsert" parameterType="java.util.Map">
+      insert into moviepoint (seq, movienameforkr) 
+      values(adminmovie_seq.currval, #{movienameforkr})
+   </insert>
+   
+   <update id="moviefix" parameterType="java.util.Map">
+   		update adminmovie set movienameforkr=#{movienameforkr},movienameforeng=#{movienameforeng},
+   		moviegenre=#{moviegenre},movieactor=#{movieactor},moviemaker=#{moviemaker},
+   		movierunningtime=#{movierunningtime},movieagelimit=#{movieagelimit},moviedate=to_date(#{moviedate},'YYYY-MM-DD')as moviedate,
+   		moviemakecountry=#{moviemakecountry} where seq=#{seq}
+   </update>
+   
+    <update id="modifymovie" parameterType="java.util.Map">
+   		update adminmovie set movienameforkr=#{movienameforkr},movienameforeng=#{movienameforeng},
+   		moviegenre=#{moviegenre},movieactor=#{movieactor},
+   		moviemaker=#{moviemaker},moviecontent=#{moviecontent},movierunningtime=#{movierunningtime},
+   		movieagelimit=#{movieagelimit},moviedate=to_date(#{moviedate},'YYYY/MM/DD'),
+   		moviemakecountry=#{moviemakecountry},moviepostimg=#{moviepostimg},
+   		moviesteelcutimg1=#{moviesteelcutimg1},moviesteelcutimg2=#{moviesteelcutimg2},
+   		moviesteelcutimg3=#{moviesteelcutimg3},movietrailer=#{movietrailer} where seq=#{seq}
+   </update>
+    
+    <select id="getmodifyform" resultType="movieDTO">
+    	select * from adminmovie where seq=#{seq}
+    </select>
+    
+   <select id="getmovieList" parameterType="java.util.Map" resultType="movieDTO">
+      <!--  
+      select * from
+      (select rownum rn, tt.* from 
+      (select * from BOARD order by ref desc, step asc)tt
+      )where between rn #{startNum} and #{endNum}
+      -->
+      
+      <![CDATA[
+      select seq,movienameforkr,movienameforeng,moviegenre,movieactor,moviemaker,
+             moviecontent,movierunningtime,movieagelimit,to_char(moviedate,'YYYY-MM-DD')as moviedate,moviemakecountry from
+      (select rownum rn, tt.* from 
+      (select * from adminmovie order by seq desc)tt
+      )where rn>=#{startNum} and rn<=#{endNum}
+      ]]>      
+   </select>
+   
+   <!-- 총 글 수  -->
+   <select id="getTotalA" resultType="int">
+      select count(*) from adminmovie
+   </select>
+   
+   <delete id="deletemovie" parameterType="String">
+   	  delete from adminmovie where seq=#{seq}
+   </delete>
+   
+   <select id="getAllData" resultType="movieDTO">
+   	  select * from adminmovie
+   </select>
+</mapper>

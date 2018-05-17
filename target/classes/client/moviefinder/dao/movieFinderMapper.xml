@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="movieFinderSQL">
+
+	<select id="getAgelim" parameterType="java.util.Map" resultType="movieDTO">
+		select movieagelimit, seq from adminmovie where movienameforkr in
+		('${movienameforkr1}', '${movienameforkr2}', '${movienameforkr3}',
+		'${movienameforkr4}', '${movienameforkr5}', '${movienameforkr6}',
+		'${movienameforkr7}')
+		ORDER BY DECODE(movienameforkr,
+		'${movienameforkr1}', 1,
+		'${movienameforkr2}', 2, '${movienameforkr3}',
+		3,
+		'${movienameforkr4}', 4, '${movienameforkr5}', 5,
+		'${movienameforkr6}', 6, '${movienameforkr7}', 7)
+
+	</select>
+
+	<select id="getMovieList" parameterType="java.util.Map"
+		resultType="movieDTO">
+		
+		select * from
+		(select rownum rn, tt.* from 
+		(select * from ADMINMOVIE order by SEQ desc)tt where ${searchfield} like '%'||#{searchtext}||'%'
+		AND MOVIEGENRE IN
+		<foreach collection="genre" item="genre" index="index" separator="," open="(" close=")">
+                    #{genre}
+		</foreach>
+		AND MOVIEMAKECOUNTRY IN
+		<foreach collection="nation" item="nation" index="index" separator="," open="(" close=")">
+                    #{nation}
+		</foreach>
+		AND MOVIEAGELIMIT IN
+		<foreach collection="ageLimit" item="ageLimit" index="index" separator="," open="(" close=")">
+                    #{ageLimit}
+		</foreach>	
+		 AND to_char(moviedate, 'YYYY') between #{year_start} and #{year_end}
+		)where rn between #{startNum} and #{endNum}
+		
+	</select>
+
+	<!-- 총글수 -->
+	<select id="getMovieTotalA" resultType="int" parameterType="java.util.Map">
+		
+		select count(*) from ADMINMOVIE where ${searchfield} like '%'||#{searchtext}||'%'
+		 AND MOVIEGENRE IN
+		<foreach collection="genre" item="genre" index="index" separator="," open="(" close=")">
+                    #{genre}
+		</foreach>
+		AND MOVIEMAKECOUNTRY IN
+		<foreach collection="nation" item="nation" index="index" separator="," open="(" close=")">
+                    #{nation}
+		</foreach>
+		AND MOVIEAGELIMIT IN
+		<foreach collection="ageLimit" item="ageLimit" index="index" separator="," open="(" close=")">
+                    #{ageLimit}
+		</foreach>
+		AND to_char(moviedate, 'YYYY') between #{year_start} and #{year_end}
+	</select>
+</mapper>

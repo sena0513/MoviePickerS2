@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="usageSQL">
+
+    <select id="pointhistory" parameterType="java.util.Map" resultType="usage">
+		select seq,id,movieName,to_char(pointUsedDate,'YYYY.MM.DD')as pointUsedDate,ticketmovieRegion,ticketmovieBranch,
+		pointUsed,ticketmoviecode,to_char(ticketmovieDate,'YYYY.MM.DD HH24:MI'),ticketmovieScreen from USAGEHISTORY where pointuseddate between #{startdate} and to_date(#{enddate},'YYYY/MM/DD HH24:MI:SS')
+    </select>
+    
+    <select id="couponhistory" parameterType="java.util.Map" resultType="usage">
+		select seq,id,movieName,to_char(couponUsedDate,'YYYY.MM.DD')as couponUsedDate,ticketmovieRegion,ticketmovieBranch,
+		couponUsed,ticketmoviecode,to_char(ticketmovieDate,'YYYY.MM.DD HH24:MI'),ticketmovieScreen from USAGEHISTORY where couponUsedDate between #{startdate} and to_date(#{enddate},'YYYY/MM/DD HH24:MI:SS')
+    </select>
+    
+    <select id="getmoviehistory" parameterType="java.util.Map" resultType="usage">
+       select id,movieName from USAGEHISTORY where id=#{id} and movieName=#{movieName}
+    </select>
+   
+   
+   <!-- 총 글 수  -->
+   
+</mapper>

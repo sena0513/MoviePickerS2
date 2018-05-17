@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AdmintimescheduleSQL">
+
+   <insert id="inserttimeschedulemovie" parameterType="java.util.Map">
+      insert into timeschedule(seq,
+                  playingMovie,
+                  theaterBranch,
+                  theaterScreen,
+                  theaterMovieGrade,
+                  theaterDate,
+                  theaterTime,
+                  theaterRegion) values(timeschedule_seq.nextval,#{playingMovie},#{theaterBranch},#{theaterScreen},#{theaterMovieGrade},to_timestamp(#{theaterDate},'YYYY-MM-DD HH24:MI'),to_timestamp(#{theaterDate},'YYYY-MM-DD HH24:MI'),#{theaterRegion})
+   </insert>
+   
+   <update id="modifytimeschedulemovie" parameterType="java.util.Map">
+   		update timeschedule set playingMovie=#{playingMovie},theaterBranch=#{theaterBranch},theaterScreen=#{theaterScreen},theaterDate=to_timestamp(#{theaterDate},'YYYY-MM-DD'),theaterTime=to_timestamp(#{theaterTime},'YYYY-MM-DD HH24:MI'),theaterMovieGrade=#{theaterMovieGrade},theaterRegion=#{theaterRegion} where seq=#{seq}
+   </update>
+   
+    
+    <select id="getalldate" resultType="Admintimeschedule">
+    	select seq,playingMovie,theaterRegion,theaterBranch,theaterScreen,to_char(theaterDate,'YYYY-MM-DD')as theaterDate,theaterMovieGrade,to_char(theaterTime,'HH24:MI')as theaterTime from timeschedule
+    </select>
+   
+   <delete id="deletetimeschedulemovie" parameterType="java.util.Map">
+        delete from timeschedule where to_char(theaterDate,'YYYY-MM-DD') = to_timestamp(#{deleteDate},'YYYY-MM-DD')
+   </delete>
+</mapper>

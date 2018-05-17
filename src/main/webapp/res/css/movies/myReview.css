@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+
+/* ----------Form----------------------------- */
+#bodyWrapper {
+   width: 100%;
+   float: left;
+   background-color:#fcfcf0; 
+}
+
+/*----------------navi----------------------*/
+.myReviewNavi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .myReviewNavi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .myReviewMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .myReviewImageDiv{
+         float: left;
+         width: 20px;
+         height: 18px;
+         margin-top: 11px;
+      }
+   
+         .myReviewImageDiv img{
+            width: 17px;
+            height: 15px;
+         }
+      
+      .myReviewSecondDiv{
+         float: left;
+         width: 60px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      
+      .myReviewThirdDiv{
+         float: left;
+         width: 60px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+      
+      .myReviewFourthDiv{
+         float: left;
+         width: 110px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+
+.contents {
+   width: 1052px;
+   margin: 0 auto;
+}
+
+/* ----------Top of top----------------------------- */
+.contents h1 {
+   height: 40px;
+}
+
+.submenu {
+    float: left;
+    text-align: center;
+    width: 1052px;
+    height: auto;
+    margin-top: 20px;
+    border-bottom: 2px solid #e3e3da;
+}
+
+.gradeLabel{
+   width: 100px;
+   height:auto;
+   float: left;
+}
+
+.myGradeLabel{
+   width: 110px;
+   height: auto;
+   float: right;
+   margin-top: 20px;
+}
+
+.normalGradeLabel{
+   width: 110px;
+   height: auto;
+   float: right;
+   margin-top: 20px;
+}
+
+.submenu a {
+   width: 100%;
+   text-decoration: none;
+   color: black;
+}
+
+
+
+/* ------------영화포스터 한 단---------------------- */
+
+.review_wrapper {
+   width: 1052px;
+   height: 800px;
+}
+
+.review_box {
+   width:1052px;
+   height:500px;
+}
+
+.review_movieList {
+   width:1052px;
+   height:auto;
+   float:left;
+   padding-bottom: 25px;
+   border-bottom: 2px solid #e3e3da;
+}
+
+.review_movielog {
+   width:30px;
+   height:230px;
+   float: left;
+}
+
+.movieNum {
+   font-size: 13px;
+}
+
+.review_movieList_poster {
+   width:180px;
+   height:265px;
+   float:left;
+   margin-right: 30px;
+   margin-top: 15px;
+}
+
+.movieList_poster {
+   width:180px;
+   height:265px;
+   position:relative;
+}
+
+.review_movieList_detail {
+   width: 842px;
+   height: auto;
+   float: left;
+}
+
+.review_movieList_detail_Label_Wrapper{
+   width: 842px;
+   height: 75px;
+   float: left;
+}
+
+.review_movieList_detail_movieNameKr {
+   width: 720px;
+   height: auto;
+   float: left;
+}
+
+.delete_review{
+   width: 50px;
+   height: 30px;
+   float: left;
+   margin-left: 72px;
+   margin-top: 20px;
+   
+}
+
+      .deleteBtn {
+         width:30px;
+         height:30px;
+      }
+
+/* -------------첫번째 컨텐츠의 DIV Wrapper-------------*/
+      
+.firstContentsDiv{
+   width: 842px;
+   height: auto;
+   float: left;
+}      
+      
+.evaluate_image {
+   width: 50px;
+   height: 30px;
+   float: left;
+}      
+
+.review_movieList_detail_id {
+    
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    margin-left: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5b4d0f;
+}
+
+.review_movieList_detail_time {
+
+    width: 230px;
+    height: auto;
+    float: left;
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #5b4d0f;
+}
+
+/*-----------------------------------*/
+
+
+.review_movieList_detail_eval {
+   width: 405px;
+   height: auto;
+   float: left;
+   font-size:13px;
+   margin-top: 20px;
+}
+
+.secondContentsDiv{
+   width: 842px;
+   height: auto;
+   float: left;
+   margin-top: 15px;
+   
+}
+
+.review_movieList_detail_modify {
+   width: 60px;
+   height: auto;
+   float: left;
+   font-size:13px;
+   color: #5b4d0f;
+   margin-top: 5px;
+}
+
+.review_movieList_detail_modify a{
+   color: #5b4d0f;
+   text-decoration: none;
+}
+
+.review_movieList_detail_modify a:hover {
+   cursor: pointer;
+   color: #f9ac1e;
+}
+
+.evaluate_image{
+   width: 25px;
+   height: auto;
+   float: left;
+   
+}
+
+.evaluate_realimage {
+   width:25px;
+   height:auto;
+   float: left;
+}
+
+.evaluate_text {
+   width: 115px;
+   float: left;
+   font-size: 13px;
+   font-weight: bold;
+   margin-top: 5px;
+   margin-left: 15px;
+}
+
+.grade_image {
+   position:absolute;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="theatersSQL">
+
+<select id="getTheatersInfo" parameterType="String" resultType="theatersDTO">
+   select * from theaters where regioncode=#{regioncode} and pseq=0
+</select>
+
+<select id="getBranchList" parameterType="String" resultType="theatersDTO">
+   select * from theaters where region=#{region} and pseq=0
+</select>
+
+<select id="chooseBranch" parameterType="int" resultType="theatersDTO">
+   select * from theaters where seq=#{seq}
+</select>
+
+<select id="getDateInfo" parameterType="String" resultType="timeScheduleDTO">
+   <![CDATA[
+   select DISTINCT to_Char(THEATERTIME, 'MM') as month, to_Char(THEATERTIME, 'DD') as day FROM TIMESCHEDULE 
+   where theaterbranch=#{branch} and
+   to_Char(THEATERTIME, 'MM') >= to_Char(sysdate, 'MM') and
+   to_Char(THEATERTIME, 'DD') >= to_Char(sysdate, 'DD') and
+   to_Char(THEATERTIME, 'YYYY-MM-DD-HH24-MI') >= to_Char(sysdate, 'YYYY-MM-DD-HH24-MI')
+   order by month asc, day asc
+   ]]>
+</select>
+
+<select id="getBranchMovieDistinct" parameterType="java.util.HashMap" resultType="timeScheduleDTO">
+   select DISTINCT PLAYINGMOVIE FROM TIMESCHEDULE
+   where theaterbranch=#{branch} and
+   to_Char(THEATERTIME, 'MM-DD') = #{date} and
+    to_Char(THEATERTIME, 'YYYY-MM-DD-HH24-MI') >= to_Char(sysdate, 'YYYY-MM-DD-HH24-MI') 
+   order by PLAYINGMOVIE asc
+</select>
+
+<select id="getScreenInfo" parameterType="java.util.HashMap" resultType="timeScheduleDTO">
+   SELECT DISTINCT THEATERSCREEN, PLAYINGMOVIE, totalseat FROM TIMESCHEDULE 
+   WHERE theaterbranch=#{theaterBranch} and PLAYINGMOVIE=#{playingMovie} and
+   to_Char(THEATERTIME, 'MM-DD') = #{date} and
+   to_Char(THEATERTIME, 'MM-DD-HH24-MI') >= to_Char(sysdate, 'MM-DD-HH24-MI')
+   order by PLAYINGMOVIE asc, THEATERSCREEN asc
+   
+</select>
+
+<select id="getScheduleInfo" parameterType="java.util.HashMap" resultType="timeScheduleDTO">
+   SELECT seq, PLAYINGMOVIE, THEATERSCREEN, THEATERMOVIEGRADE, to_char(THEATERTIME, 'HH24:mI')as THEATERTIME, TOTALSEAT, THEATERREGION, THEATERBRANCH, to_char(THEATERDATE, 'YYYY-MM-DD') as THEATERDATE FROM TIMESCHEDULE
+   WHERE THEATERBRANCH=#{theaterBranch} and PLAYINGMOVIE=#{playingMovie} and THEATERSCREEN =#{theaterScreen} and
+    to_Char(THEATERTIME, 'MM-DD') = #{date} and
+    to_Char(THEATERTIME, 'MM-DD-HH24-MI') >= to_Char(sysdate, 'MM-DD-HH24-MI')
+   order by THEATERTIME asc
+   
+</select>
+
+<select id="getMovieInfo" parameterType="String" resultType="movieDTO">
+   select seq, movienameforkr, movienameforeng, moviegenre, movierunningtime, to_char(moviedate, 'YYYY-MM-DD')as moviedate, movieagelimit from adminmovie where movienameforkr=#{movienameforkr}
+</select>
+
+
+
+</mapper>

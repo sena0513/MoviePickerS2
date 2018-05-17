@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.3.xsd
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring-1.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+
+    <!-- Uncomment and your base-package here:
+         <context:component-scan
+            base-package="org.springframework.samples.web"/>  -->
+	<!-- 클라이언트 (사용자 부분)  -->
+	<context:component-scan base-package="client.main.controller"/>
+	<context:component-scan base-package="client.helpCenter.controller"/>
+	<context:component-scan base-package="client.movies.controller"/>
+	<context:component-scan base-package="client.member.controller"/>
+	<context:component-scan base-package="client.usagehistory.controller"/>
+	<context:component-scan base-package="client.ticket.controller"/>
+	<context:component-scan base-package="client.theaters.controller"/>
+	
+	<!-- admin(관리자 부분)  -->
+   <context:component-scan base-package="admin.controller"/>
+   <context:component-scan base-package="admin.maincategory.controller"/>
+   <context:component-scan base-package="admin.timeschedule.controller"/>
+   <context:component-scan base-package="admin.notice.controller"/>
+   <context:component-scan base-package="admin.QnA.controller"/>
+   <context:component-scan base-package="admin.report.controller"/>
+	<context:annotation-config/>
+
+    <mvc:annotation-driven />
+
+	<!-- <mvc:resources mapping="/res/css/**" location="/res/css/"/>
+   <mvc:resources mapping="/res/image/**" location="/res/image/"/>
+   <mvc:resources mapping="/res/mv_point/**" location="/res/mv_point/"/>
+   <mvc:resources mapping="/res/footer/**" location="/res/footer/"/>
+ -->    
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	        <!-- Example: a logical view name of 'showMessage' is mapped to '/WEB-INF/jsp/showMessage.jsp' -->
+	        <!-- <property name="prefix" value="/WEB-INF/"></property> -->
+	        <property name="suffix" value=".jsp"/>
+	</bean>
+	
+	
+	<!-- jsonView -->
+   <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+   		<property name="contentType" value="text/html;charset=UTF-8"/>
+   </bean>
+   
+   <!-- order value=0 ->0번째 인덱스부터 차례로 매치시키겠다 -->
+   <bean id="beanNameResolver" class="org.springframework.web.servlet.view.BeanNameViewResolver">
+   	<property name="order" value="0"/>
+   </bean>
+	
+	<!-- 파일 업로드  -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+	</bean>
+	
+	
+
+
+	
+	
+	<!-- <mvc:resources location="/image/" mapping="/image/**"></mvc:resources> -->
+
+</beans>

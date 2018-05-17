@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+#bodyWrapper{
+   width: 100%;
+   float: left;
+   background-color:#fcfcf0;
+}
+
+.dropOutFormContentsWrapper{
+   width: 1052px;
+   height: 700px;
+   margin: 0 auto;
+   margin-top: 30px;
+
+}
+
+.dropOutFormLabel{
+   width: 1052px;
+   height: auto;
+   margin-top: 20px;
+   border-bottom: 1.5px solid black;
+}
+
+.dropOutFormImage{
+   width: 1052px;
+   height: auto;
+   float: left;
+   text-align: center;
+   margin-top: 50px;
+}
+
+.dropOutFormImage img{
+   width: 400px;
+   height: auto
+}
+
+.dropOutFormContents{
+   width: 1052px;
+   height: auto;
+   float: left;
+   text-align: center;
+   margin-top: 40px;
+}
+
+.dropOutFormBottonWrapper{
+   width: 1052px;
+   height: auto;
+   float: left;
+   text-align: center;
+   margin-top: 40px;
+}
+
+.dropOutFormBottonWrapper input[type="button"]{
+   width: 110px;
+   height: 50px;
+   border-radius: 6px;
+   outline: none;
+   background-color: #282828;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+}
+

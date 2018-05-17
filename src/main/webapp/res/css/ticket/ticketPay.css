@@ -1,0 +1,516 @@
+@charset "UTF-8";
+
+body {
+   background-color: white; important!
+}
+.bodyWrapper{
+	width: 100%;
+	float: left;
+}
+/*----------------navi----------------------*/
+.ticketingNavi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .ticketingNavi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .ticketingMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .ticketingImageDiv{
+         float: left;
+         width: 20px;
+         height: 18px;
+         margin-top: 11px;
+      }
+   
+         .ticketingImageDiv img{
+           width: 17px;
+   		   height: 15px;
+         }
+      
+      .ticketingSecondDiv{
+         float: left;
+         width: 50px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      
+      .ticketingThirdDiv{
+         float: left;
+         width: 100px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+.ticketingContents{
+   width: 1052px;
+   margin: 0 auto;
+}
+
+.ticketingCenter {
+   width:1052px;   
+   height:auto;
+}
+
+
+.ticketPayWrapper{
+	width:1052px;
+	height:435px;
+	float:left;
+}
+
+/* --------------------------------- topNaviButtons  */
+.ticketNevi{
+   width:1052px;
+   height:40px;
+}
+.ticketBtn{
+   float: right;
+   padding: 10px 3px 3px 0px;
+}
+.ticketingGuide, .ticketingSchedule, .backTicketing{
+   width:97px;
+   height:23px;
+   border:none;
+   outline: none;
+   cursor: pointer;
+   border-radius:5px;
+   background-color: #282828;
+   color:#ffffff;
+}
+
+/* ---------------------------------------- Discount  */
+.ticketDiscountSection {
+   margin: 0 auto;
+}
+.ticket-colHeader {
+   height: 30px;
+   background: #282828;
+}
+.ticket-colHeader .title0 {
+   margin-top: 20px;
+   margin-left: 10px;
+   color: white;
+}
+
+/* ---------------------------------- Discount : CJ point  */
+.cjPointWrapper {
+   width: 1052px;
+   height: 90px;
+   background-color: #f2f0e5;
+}
+
+.ticket-point {
+   width: 380px;
+   float: left;
+}
+.ticket-point h1 {
+   margin-left: 10px;
+}
+.pointInfo {
+   float: left;
+   margin-top: 21px;
+   margin-left: 15px;
+   top: 15px;
+   left: 145px;
+}
+.pointInfo .showPoint-top {
+   font-weight: bold;
+}
+.pointInfo .showPoint-top .title {
+   color: #59656e;
+}
+.pointInfo .showPoint-top .userPoints {
+   color: #9b3d20;
+}
+.pointInfo .showPoint-top .title2 {
+   margin-left: 140px;
+}
+.usePointInput {
+   width: 75px;
+   text-align: right;
+   background-color: transparent;
+}
+
+
+/* ---------------------------------- Discount : CGV 영화관람권 */
+.ticket-freeTicket-wrapper {
+   width: 1052px;
+   background-color: #f2f0e5;
+   margin-top: -10px;
+}
+.ticket-freeTicket-wrapper .ticket-freeTicket{
+	width: 1052px;
+	text-align: left;
+	float: left;	
+}
+.ticket-freeTicket-wrapper .ticket-freeTicket h1 {
+   margin-top: 2px;
+   margin-left: 10px;
+}
+.ticket-freeTicket-wrapper .ticket-freeTicket-list table {
+	magin-top: -10px;
+	magin: center;
+}
+
+
+
+/* ---------------------------------------- Price  */
+.ticketPriceSection {
+   float: left;
+   width: 1052px;
+   height: 160px;
+   background-color: #f2f0e5;
+}
+
+/* ------------------------------ (1) ticketCost */
+.ticketCost {
+   width: 250px;
+   float: left;
+    margin: 0 45px;
+    border-radius: 4px;
+    background-color: #202020;
+    margin-top: 20px;
+    padding: 2px;
+}
+.ticketCost .paymentHeader {
+   height: 27px;
+    line-height: 27px;
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+}
+.ticketCost .paymentHeader .paymentHeader-text {
+   height: 32px;
+   line-height: 32px;
+   background-color: #fff;
+   font-size: 14px;
+}
+
+.ticketCost .paymentFooter {
+   height: 32px;
+   line-height: 32px;
+   background-color: #474747;
+    color: #fff;
+    box-shadow: inset 0 0 10px #202020;
+   text-align: right;
+}
+.ticketCost .paymentFooter .paymentFooter-resultPrice {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+/* ------------------------------ (2) ticketDiscount */
+.ticketDiscountPrice {
+   width: 250px;
+   float: left;
+    margin: 0 45px;
+    border-radius: 4px;
+    background-color: #202020;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.ticketDiscountPrice .discountHeader {
+   height: 27px;
+    line-height: 27px;
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.ticketDiscountPrice .discountHeader .discountHeader-text {
+   height: 32px;
+   line-height: 32px;
+   font-size: 14px;
+}
+.ticketDiscountPrice .discountFooter {
+   height: 27px;
+    line-height: 27px;
+   background-color: #bed4f7;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+}
+.ticketDiscountPrice .discountFooter .discountFooter-resultPrice {
+   font-size: 20px;
+   font-weight: bold;
+    color: #fff;
+}
+
+
+.ticketDiscountPrice .totalDiscountHeader {
+   height: 27px;
+    line-height: 27px;
+    background-color: #fff;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.ticketDiscountPrice .totalDiscountHeader .totalDiscountHeader-text {
+   height: 32px;
+   line-height: 32px;
+   font-size: 17px;
+}
+.ticketDiscountPrice .totalDiscountFooter {
+   height: 27px;
+    line-height: 27px;
+    border-radius: 3px 3px 0 0;
+   background-color: #1a78b8;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+}
+.ticketDiscountPrice .totalDiscountFooter .totalDiscountFooter-resultPrice {
+   font-size: 20px;
+   font-weight: bold;
+    color: #fff;
+}
+
+
+/* ------------------------------ (3) ticketTotalCost */
+.ticketTotalCost {
+   width: 250px;
+   float: left;
+    margin: 0 45px;
+    border-radius: 4px;
+    background-color: #202020;
+    margin-top: 20px;
+    padding: 2px;
+}
+
+.ticketTotalCost .totalCostHeader {
+   height: 27px;
+    line-height: 27px;
+    border-radius: 3px 3px 0 0;
+    background-color: #fff;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.ticketTotalCost .totalCostHeader .totalCostHeader-text {
+   height: 32px;
+   line-height: 32px;
+   font-size: 14px;
+}
+.ticketTotalCost .totalCostFooter {
+   height: 27px;
+    line-height: 27px;
+   background-color: #ffca6d;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+}
+.ticketTotalCost .totalCostFooter .totalCostFooter-resultPrice {
+   font-size: 20px;
+   font-weight: bold;
+    color: #fff;
+}
+
+.ticketTotalCost .finalTotalCostHeader {
+   height: 27px;
+    line-height: 27px;
+    background-color: #fff;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.ticketTotalCost .finalTotalCostHeader .finalTotalCostHeader-text {
+   height: 32px;
+   line-height: 32px;
+   font-size: 17px;
+}
+.ticketTotalCost .finalTotalCostFooter {
+   height: 27px;
+    line-height: 27px;
+    border-radius: 3px 3px 0 0;
+   background-color: #faac1f;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: right;
+    color: #fff;
+}
+.ticketTotalCost .finalTotalCostFooter .finalTotalCostFooter-resultPrice {
+   font-size: 20px;
+   font-weight: bold;
+    color: #fff;
+}
+
+
+
+
+
+
+/* ---------------------------------------- Info  */
+
+/* 선택바 */
+.ticketSelectBar_Wrapper{
+   width: 100%;
+   height:130px;
+   float:left;
+    background-color: #282828;
+  
+}
+.ticketSelectBar_Wrapper2{
+   width:1052px;   
+   height:auto;
+    margin: 0 auto;
+}
+.ticketSelectBar{
+   width:100%;
+   height:130px;
+   float: left;
+   color: white;
+}
+
+.ticketSelectBar_Back_Movie{
+   padding:15px 5px 10px 10px;
+   width: 110px;
+   height: 105px;
+   float:left;
+}
+.selectBarPoster{ 
+   padding:10px 0px 10px 10px;
+   width:270px;
+   height:110px;
+   float: left;
+} 
+.selectBarPoster img{
+   width:90px;
+   height:110px;
+   float: left;
+}
+.ticketMovie_Name_Grade{
+   padding:0 10px;
+   width:160px;
+   height:110px;
+   float: left;
+}
+.ticketMovieName{
+   margin:0;
+   width:150px;
+   height:50px;
+   font-size: 14px;
+   font-weight:bold;
+}
+.ticketMovieGrade{
+   margin:0;
+   width:150px;
+   height:50px;
+   font-size: 12px;
+   font-weight:bold;
+}
+.selectBar_Info_Theater_Date{
+   padding:5px;
+   width:160px;
+   height:120px;  
+   float: left;
+   font-size: 13px;
+}
+.selectBarTheater{
+   padding-top:5px;
+   width: 170px;
+   height: 30px;
+   float: left;
+}
+.selectBarDate{
+   width: 170px;
+   height: 30px;
+   float: left;
+}
+.selectBar_Span {
+   font-weight:bold;
+}
+.selectBar_Seat_Info{
+   padding:5px 25px;
+   width:110px;
+   height:120px;
+   float: left;
+}
+.selectBar_Seat_Name{
+   margin-top:5px;
+   width:110px;
+   height:90px;
+   font-size: 13px;
+}
+.selectBar_Payment_Info{
+   padding:5px 10px;
+   width:180px;
+   height:120px; 
+   float: left;
+}
+.selectBar_Payment_Price{
+   padding-top:5px;
+   width:180px;
+   height:30px;
+   float: left;
+   font-size: 13px;
+}
+.selectBar_Payment_Total{
+   width:180px;
+   height:30px;
+   float: left;
+   font-size: 13px;
+}
+.selectBar_Payment_Btn{
+   padding: 15px 25px 15px 117px;
+   width: 170px;
+   height: 100px;
+   float: left;
+}
+
+.toAskPage_btn{
+	width: 175px;
+	height: 100px;
+}
+
+.totalPrice{
+   color:red;  
+}
+
+/*광고*/
+.ticketingAdWraper{
+   width: 100%;
+   height:130px;
+   float:left;
+}
+.ticketingAdWraper2{
+   width:1052px;   
+   height:auto;
+   margin: 0 auto;
+}
+.ticketingAdWraper3{
+   width:100%;
+   height:130px;
+   float: left;
+}
+.ticketingAdWraper3 img{
+   padding-top:15px;
+   width:1052px;
+   height: 100px;
+}

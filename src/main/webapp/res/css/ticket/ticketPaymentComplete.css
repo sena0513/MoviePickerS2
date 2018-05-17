@@ -1,0 +1,362 @@
+@charset "UTF-8";
+
+body {
+   background-color: white; important!
+}
+.bodyWrapper{
+   width: 100%;
+   float: left;
+}
+/*----------------navi----------------------*/
+.ticketingNavi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .ticketingNavi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .ticketingMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .ticketingImageDiv{
+          float: left;
+          width: 20px;
+          height: 18px;
+          margin-top: 11px;
+      }
+   
+         .ticketingImageDiv img{
+            width: 17px;
+            height: 15px;
+         }
+      
+      .ticketingSecondDiv{
+         float: left;
+         width: 46px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      
+      .ticketingThirdDiv{
+         float: left;
+         width: 100px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+
+/* ---------------------------------- */
+
+.ticketPaymentCompleteWrapper {
+   width: 1052px;
+   margin: 0 auto;
+}
+
+
+
+/* ------------------------------- paymentCompleteHead */
+.paymentCompleteHead {
+   width: 1052px;
+   height: 35px;
+   margin-top: 25px;
+   background: #282828;
+   text-align: center;
+}
+.paymentCompleteHead .paymentCompleteHead-text {
+   height: 25px;
+   line-height: 35px;
+   margin-left: 10px;
+   color: white;
+}
+
+/* ------------------------------- paymentCompleteBody */
+.paymentCompleteBody {
+   width: 1052px;
+   height: 610px;
+   background: #fcfcf0;
+   margin-bottom: 25px;
+}
+
+.paymentCompleteBody .paymentCompleteBody-title {
+   width: 1052px;
+   height: 60px;
+   background: none;
+   text-align: center;
+}
+.paymentCompleteBody .paymentCompleteBody-title .paymentCompleteBody-title-text {
+   margin-top: 20px;
+   width: 1052px;
+   height: 60px;
+   line-height: 60px;
+   font-size: 26px;
+}
+
+/* ------------------------------- paymentCompleteBody - paymentCompleteBody-movieInfo */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper {
+   width: 710px;
+   height: 285px;
+   margin: 10px auto;
+   margin-top: 20px;
+}
+
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .poster {
+   width: 185px;
+   height: 165px;
+   float: left;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .poster img {
+   width: 185px;
+   height: auto;
+}
+
+/* -------- paymentCompleteBody-movieInfo ---------- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo {
+   width: 350px;
+   margin-left: 33px;
+   float: left;
+}
+
+/* --- movieReservationNumWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieReservationNumWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieReservationNumWrapper .ticketMovieCodeLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieReservationNumWrapper .ticketMovieCodeWrapper {
+   width: 200px;
+   float: left;
+}
+
+/* --- movieNameWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieNameWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieNameWrapper .ticketMovieTitleLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieNameWrapper .ticketMovieTitleWrapper {
+   width: 200px;
+   float: left;
+}
+
+/* --- movieGradeWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieGradeWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieGradeWrapper .ticketMovieGradeLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieGradeWrapper .ticketMovieGradeWrapper {
+   width: 200px;
+   float: left;
+}   
+
+/* --- moviePlaceWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePlaceWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePlaceWrapper .ticketMoviePlaceLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePlaceWrapper .ticketMoviePlaceWrapper {
+   width: 200px;
+   float: left;
+}
+
+/* --- movieDateWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieDateWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieDateWrapper .ticketMovieDateLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieDateWrapper .ticketMovieDateWrapper {
+   width: 200px;
+   float: left;
+}
+
+/* --- moviePeopleWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePeopleWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePeopleWrapper .ticketMoviePeopleLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePeopleWrapper .ticketMoviePeopleWrapper {
+   width: 200px;
+   float: left;
+}
+
+/* --- movieSeatWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieSeatWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieSeatWrapper .ticketMovieSeatLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.movieSeatWrapper .ticketMovieSeatWrapper {
+   width: 200px;
+   float: left;
+}
+
+/* --- moviePriceWrapper ----- */
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePriceWrapper {
+   width: 400px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePriceWrapper .ticketMoviePriceLabel {
+   width: 80px;
+   float: left;
+   font-weight: bold;
+   
+}
+.paymentCompleteBody .paymentCompleteBody-movieInfoWrapper .paymentCompleteBody-movieInfo 
+.moviePriceWrapper .ticketMoviePriceWrapper {
+   width: 200px;
+   float: left;
+}
+
+/* --- pointPlusedWrapper ----- */
+.pointPlusedWrapper {
+   width: 310px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 10px;
+}
+.pointPlusedLabel {
+   width: 120px;
+   float: left;
+   font-weight: bold;
+}
+.pointPlused {
+   width: 80px;
+   float: left;
+}
+
+/* ------------------------------- paymentCompleteBody - paymentCompleteBody-reservationInfo */
+.paymentCompleteBody .paymentCompleteBody-reservationInfo {
+   width: 690px;
+   height: 60px;
+   float: left;
+   margin-top: 30px;
+   margin-left: 210px;
+}
+
+.paymentCompleteBody .paymentCompleteBody-reservationInfo .paymentCompleteBody-reservationInfo-title {
+   width: 130px;
+   float: left;
+   font-size: 15px;
+   font-weight: bold;
+}
+.paymentCompleteBody .paymentCompleteBody-reservationInfo .paymentCompleteBody-reservationInfo-content {
+   width: 450px;
+   float: left;
+   margin-left: 49px;
+   text-align: left;
+   font-size: 13px;
+   line-height: 20px;
+}
+
+.ticketPaymentCompleteGotoHome{
+   width: 115px;
+   height: auto;
+   margin: 0 auto;
+   margin-left: 470px;
+   margin-top: 60px;
+   float: left;   
+}
+
+.ticketPaymentCompleteGotoHome input[type="button"]{
+   width: 100px;
+   height: 40px;
+   margin: 0;
+   padding: 0;
+   border-radius: 6px;
+   outline: none;
+   background-color: #282828;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   cursor: pointer;
+   
+}
+

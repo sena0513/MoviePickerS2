@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+.reservationGuideWrapper {
+   width: 400px;
+   margin: 0 auto;
+   
+}
+
+.guideHeader {
+   height: 50px;
+}
+.guideHeader h1 {
+   text-align: center;
+}
+
+/* Style the tab */
+.guideTab {
+   width: 400px;
+    overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.guideTab .tabButtons {
+   width: 133.3px;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.guideTab .tabButtons button {
+   width: 133px;
+   border-radius: 4px;
+   background-color: #282828;
+}
+
+.guideTab .tabButtons .tablinks img {
+   width: 80px;
+   height: 30px;
+   align: center;
+}
+.guideTab .tabButtons .tablinks span {
+    font-size: 8px;
+    font-height: 8px;
+    text-align: cetner;
+    color: white;
+    font-weight: bold;
+}   
+
+/* Change background color of buttons on hover */
+.guideTab button:hover {
+    background-color: #1a78b8;
+}
+
+/* Create an active/current tablink class */
+.guideTab button.active {
+    background-color: #faac1f;
+}
+
+
+/* Style the tab content */
+.guideTab_Content {
+   width: inherit;
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.guideTab_Content img {
+   width: 400px;
+}
+
+
+.reservationGuideWrapper .closeButton button{
+   border-radius: 4px;
+   background-color: #282828;
+   color: white;
+   font-weight: bold;
+}

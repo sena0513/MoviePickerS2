@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+
+
+#bodyWrapper{
+   width: 100%;
+   float: left;
+   background-color:#fcfcf0;
+   height: 631px;
+}
+
+.pWSearchNavi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .pwSearchNavi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .pwSearchMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .pWimageDiv{
+         float: left;
+         width: 20px;
+         height: 18px;
+         margin-top: 11px;
+         margin-left: 33px;
+      }
+   
+         .pWimageDiv img{
+            width: 17px;
+            height: 15px;
+         }
+      
+      .pwSearchNaviSecondDiv{
+         float: left;
+         width: 113px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      
+      .pwSearchNaviThirdDiv{
+         float: left;
+         width: 75px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+      
+         .pwSearchNaviFourthDiv{
+         float: left;
+         width: 120px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+.pwSearchWrapper{
+   width: 1052px;
+   height: 500px;
+   margin: 0 auto;
+}
+
+
+
+
+.searchPwTitle{
+   width: 840px;
+   height: 160px;
+   margin-left: 100px;
+   
+}
+
+   .searchPwTitle h1{
+      background-color: #e3e3da;
+   }
+
+.searchPwContent{
+   width: 840px;
+   height: 340px;
+   margin-left: 100px;   
+}
+.nameDiv{
+   width: 570px;
+   height: 65px;
+   margin-left: 180px;
+}
+   .nameLabelDiv{
+      width: 50px;
+      height: 25px;
+      float: left;
+      margin-top: 20px;
+   }
+   
+   .inputNameDiv{
+      width: 225px;
+      height: 46px;
+      float: left;
+      margin-top: 10px;
+      margin-left: 55px;
+   }
+   
+           .nameDiv input[type="text"] {
+             width: 205px;
+             line-height: 40px;
+           }
+   
+   .selectForeignerBox{
+width: 130px;
+    height: 46px;
+    float: left;
+    margin-top: -46px;
+    margin-left: -78px;
+   }
+   
+      .selectForeignerBox select {
+           width: 127px;
+           height: 46px;
+       }
+   
+   
+   
+.birthDiv{
+    width: 650px;
+    height: 60px;
+    margin-left: 180px;
+    margin-top: 25px;
+   
+}
+
+   .birthLabelDiv{
+      width: 70px;
+      height: 25px;
+      float: left;
+      margin-top: 20px;
+   }
+   
+   .inputBirthDiv{
+      width: 225px;
+      height: 46px;
+      float: left;
+      margin-top: 10px;
+      margin-left: 35px;
+   }
+   
+      .birthDiv input[type="text"] {
+          width: 205px;
+          line-height: 40px;
+          font-size: 16px;
+        }
+        
+     .genderDiv{
+        width: 130px;
+        height: 46px;
+        float: left;
+        margin-top: 10px;
+     }
+     
+        .genderDiv .manButton, .girlButton{
+           padding: 12 15px;
+           background-color: #282828;
+            color: white; 
+            border-radius: 8px; 
+            outline: none; 
+            font-weight: bold;
+        }
+        
+        .genderDiv .manButton:focus{
+           background: white;
+           color: #282828;
+           font-weight: bold;
+        }
+        
+        .genderDiv .girlButton:focus{
+           background: white;
+           color: #282828;
+           font-weight: bold;
+        }
+
+.inputIdDivForPw{
+   width: 462px;
+   height: 50px;
+   margin-left: 180px;
+   margin-top: 10px;
+}
+   
+   .idLabelDiv{
+      width: 60px;
+      height: 25px;
+      float: left;
+      margin-top: 10px;
+   }
+   
+   .inputIdDiv{
+      width: 300px;
+      height: 50px;
+      float: left;
+      margin-left: 44px;
+   }
+   
+      .inputIdDivForPw input[type="text"] {
+         width: 353px;
+         line-height: 40px;
+         font-size: 16px;
+      }       
+           
+        
+.receivingNumberDiv{
+    width: 500px;
+    height: 65px;
+    margin-left: 180px;
+    margin-top: 28px;
+}
+   
+   .receivingNumberLabelDiv{
+      width: 70px;
+      height: 25px;
+      float: left;
+      margin-top: 20px;
+   }
+   
+   .selectPhoneBox{
+      width:80px;
+      height:46px;
+      float:left;
+      margin-top: 10px;
+      margin-left: 35px;
+   }
+   
+   .inputRecevingNumberDiv{
+      width: 280px;
+      height: 46px;
+      float: left;
+      margin-top: 10px; 
+   }
+   
+      .receivingNumberDiv input[type="text"] {
+          width: 273px;
+          line-height: 43px;
+          font-size: 16px;
+        }
+        
+        .selectPhoneBox    select {
+           width: 65px;
+           height: 46px;
+       }
+
+.bottomButtonMenu{
+    width: 1052px;
+    height: 60px;
+    text-align: center;
+    margin-top: 46px;
+}
+
+.buttonMenuDiv{
+   width: 420px;
+   height: 58px;
+   margin-left: 250px;   
+}
+
+   .buttonMenuDiv .bottomSubmitButton{
+      width:165px; 
+      height:50px; 
+      font-size:25px; 
+      background-color: #282828;
+        color: white;
+         border-radius: 8px;
+         outline: none;
+         font-weight: bold;
+         cursor: pointer;
+   } 
+
+   .buttonMenuDiv .bottomCancelButton{
+      width:165px; 
+      height:50px; 
+      font-size:25px;  
+      background-color: #282828;
+         color: white; 
+         border-radius: 8px; 
+         outline: none; 
+         font-weight: bold;
+         cursor: pointer;
+   }
+
+#nameDIV{
+    width: 300;
+    float: left;
+    margin-top: 10;
+   margin-left: 106px;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+
+ }
+#birthDIV{
+    width: 300;
+    float: left;
+    margin-top: 10;
+    margin-left: 0px;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+#phoneNumberDIV{
+   width: 300;
+    float: left;
+    margin-top: 10;
+    margin-left: 0px;
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+}
+      

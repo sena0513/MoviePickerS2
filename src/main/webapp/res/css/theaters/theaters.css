@@ -1,0 +1,493 @@
+@charset "UTF-8";
+
+/* ----------Form----------------------------- */
+
+#form{
+   width: 100%;
+   float: left;
+}
+
+.wholepage{
+   width: 100%;
+   float: left;
+}
+
+.contents{
+   width: 1052px;
+   margin: 0 auto;
+}
+
+/* ------------bar-------*/
+
+.movieDetail_bar {
+   width: 1052px;
+   height: 40px;
+   background-color: pink;
+}
+
+.bar_yellow {
+   width: 10px;
+   height: 40px;
+   background-color: #f9ac1e;
+   float: left;
+   color: black;
+   line-height: 40px;
+}
+
+.bar_black {
+   width: 1042px;
+   height: 40px;
+   background-color: #282828;
+   float: left;
+   color: white;
+   line-height: 40px;
+}
+
+/* ----movieTheaters_1stBigBox------ */
+.movieTheaters_1stBigBox {
+   width: 1052px;
+    height: 388px;
+    /* background-color: pink; */
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(../../image/theaters/movieTheater_back03.png);
+}
+
+.movieTheaters_1stBox {
+   width: 925px;
+    height: 380px;
+    margin-top: 36px;
+    margin-left: 63px;
+    position: absolute;
+    /* background-color: teal; */
+}
+
+.movieTheaters_1stBigBox_1stEle {
+   width:925px;
+   height:50px;
+   /* background-color: yellow; */
+   color:white;
+}
+
+.text_favoriteTheater {
+   width: 450;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 225px;
+}
+
+.movieTheaters_1stBigBox_2ndEle_line {
+   width:925px;
+   height:10px;
+   border-bottom:2px solid #696768;
+   /* background-color: white; */
+}
+
+.movieTheaters_1stBigBox_3rdEle_area {
+   width:925px;
+   height:50px;
+   font-weight:bold;
+}
+
+.areaText {
+   width: 97px;
+    height: 45px;
+    color: white;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.areaText2 {
+   width: 97px;
+    height: 45px;
+    color: white;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+.areaText_long {
+   width:111px;
+   height: 45px;
+    color: white;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.movieTheaters_1stBigBox_3rdEle {
+   width:925px;
+   height:50px;
+   color:white;
+}
+
+.movieTheaters_1stBigBox_5thEle {
+   width:925px;
+   height:200px;
+    position: absolute;
+   /* background-color: red; */
+}
+
+.areaText02 {
+    width: 100px;
+    height: 45px;
+    color: #c0c0c0;
+    float: left;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer; 
+    margin-left: -4px;
+}
+
+.areaText02 :hover {
+   color:#f9ac1e;
+}
+
+.areaText02 a {
+   color: #ffffff;
+}
+
+
+/* ----movieTheaters_2ndBigBox_0------ */
+
+.movieTheaters_2ndBigBox_0 {
+   width:1052px;
+   height:40px;
+   font-size: 25px;
+   font-weight: bolder;
+}
+
+
+/* ----movieTheaters_2ndBigBox------ */
+
+.movieTheaters_2ndBigBox {
+   width:1052px;
+   height:400px;
+/*    background-color: #f9ac1e; */
+   /* background-image: url(../../image/theaters/theater_img.png); */
+   position: relative;
+}
+
+.theaters_image {
+	width:1052px;
+    height:400px;
+	position: relative;
+} 
+
+.movieTheaters_2ndBigBox_contents {
+    width: 1052px;
+    height: 150px;
+    margin-top: -150px;
+    background-color: black;
+    position: absolute;
+    opacity: 0.8;
+}
+
+.movieTheaters_2ndBigBox_contents_left {
+   width:750px;
+   height:150px;
+   color:white;
+   float:left;
+   font-weight: bold;
+   font-size: 12px;
+   margin-left:20px;
+}
+
+.movieTheaters_2ndBigBox_contents_right {
+   width:250px;
+   height:150px;
+   color:white;
+   float:left;
+}
+
+
+/* ----movieTheaters_3rdBigBox------ */
+
+.movieTheaters_3rdBigBox {
+   width:1052px;
+   height: 70px;
+   margin-bottom: 10px;
+}
+
+.movieTheaters_BigBox_line_bold {
+   width:1052px;
+   height:10px;
+   border-bottom: 2px solid black;
+   float:left;
+}
+
+.movieTheaters_BigBox_line {
+   width:1052px;
+   height:10px;
+   border-bottom: 1px solid black;
+}
+
+
+.movieTheaters_3rdBigBox_icon {
+   width:100px;
+   height:55px;
+   float:left;
+   
+}
+
+.handPointer01 {
+   width:80px;
+   height:auto;
+   margin-top: 15px;
+   float:left;
+}
+
+.movieTheaters_3rdBigBox_date {
+    width: 80px;
+    height: 55px;
+    float: left;
+    border: 2px solid #282828;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.movieTheaters_MonthAndWeek {
+   width:30px;
+   height:55px;
+   float:left;
+}
+
+.movieTheaters_month {
+   font-size: 12px;
+    margin-top: 20px;
+    margin-left: 4px;
+}
+
+.movieTheaters_Day {
+   width:40px;
+   height:55px;
+   float:left;
+   font-size: 40px;
+}
+
+/* ----movieTheaters_4thBigBox------ */
+
+.movieTheaters_4thBigBox {
+   width:1052px;
+   height:30px;
+}
+
+.movieTheaters_4thBigBox_text {
+   width:300px;
+   height:30px;
+   float:left;
+   font-size: 11px;
+   margin-top: 12px;
+}
+
+.movieTheaters_4thBigBox_guideAge {
+   width:110px;
+   height:30px;
+   float:right;
+   margin-top: 4px;
+}
+
+.guideAge_btn:hover{
+   cursor: pointer;
+}
+
+.alarm_age {
+   width: 500px;
+    height: 350px;
+    background-color: #f1f1f1;
+    border: 6px solid #282828;
+    margin-left: -395px;
+    position: absolute;
+}
+
+.alarm_age_title {
+   width: 497px;
+    height: 29px;
+    background-color: #282828;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #282828;
+}
+
+.alarm_age_contents {
+   width:497px;
+   height:300px;
+   margin-top:40px;
+   font-size: 10px;
+}
+/* ----movieTheaters_5thBigBox------ */
+
+.movieTheaters_5thBigBox {
+   width:1052px;
+   height: auto;
+   /* margin-top:10px; */
+   /* background-color:#ff8080; */
+   /* border-bottom:1px solid black; */
+}
+
+.movieTheaters_5thBigBox_1stLine_ageIcon {
+   width:30px;
+   height:30px;
+   float:left;
+}
+
+.ageIcon {
+   float: left;
+}
+
+.movieTheaters_5thBigBox_1stLine {
+   width: 1052px;
+    height: 40px;
+    padding-top: 10px;
+    float: left;
+    /* background-color: teal; */
+}
+
+.movieTheaters_5thBigBox_1stLine_movieInfo {
+   width:1000px;
+   height:30px;
+   float:left;
+   margin-top: 5px;
+}
+
+.movieTheaters_5thBigBox_1stLine_title {
+   font-size: 17px;
+    font-weight: bold;
+    width: auto;
+    float: left;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+.movieTheaters_5thBigBox_1stLine_detail {
+   font-size: 13px;
+   width: 450px;
+    float: left;
+    margin-top: 9px;
+}
+
+.movieTheaters_5thBigBox_2ndLine {
+   width: 100px;
+   /*  height: 20px;
+    margin-left: 30px; */
+}
+
+.movieTheaters_5thBigBox_2ndLine_detail {
+    font-size: 13px;
+    float: left;
+    margin-bottom: 10px;
+    width: 1052px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.movieTheaters_5thBigBox_3rdLine {
+   margin-top:10px;
+}
+
+.movieTheaters_5thBigBox_3rdLine_timeAndSeat {
+    width: 1052px;
+    height: 70px;
+    float: left;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.movieTheaters_5thBigBox_3rdLine_time {
+   font-size:15px;
+   color:#282828;
+   font-weight: bold;
+}
+
+.movieTheaters_5thBigBox_3rdLine_seat {
+   font-size:13px;
+   color:#1a78b8;
+   font-weight: bold;
+}
+
+.wrapTimeAndSeat {
+    width: 85px;
+    height: 55px;
+    float: left;
+    margin-top: 4px;
+    border: 1px solid black;
+    font-size:15px;
+   color:#282828;
+   font-weight: bold;
+   margin-left: 10px;
+   text-align: center;
+   margin-bottom: 10px;
+   cursor: pointer;
+}
+
+.movieTheaters_4thBigBox_guideAge button {
+    border: none;
+    background-color: #e7e4df;
+    outline: none;
+}
+
+.black_overlay{
+   display: none;
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   width: 100%;
+   height: 100%;
+   background-color: black;
+   z-index:1001;
+   -moz-opacity: 0.8;
+   opacity:.80;
+   filter: alpha(opacity=80);
+}
+
+.white_content {
+   display: none;
+   position: absolute;
+   top: 25%;
+   left: 25%;
+   width: 50%;
+   height: 50%;
+   padding: 16px;
+   border: 16px solid orange;
+   background-color: white;
+   z-index:1002;
+   overflow: auto;
+}
+
+.noData {
+   width:1052px;
+   height:100px;
+   font-weight: bold;
+   margin-top:30px;
+   text-align: center;
+}
+
+
+.theaterAD {
+   float: left;
+   margin-top: 40px;
+    width: 1052px;
+    height: 140px;
+}
+
+.adimage {
+   margin-left: 50px;
+}
+
+.noBranch {
+   inline-size: 928px;
+    margin-top: 27px;
+    float: left;
+}

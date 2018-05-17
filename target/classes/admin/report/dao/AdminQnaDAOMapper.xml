@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+ <mapper namespace="AdminQnaSQL">
+   <insert id="QnaWrite"  parameterType="java.util.Map">
+      insert into qna(seq,id,name,phone1,phone2,phone3,email1,email2,type,title,contents,regidate,situation)
+      values(
+         qna_seq.nextval,
+         #{id},
+         #{name},
+         #{phone1},
+         #{phone2},
+         #{phone3},
+         #{email1},
+         #{email2},
+         #{type},
+         #{title},
+         #{contents},
+         sysdate,
+         '답변대기중'
+      )
+   </insert>
+   
+   <select id="QnaList"  parameterType="java.util.Map" resultType="AdminQnaDTO">
+      <![CDATA[
+      select rn, seq,id,name,phone1,phone2,phone3,email1,email2,type,title,contents, to_char(regidate, 'YYYY.MM.DD')as regidate,
+      situation, replycontents, to_char(replydate, 'YYYY.MM.DD')as replydate from
+      (select rownum rn, tt.* from 
+      (select * from QNA order by seq desc)tt where title like '%'||#{searchtext}||'%'
+      )where rn>=#{startNum} and rn<=#{endNum}
+      ]]>
+   </select>
+   
+   <!-- 총글수 -->
+   <select id="getQnaTotalA" resultType="int"  parameterType="java.util.Map" >
+      select count(*) from QNA where title like '%'||#{searchtext}||'%'
+   </select>
+   
+   <select id="QnaView" resultType="AdminQnaDTO">
+      select * from qna where seq = #{seq}
+   </select>
+   <update id="updateqna" parameterType="java.util.Map" >
+      update QNA set replycontents=#{replycontents},replydate=TO_CHAR(SYSDATE, 'YYYYMMDD'),situation=#{situation} where seq=#{seq}
+   </update>
+   
+ </mapper>

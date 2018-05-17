@@ -1,0 +1,754 @@
+@charset "UTF-8";
+
+#bodyWrapper{
+   width:100%;
+   height: auto;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.myPointIndexNavi {
+   width: 100%;
+   height: 37px;
+   background-color: #e3e3da;
+}
+
+.myPointIndexNavi a {
+   color: black;
+   text-decoration: none;
+   display: block;
+}
+
+.myPointMenuDiv {
+   width: 1052px;
+   height: 37px;
+   margin: 0 auto;
+}
+
+.myPointMenuImageDiv {
+   float: left;
+   width: 20px;
+   height: 18px;
+   margin-top: 11px;
+}
+
+.myPointMenuDivImageDiv img {
+   width: 18px;
+   height: 15px;
+}
+
+.myPointNaviSecondDiv {
+   float: left;
+   width: 90px;
+   height: 22px;
+   margin-top: 10px;
+   margin-left: 15px;
+   font-size: 13px;
+}
+
+.myPointIndexNaviThirdDiv {
+   float: left;
+   width: 95px;
+   height: 22px;
+   margin-top: 10px;
+   font-size: 13px;
+}
+
+.myPointIndexNaviFourthDiv{
+   float: left;
+   width: 185px;
+   height: 22px;
+   margin-top: 10px;
+   font-size: 13px;
+   
+}
+
+
+/*--------------------- 첫번째 div 부분 ---------------------*/
+.moviePickerTotalWrapper{
+   width: 1052px;
+   height: auto;
+   margin: 0 auto;
+   
+}
+
+.myCgvProfileContentsDiv{
+   width: 1052px;
+   height: 400px;
+   position: relative;
+}
+
+.myCgvProfileContentsDivImg{
+   width: 1052px;
+   height: 400px;
+   position: absolute;
+}
+
+.myCgvProfileFirstContents{
+   width: 970px;
+   height: 150px;
+   position: absolute;
+   margin-left: 40px;
+   margin-top: 40px;
+}
+
+.profileImageContents {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 100px;
+}
+
+   .profileImageContents img{
+      width: 130px;
+      height: 130px;
+    border-radius: 50%;
+   }
+
+.secondMyCgvProfileRealContents{
+   width: 700px;
+   height: 150px;
+   float: left;
+}
+
+.profileNameDiv{
+   width: 700px;
+   height: 75px;
+}
+
+.firstNameDiv {
+    width: 216px;
+    height: 75px;
+    float: left;
+    text-align: center;
+}
+
+.secondNameDiv {
+    width: 130px;
+    height: 75px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.thirdNameDiv {
+    width: 60px;
+    height: 75px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.fourthNameDiv {
+    width: 170px;
+    height: 75px;
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.fifthNameDiv{
+   width: 30px;
+   height: 30px;
+   float: left;
+   margin-left: 5px;
+   margin-top: 20px;   
+}
+
+   .fifthNameDiv img{
+      width: 25px;
+      height: 25px;
+   }
+
+.profileGradeDiv{
+   width: 500px;
+   height: 50px;
+   margin-left: 15px;
+}
+
+.memberShipContentsDiv{
+   width: 200px;
+   height: 200px;
+   float: left;
+}
+
+/* ----------------------두번째 div부분--------------------*/
+
+
+.myCgvProfileSecondContents{
+   width: 970px;
+   height: 165px;
+   position: absolute;
+   margin-top: 200px;
+   margin-left: 40px;
+}
+
+/* myCgvCouponDiv 부분*/
+
+.myCgvCouponDiv{
+   width: 450px;
+   height: 165px;
+   float: left;
+   margin-left: 30px;
+}
+
+.couponLabelDiv{
+   width: 340px;
+   height: 65px;
+   margin-left: 60px;
+}
+
+.couponLabelDiv img{
+   width: 280px;
+   height: 38px;
+   margin-left: 20px;
+}
+
+.couponContentDiv{
+   width: 450px;
+   height: 100px;   
+}
+
+.movieTicketLabel{
+   width: 150px;
+   height: 70px;
+   float: left;
+   margin-left: 63px;
+}
+
+.movieTicketCount{
+   width: 70px;
+   height: 25px;
+   float: left;
+   margin-top: 20px;
+   margin-left: 120px;
+}
+/* myCgvOnePointDiv 부분 */
+
+.myCgvOnePointDiv{
+   width: 450px;
+   height: 165px;
+   float: left;
+   margin-left: 25px;
+}
+
+.onePointLabelDiv{
+   width: 340px;
+   height: 65px;
+   margin-left: 50px;
+}
+
+.onePointLabelDiv img{
+   width: 340px;
+   height: auto;
+}
+
+.onePointContentsDiv{
+   width: 450px;
+   height: 110px;
+}
+
+.possiblePoint{
+   width: 430px;
+   height: 50px;
+   margin-left: 30px;
+}
+
+.possiblePointLabel{
+   width: 200px;
+   height: 50px;
+   float: left;
+}
+
+.possiblePointValue{
+   width: 100px;
+   height: 50px;
+   float: left;
+   margin-left: 100px;
+}
+
+.vipCheckPoint{
+   width: 430px;
+   height: 50px;
+   margin-left: 30px;
+}
+
+.vipCheckPointLabel{
+   width: 200px;
+   height: 50px;
+   float: left;
+}
+
+.vipCheckPointValue{
+   width: 100px;
+   height: 50px;
+   float: left;
+   margin-left: 100px;
+}
+
+/* 2번째 Wrapper를 감싸고있는 bothDivWrapper*/
+.bothDivWrapper{
+   width: 1052px;
+   height: auto;
+}
+
+.leftDiv{
+   width: 160px;
+   height: 344px;
+   float: left;
+   margin-top: 20px;   
+}
+
+   .leftDiv ul{
+      margin: 0px;
+      padding: 0px;
+   }
+   
+
+   .mvHome{
+      width: 160px;
+      height: 35px;
+      background-color: #232323;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+   }
+   
+   /*클릭하지않은 링크*/
+   .mvHome a:link {
+      color: white;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .mvHome a:visited {
+      color: white;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .mvHome a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+
+   
+   .myReservation{
+      margin-top: 18px;
+   }
+   
+   /*클릭하지않은 링크*/
+   .myReservation a:link {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .myReservation a:visited {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .myReservation a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+   
+   
+   .discountCoupon{
+      margin-top: 18px;
+   }
+   
+      /*클릭하지않은 링크*/
+   .discountCoupon a:link {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .discountCoupon a:visited {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .discountCoupon a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+   
+   
+   
+   .mvPoint{
+      margin-top: 18px;
+   }
+   
+      /*클릭하지않은 링크*/
+   .mvPoint a:link {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .mvPoint a:visited {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .mvPoint a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+   
+   .clientInfo{
+      margin-top: 18px;
+   }
+   
+      /*클릭하지않은 링크*/
+   .clientInfo a:link {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .clientInfo a:visited {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .clientInfo a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+   
+      .inLineUlDivFirst{
+         width: 115px;
+         height: auto;
+         margin-left: 20px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+   
+   .editProfile{
+      margin-top: 18px;
+   }
+   
+      /*클릭하지않은 링크*/
+   .editProfile a:link {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .editProfile a:visited {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .editProfile a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+   
+   .myInquiryList{
+      margin-top: 18px;
+   }
+   
+      /*클릭하지않은 링크*/
+   .myInquiryList a:link {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .myInquiryList a:visited {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .myInquiryList a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+   
+   .watchMovieList{
+      margin-top: 18px;
+   }
+   
+      /*클릭하지않은 링크*/
+   .watchMovieList a:link {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*한번 클릭했거나 다녀간 링크*/
+   .watchMovieList a:visited {
+      color: #232323;
+   /*    text-decoration: none; */
+   }
+   
+   /*링크클릭하려고 마우스 가져다댈때*/
+   .watchMovieList a:hover {
+      color: #f9ac1e;
+      text-decoration: underline;
+      cursor: pointer;
+   }
+
+
+.centerDiv {
+   width: 892px;
+   height: auto;
+   float: left;
+}
+
+.havingMovieTicketLabel {
+   width: 805px;
+   height: auto;
+   float: left;
+   margin-left: 60px;
+   border-bottom: 1px solid #232323;
+}
+
+.havingMovieTicketInfo {
+   width: 805px;
+   height: 40px;
+   float: left;
+   margin-top: 20px;
+   margin-left: 60px;
+   border-bottom: 1px solid #232323;
+}
+
+.havingMovieTicketContentsWrapper {
+   width: 805px;
+   height: auto;
+   float: left;
+   margin-top: 20px;
+   margin-left: 60px;
+   margin-bottom: 60px;
+}
+
+.inquiryTerm {
+   width: 805px;
+   height: 130px;
+   float: left;
+   margin-top: 30px;
+   border-bottom: 1px solid black;
+}
+
+.inquiryTermLabel {
+   width: 100px;
+   height: 100px;
+   float: left;
+}
+
+.inquiryTermLabel h3 {
+   margin-top: 35px;
+}
+
+.inquiryTermWrapper {
+   width: 700px;
+   height: 100px;
+   float: left;
+}
+
+.inquiryTermPeriod {
+   width: 700px;
+   height: 32px;
+   float: left;
+}
+
+.inquiryTermPeriod input[type="button"] {
+   width: 80px;
+   height: 34px;
+   color: #232323;
+   outline: none;
+   font-weight: bold;
+   font-size: 15px;
+   border: 1px solid black;
+   cursor: pointer;
+}
+
+.twoWeeksWrapper {
+   width: 100px;
+   height: auto;
+   float: left;
+}
+
+.monthWrapper {
+   width: 100px;
+   height: auto;
+   float: left;
+   margin-left: 50px;
+}
+
+.threeMonthsWrapper {
+   width: 100px;
+   height: auto;
+   float: left;
+   margin-left: 50px;
+}
+
+.inquiryTermContents {
+   width: 700px;
+   height: 40px;
+   float: left;
+   margin-top: 30px;
+}
+
+.startTextDiv {
+   width: 180px;
+   height: 40px;
+   float: left;
+}
+
+.startTextDiv input[type="text"] {
+   width: 170px;
+   height: 30px;
+}
+
+.startButtonDiv {
+   width: 80px;
+   height: 40px;
+   float: left;
+   margin-left: 17px;
+}
+
+.startButtonDiv input[type="button"] {
+   width: 70px;
+   height: 32px;
+   outline: none;
+   font-weight: bold;
+   font-size: 15px;
+   border: 1px solid black;
+}
+
+.endTextDiv {
+   width: 180px;
+   height: 40px;
+   float: left;
+   margin-left: 30px;
+}
+
+.endTextDiv input[type="text"] {
+   width: 170px;
+   height: 30px;
+}
+
+.endButtonDiv {
+   width: 80px;
+   height: 40px;
+   float: left;
+   margin-left: 17px;
+}
+
+.endButtonDiv input[type="button"] {
+   width: 70px;
+   height: 32px;
+   outline: none;
+   font-weight: bold;
+   font-size: 15px;
+   border: 1px solid black;
+}
+
+.searchButtonDiv {
+   width: 82px;
+   height: 40px;
+   float: left;
+   margin-left: 25px;
+}
+
+.searchButtonDiv input[type="button"] {
+   width: 70px;
+   height: 34px;
+   outline: none;
+   background-color: #232323;
+   color: white;
+   font-weight: bold;
+   font-size: 15px;
+   border: 0px;
+   cursor: pointer;
+}
+
+.havingMovieTicketContentsLabel {
+   width: 805px;
+   height: auto;
+   float: left;
+   border-bottom: 1px solid #232323;
+}
+
+.havingMovieTicketNumber {
+   width: 95px;
+   height: auto;
+   float: left;
+}
+
+.havingMovieTicketGroup {
+   width: 70px;
+   height: auto;
+   float: left;
+   margin-left: 150px;
+}
+
+.havingMovieTicketExpirationDate {
+   width: 50px;
+   height: auto;
+   float: left;
+   margin-left: 180px;
+}
+
+.havingMovieTicketExplanation {
+   width: 65px;
+   height: auto;
+   float: left;
+   margin-left: 175px;
+}
+
+.havingMovieTicketContents {
+   width: 805px;
+   height: auto;
+   float: left;
+   margin-top: 10px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #232323;
+}
+
+.firstTicketNumber {
+   width: 95px;
+   height: auto;
+   float: left;
+}
+
+.firstTicketGroup {
+   width: 130px;
+   height: auto;
+   float: left;
+   margin-left: 148px;
+}
+
+.firstTicketExpirationDate {
+   width: 80px;
+   height: auto;
+   float: left;
+   margin-left: 120px;
+}
+
+.firstTicketExplanation {
+   width: 45px;
+   height: auto;
+   float: left;
+   margin-left: 148px;
+}

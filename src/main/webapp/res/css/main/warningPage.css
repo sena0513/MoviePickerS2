@@ -1,0 +1,112 @@
+@charset "UTF-8";
+#bodywrapper{
+   width: 100%;
+   float: left;
+   background-color:#fcfcf0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#errorform{
+    width: 1052px;
+    margin: 0 auto;
+    height: 315px;
+    margin-top: 80px;
+}
+
+.warningImageWrapper{
+   width: 1052px;
+   height: 52px;
+   float: left;
+   text-align: center;
+   margin-top: 60px;
+}
+
+.warningImageWrapper img{
+   width: 50px;
+   height: 50px;
+}
+
+.errorcontents{
+    width: 1052px;
+    height: 210px;
+    text-align: center;
+    float: left;
+    padding-bottom: 130px;
+}
+
+.errorcontents > p{
+    margin: 12px 0 40px;
+    color: #222222;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.errorcontents > h3{
+    height: auto;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 20px;
+    color: #222222;
+    font-size: 23px;
+}
+
+.errorcontentsButtonWrapper{
+   width: 1052px;
+   height: auto;
+   float: left;
+   text-align: center;
+}
+
+.backTothePageButton{
+   width: 110px;
+   height: 50px;
+   border-radius: 6px;
+   outline: none;
+   background-color: #282828;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+   border: 2px solid #282828;
+}
+
+.helpCenterMainButton{
+   width: 195px;
+   height: 50px;
+   border-radius: 6px;
+   outline: none;
+   background-color: white;
+   color: #282828;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+   margin-left: 20px;
+   border: 2px solid #282828;
+}
+
+.goTothePageButton{
+   width: 110px;
+   height: 50px;
+   border-radius: 6px;
+   outline: none;
+   background-color: #282828;
+   color: white;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   margin: 0;
+   padding: 0;
+   cursor: pointer;
+   margin-left: 20px;
+   border: 2px solid #282828;
+}

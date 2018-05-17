@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+ul {
+   list-style: none;
+}
+
+a{
+   text-decoration: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.centerMenuList li {
+   float: left;
+}
+
+#headerWrapper {
+   width: 100%;
+   float: left;
+   height: 215px;
+   background-color: #282828;
+   position: relative;
+}
+
+.header {
+   width: 1052px;
+   height: 200px;
+   margin: 0 auto;
+}
+
+
+
+
+.headerContentsWrapper {
+   width: 1052px;
+   height: auto;
+   float: left;
+   margin-top: 8px;
+}
+
+.headerContentsWrapper a {
+    color: white;
+    text-decoration: none; 
+}
+
+.headerContentsWrapper a:hover {
+   cursor: pointer;
+   color: #f9ac1e;
+}
+
+.mainCgvMark {
+   width: 220px;
+   height: 150px;
+   float: left;
+   margin-left: 58px;
+   margin-top: 32px;
+}
+
+.mainCgvMark img {
+   width: 165px;
+   height: auto;
+}
+
+.centerMenu {
+   width: 380px;
+   height: 150px;
+   float: left;
+   margin-left: 42px;
+   margin-top: 51px;
+   text-align: center;
+}
+
+.theater {
+   width: 280px;
+   height: 103px;
+   margin-left: 65px;
+   padding-top: 10px;
+}
+
+.theater img {
+   width: 235px;
+   height: auto;
+}
+
+
+.dropbtn {
+    background-color: #282828;
+    color: white;
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.dropbtn:hover{
+   color: #f9ac1e;
+}
+
+.reservationBtn{
+   background-color: #282828;
+    color: white;
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    margin-right: 8px;
+    outline: none;
+    font-weight: bold;
+    
+}
+
+.reservationBtn:hover{
+   cursor: pointer;
+   color: #f9ac1e;
+}
+
+.theaterBtn{
+   background-color: #282828;
+    color: white;
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    margin-left: 35px;
+    outline: none;
+    font-weight: bold;
+    
+}
+
+.theaterBtn:hover{
+   cursor: pointer;
+   color: #f9ac1e;
+}
+
+
+.totalDropDown{
+   width: 310px;
+    height: 30px;
+    margin-left: 65px;
+}
+
+.dropdown {
+    width: 80px;
+    height: 30px;
+    float: left;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+  }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e7e4df;
+    min-width: 160px;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    right: -40px;
+    z-index: 10;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+   background-color: #ddd; x
+   
+   }
+   
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    cursor: pointer;
+    color: white;
+    }
+
+.dropdown:hover .dropbtn {
+    background-color: #282828;
+    cursor: pointer;
+}
+
+.dropdownRight{
+   width: 220px;
+   height: 30px;
+   float: left;
+}
+
+.searchPartDiv {
+   width: 270px;
+   height: auto;
+   float: left;    
+   margin-left: 75px;
+}
+
+   .memberGroup {
+      width: 260px;
+      float: left;
+      font-size: 15px;
+   }
+
+      .memberGroup ul{
+         padding: 0px;
+         margin: 0px;
+      }
+      
+         .loginLi{
+            width: 60px;
+            height: auto;
+            float: left;
+         }
+      
+      
+         .joinLi{
+            width: 60px;
+            height: auto;
+            margin-left: 28px;
+            float: left;
+         }
+         
+         .HelpCenterLi{
+            width: 60px;
+            height: auto;
+            margin-left: 30px;
+            float: left;
+         }
+
+
+   .searchPartContents{
+      width: 260px;
+      float: left;
+      margin-top: 111px;
+   }
+
+   .inputTextFieldDiv{
+      width: 180px;
+      height: auto;
+      float: left;
+   }
+   
+   .clickSearchButtonDiv{
+      width:80px;
+      height: auto;
+      float: left;
+   }
+
+
+     .searchPartDiv input[type="text"] {
+       width: 180px;
+       height: 32px;
+       font-size: 18px;
+     }
+     
+     _:-ms-fullscreen, :root .searchPartDiv input[type="text"]{
+         width: 195px;
+       height: 38px;
+       font-size: 18px;
+      } 
+ 
+   
+   #searchButton{
+      padding: 6px 10px;
+      margin-left: 14px;
+      background-color: #282828;
+      color: white;
+      border-radius: 8px;
+      outline: none;
+      font-weight: bold;
+   }
+   
+   #searchButton:hover{
+      cursor: pointer;
+      color: #f9ac1e;
+   }
+   
+   

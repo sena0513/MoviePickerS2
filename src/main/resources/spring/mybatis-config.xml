@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!-- 환경설정을 잡아주고 관련된 모든걸 처리하는 문서. 얘에 따라 mapper.xml(mybatis)이 1개 이상 들어가게 됨. -->
+
+<configuration>
+
+	<typeAliases>
+	
+	<!-- 영화 DTO 부분  DTO -->
+		<typeAlias alias="movieDTO" type="client.movies.bean.MovieplatformDTO" />
+		<typeAlias alias="moviePoint" type="client.movies.bean.MoviePointDTO"  />
+		<typeAlias alias="review" type="client.review.bean.ReviewDTO"  />
+		
+		
+		<!-- 멤버 & Mypage 부분 DTO  -->
+		<typeAlias alias="QnaBoard" type="client.helpCenter.bean.QnaBoardDTO" />
+		<typeAlias alias="NoticeBoard" type="client.helpCenter.bean.NoticeBoardDTO" />
+		<typeAlias alias="QnaDTO" type="client.helpCenter.bean.QnaDTO" />
+		<typeAlias alias="memberDTO" type="client.member.bean.MemberDTO" />
+		<typeAlias alias="usage" type="client.usagehistory.bean.UsagehistoryDTO" />
+		<typeAlias alias="wishlistDTO" type="client.wishList.bean.WishlistDTO" />
+         
+		<!-- 예매(Ticket)부분  -->
+		<typeAlias alias="ticketSchedulTimeDTO" type="client.ticket.bean.TicketScheduleTimeDTO" />
+		<typeAlias alias="timeScheduleDTO" type="client.theaters.bean.TimeScheduleDTO"  />
+      	<typeAlias alias="ticketDTO" type="client.ticket.bean.TicketDTO" />
+      
+		<!-- 극장 (Theaters) 부분 -->
+		<typeAlias alias="theatersDTO" type="client.theaters.bean.TheatersDTO" />
+		
+		<!-- 어드민 DTO 부분 -->
+		<typeAlias alias="Adminmember" type="admin.bean.AdminMemberDTO" />
+      <typeAlias alias="Adminmaincategory" type="admin.maincategory.bean.MainCategoryDTO" />
+      <typeAlias alias="Admintimeschedule" type="admin.timeschedule.bean.AdminTimeScheduleDTO" />
+      <typeAlias alias="AdminNoticeBoard" type="admin.notice.bean.AdminNoticeBoardDTO" />
+      
+      <typeAlias alias="AdminQnaBoard" type="admin.QnA.bean.AdminQnaBoardDTO" />
+      
+      <typeAlias alias="AdminQnaDTO" type="admin.report.bean.AdminQnaDTO" />
+      <typeAlias alias="AdminReviewReportDTO" type="admin.report.bean.AdminReviewReportDTO" />
+	</typeAliases>
+
+
+
+	<!-- <mappers> <mapper resource="member/dao/memberMapper.xml"/> 리소스는 경로이므로 
+		user.dao의 점을 그대로 쓰지 말고 슬래시로 구분할 것 </mappers> -->
+
+</configuration>

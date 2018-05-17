@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+#bodyWrapper{
+   width: 100%;
+   height: auto;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+
+.charmPointTotalDiv{
+   width: 580px;
+   height: 300px;
+   margin: 0 auto;
+   background-color: #fcfcf0;
+   margin-top: 47px;
+}
+
+.charmPointSubjectDiv{
+   width: 535px;
+   height: 80px;
+   margin-left: 20px;
+   padding-top: 10px;
+
+}
+
+.charmPointSubjectDiv h2{
+   width: 120px;
+   height: 35px;
+   margin-left: 20px;
+   border-bottom: 2px solid #282828;
+   
+}
+
+.charmPointcontentsDiv{
+   width: 540px;
+   height: 135px;
+   margin-left: 20px;
+}
+
+.charmPointContentSubjectDiv{
+   width: 540px;
+   height: 30px;
+   text-align: center;
+   border-bottom: 2px dotted #afb1b5;
+   color: black;
+}
+
+.charmPointContentSubjectDiv h4{
+   width: 460px;
+   height: 25px;
+   margin-left: 40px;
+}
+
+.charmPointCheckBoxDiv{
+   width: 540px;
+   height: 30px;
+   margin-top: 20px;   
+}
+
+.checkBox1{
+   width: 115px;
+   height: auto;
+   float: left;
+   margin-left: 2px;
+}
+
+.checkBox2{
+   width: 110px;
+   height: auto;
+   float: left;
+   margin-left: 10px;
+}
+
+.checkBox3{
+   width: 85px;
+   height: auto;
+   float: left;
+}
+
+.checkBox4{
+   width: 100px;
+   height: auto;
+   float: left;
+   margin-left: 25px;
+}
+
+.checkBox5{
+   width: 70px;
+   height: auto;
+   float: left;
+   margin-left: 20px;
+}
+
+.checkBoxConfirmButton{
+   width: 93px;
+   height: 35px;
+   float: left;
+   margin-left: 235px;
+   margin-top: 20px;
+   
+}
+
+.checkBoxConfirmButton button {
+   width: 80px;
+   height: 30px;
+   font-size: 15px;
+   background-color: #ff0000;
+   color: white;
+   border-radius: 8px;
+   outline: none;
+   font-weight: bold;
+   border: 0;
+}
+
+.checkBoxConfirmButton button:hover{
+   cursor: pointer;
+}

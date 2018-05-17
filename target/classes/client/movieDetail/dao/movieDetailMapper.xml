@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper  
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="movieDetailSQL">
+
+<select id="getMovieInfo" parameterType="int" resultType="movieDTO">
+   select seq, movienameforkr, movienameforeng, moviegenre, movieactor, moviemaker, moviecontent, movierunningtime, movieagelimit, moviemakecountry,
+   moviepostimg, moviesteelcutimg1, moviesteelcutimg2, moviesteelcutimg3, to_char(moviedate, 'YYYY-MM-DD') as moviedate, movietrailer from adminmovie where seq=#{seq}
+</select>
+
+<select id="getMovieInfoTomovieName" parameterType="String" resultType="movieDTO">
+   select * from adminmovie where movienameforkr=#{movienameforkr}
+</select>
+</mapper>

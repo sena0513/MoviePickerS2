@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+#bodyWrapper {
+   width: 600px;
+   height: 520px;
+   background-color: #fcfcf0;
+}
+
+.contentWrapper {
+   width: 600px;
+   height: 400px;
+   margin: 0 auto;
+}
+
+/* myProfileWrapper 첫번째 div부분*/
+.myProfileModifyLabel {
+   width: 600px;
+   height: 70px;
+   float: left;
+}
+
+.koreanName {
+   width: 220px;
+   height: 70px;
+   float: left;
+}
+
+.nickName {
+   width: 80px;
+   height: 70px;
+   float: left;
+   margin-left: 10px;
+   margin-top: 7px;
+}
+
+/* 실질적인 컨텐츠 부분  */
+.myProfileModifyContents {
+   width: 600px;
+   height: 330px;
+   float: left;
+   background-color: #dad7d7;
+}
+
+/* 닉네임담당하는 Wrapper*/
+.nickNameWrapper {
+   width: 600px;
+   height: 100px;
+   float: left;
+}
+
+.nickNameLabel {
+   width: 60px;
+   height: 73px;
+   float: left;
+   margin-left: 20px;
+}
+
+.nickNameContents {
+   width: 350px;
+   height: 100px;
+   float: left;
+   margin-left: 90px;
+}
+
+.nickNameStandard {
+   width: 400px;
+   height: 50px;
+   float: left;
+}
+
+.nickNameTextField {
+   width: 400px;
+   height: 50px;
+   float: left;
+}
+
+.nickNameTextField input[type="text"] {
+   width: 237px;
+   height: 30px;
+}
+
+.nickNameTextField input[type="button"] {
+   width: 100px;
+   height: 35px;
+   border: 1px solid black;
+   outline: none;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/*프로필 이미지 담당하는 부분*/
+.profileImageWrapper {
+   width: 600px;
+   height: 200px;
+   float: left;
+   margin-top: 10px;
+}
+
+/* 이미지 삭제 버튼 */
+button#delete_image {
+   float: left;
+   margin: 0;
+   padding: 0;
+   margin-left: 100px;
+   margin-bottom: -10px;
+   border: 0;
+   cursor: pointer;
+}
+
+.profileImageLabel {
+   width: 120px;
+   height: 200px;
+   float: left;
+   margin-left: 20px;
+}
+
+.profileContentsWrapper {
+   width: 365px;
+   height: 200px;
+   float: left;
+   margin-left: 30px;
+}
+
+.profileContentsImage {
+   width: 400px;
+   height: 100px;
+   float: left;
+}
+
+.profileContentsImage img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+}
+
+.profileContentsWarning {
+   width: 400px;
+   height: 60px;
+   float: left;
+}
+
+.choiceFileWrapper {
+   width: 400px;
+   height: 27px;
+   float: left;
+}
+
+input[name="choiceFileButton"] {
+   width: 200px;
+   height: 26px;
+   outline: none;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+/*  -----Button Wrapper----- */
+.myProfileModifyButtonWrapper {
+   width: 210px;
+   height: 40px;
+   float: left;
+   margin-top: 40px;
+   margin-left: 165px;
+}
+
+.ok_button {
+   width: 100px;
+   height: 35px;
+   outline: none;
+   background-color: #282828;
+   color: white;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.cancle_button {
+   width: 100px;
+   height: 35px;
+   outline: none;
+   border: 1px solid black;
+   font-size: 15px;
+   font-weight: bold;
+   cursor: pointer;
+}

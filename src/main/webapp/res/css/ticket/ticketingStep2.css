@@ -1,0 +1,415 @@
+ @charset "UTF-8";
+
+body {
+   background-color: white; important!
+}
+
+
+.bodyWrapper{
+	width: 100%;
+	float: left;
+}
+/*----------------navi----------------------*/
+.ticketingNavi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .ticketingNavi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .ticketingMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .ticketingImageDiv{
+          float: left;
+          width: 20px;
+          height: 18px;
+          margin-top: 11px;
+      }
+   
+         .ticketingImageDiv img{
+            width: 17px;
+            height: 15px;
+         }
+      
+      .ticketingSecondDiv{
+         float: left;
+         width: 48px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      
+      .ticketingThirdDiv{
+         float: left;
+         width: 100px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+
+/* ---------------------------------- */
+.ticketingContents{
+   width: 1052px;
+   margin: 0 auto;
+}
+
+.ticketingCenter {
+   width:1052px;   
+   height:auto;
+}
+
+
+/* 네비  */
+.ticketNevi{
+   width:1052px;
+   height:40px;
+   float:left;
+}
+.ticketBtn{
+   float: right;
+   padding: 10px 3px 3px 0px;
+}
+
+.ticketing_Info_Wapper{
+   width:1052px;
+   height:510px;
+   float:left;
+}
+
+.ticketingGuide, .ticketingSchedule, .backTicketing{
+   width:97px;
+   height:23px;
+   border:none;
+   outline: none;
+   cursor: pointer;
+   border-radius:5px;
+   background-color: #282828;
+   color:#ffffff;
+}
+
+
+.colHead {
+   width: 1052px;
+   height: 28px;
+   float:left;
+   background: #282828;
+   color: white;
+   font-size: 17px;
+   text-align: center;
+   line-height: 28px;
+   font-weight:bold;
+}
+
+/* ------------------------------------------- selected-Ticket-Info */
+
+.person_screen {
+   border:1px solid white;
+   width: 1052px;
+   height: 80px;
+   float:left;
+   background: #f2f0e5;
+}
+
+.numberOfPeople {
+   float: left;
+   width: 50%;
+   height: 100%;
+}
+
+
+.numberOfPeople span.ticketType {
+   float: left;
+   width: 55px;
+   height: 22px;
+   line-height: 22px;
+   margin-top: 28px;
+   margin-left: 50px;
+}
+
+.ticketType {
+   margin-top: 14px;
+}
+
+.selected{
+   margin:12px 4px;
+   border:1px solid black;
+   width:22px;
+   height:22px;
+   float:left;
+   background-color: #dddddd;
+   color:black;
+   font-weight: bold;
+   line-height: 19px;
+   text-align: center;
+   cursor: pointer;
+}
+
+.ticket_total_active{
+   background-color: #282828;
+   color:white;
+}
+
+.userSelect-movieInfo {
+   display: block;
+   width: 50%;
+   height: 100%;
+   float: left;
+}
+
+.person_screen .userSelect-movieInfo .theaterInfo p {
+   height: 50%;
+}
+
+.person_screen .userSelect-movieInfo .moviePlayYMD-info p {
+   height: 50%;
+}
+
+.userSelect-movieInfo .moviePlayYMD-info b {
+   display: block;
+   float: left;
+   size: 20px;
+   line-height: 20px;
+}
+
+
+
+/* 좌석 */
+.seatWrapper{
+   border:1px solid white;
+   width: 1052px;
+      height: 400px;
+      float: left;
+      background-color: #f2f0e5;
+}
+.seatWapper_active{
+   opacity: 0.1;
+   background-color: #000;
+   pointer-events: none;
+   cursor: default;
+}
+.seatScreenBar{
+   margin:10px 300px;
+   width:452px;
+   height: 30px;
+   float:left;
+   background: url(../../image/ticketingImages/screen_bg.png) repeat-x left;
+}
+.screen{
+   margin:0px 200px;
+   padding-top:3px;
+   width:58px;
+   height:25px;
+}
+
+.seatList{
+   margin:10px 376px;
+   width: 300px;
+   height: 300px;
+   position:relative;
+   float:left;
+}
+.seats{
+   margin:90.1px 48.3px;
+   width:180px;
+   height: 120px;
+   float:left;
+   font-size: 10px;
+}
+.row{
+   border-top:1px solid gray;
+   border-bottom:1px solid gray;
+   margin:5px;
+   width:20px;
+   height:18px;
+   float:left;
+   text-align:center;
+}
+.col{
+   width:17px;
+   height:17px;
+   margin:5px;
+   border:1.5px solid #faac1f;
+   float:left;
+   text-align: center;
+   background-color: #dddddd;
+   cursor: pointer;
+}
+
+.seatActive{
+   background-color: #faac1f;
+   color:white;
+   pointer-events: none;
+   cursor: default;
+}
+.reservedSeat_Active{
+   background-color: #ececec;
+   border: 1.5px solid white;
+   color:white;
+   background-image:url(../../image/ticketingImages/ticketX.png);
+   pointer-events: none;
+   cursor: default;
+}
+
+
+/* 선택바 */
+.ticketSelectBar_Wrapper{
+   width: 100%;
+   height:130px;
+   float:left;
+    background-color: #282828;
+  
+}
+.ticketSelectBar_Wrapper2{
+   width:1052px;   
+   height:auto;
+    margin: 0 auto;
+}
+.ticketSelectBar{
+   width:100%;
+   height:130px;
+   float: left;
+   color: white;
+}
+.ticketSelectBar_Back_Movie{
+   padding:14px 5px 10px 10px;
+   width: 110px;
+   height: 106px;
+   float:left;
+}
+.selectBarPoster{ 
+   padding:10px 0px 10px 10px;
+   width:270px;
+   height:110px;
+   float: left;
+} 
+.selectBarPoster img{
+   width:90px;
+   height:110px;
+   float: left;
+}
+.ticketMovie_Name_Grade{
+   padding:0 10px;
+   width:160px;
+   height:110px;
+   float: left;
+}
+.ticketMovieName{
+   margin:0;
+   width:150px;
+   height:50px;
+   font-size: 14px;
+   font-weight:bold;
+}
+
+.ticketMovieName a{
+   color:white;
+}
+.ticketMovieGrade{
+   margin:0;
+   width:150px;
+   height:50px;
+   font-size: 12px;
+   font-weight:bold;
+}
+.selectBar_Info_Theater_Date{
+   padding:5px;
+   width:160px;
+   height:120px;  
+   float: left;
+   font-size: 13px;
+}
+.selectBarTheater{
+   padding-top:5px;
+   width: 170px;
+   height: 30px;
+   float: left;
+}
+.selectBarDate, .selectBarAuditorium, .selectBarPeople{
+   width: 170px;
+   height: 30px;
+   float: left;
+}
+.selectBar_Span {
+   font-weight:bold;
+}
+.selectBar_Seat_Info{
+   padding:5px 25px;
+   width:110px;
+   height:120px;
+   float: left;
+}
+.selectBar_Seat_Name{
+   margin-top:5px;
+   width:110px;
+   height:90px;
+   font-size: 13px;
+}
+.selectBar_Payment_Info{
+   padding:5px 10px;
+   width:180px;
+   height:120px; 
+   float: left;
+}
+.selectBar_Payment_Price{
+   padding-top:5px;
+   width:180px;
+   height:30px;
+   float: left;
+   font-size: 13px;
+}
+.selectBar_Payment_Total{
+   width:180px;
+   height:30px;
+   float: left;
+   font-size: 13px;
+}
+.selectBar_Payment_Selection_Next_Btn{
+   padding:14px 0px;
+   width:104px;
+   height:106px;
+   float:left;
+}
+
+.totalPrice{
+   color:#faac1f;  
+}
+
+.movieSeat1Span, .movieSeat2Span, .movieSeat3Span, .movieSeat4Span, .movieSeat5Span{
+   font-weight: bold;
+   
+}
+
+
+/*광고*/
+.ticketingAdWraper{
+   width: 100%;
+   height:130px;
+   float:left;
+}
+.ticketingAdWraper2{
+   width:1052px;   
+   height:auto;
+    margin: 0 auto;
+}
+.ticketingAdWraper3{
+   width:100%;
+   height:130px;
+   float: left;
+}
+.ticketingAdWraper3 img{
+   padding-top:15px;
+   width:1052px;
+   height: 100px;
+}

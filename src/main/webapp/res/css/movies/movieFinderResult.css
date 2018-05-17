@@ -1,0 +1,521 @@
+@charset "UTF-8";
+
+#wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.bodyWrapper {
+	width: 100%;
+	height: auto;
+	float: left;
+	background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.helpCenterIndexNavi {
+	width: 100%;
+	height: 37px;
+	background-color: #e3e3da;
+}
+
+.helpCenterIndexNavi a {
+	color: black;
+	text-decoration: none;
+	display: block;
+}
+
+.helpCenterIndexMenuDiv {
+	width: 1052px;
+	height: 37px;
+	margin: 0 auto;
+}
+
+.helpCenterIndexImageDiv {
+	float: left;
+	width: 20px;
+	height: 18px;
+	margin-top: 11px;
+}
+
+.helpCenterIndexImageDiv img {
+	width: 17px;
+	height: 15px;
+}
+
+.helpCenterIndexNaviSecondDiv {
+	float: left;
+	width: 60px;
+	height: 22px;
+	margin-top: 10px;
+	margin-left: 15px;
+	font-size: 13px;
+}
+
+.helpCenterIndexNaviThirdDiv {
+	float: left;
+	width: 100px;
+	height: 22px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+/* ---------- Movie Finder ----------------------------- */
+.contents {
+	width: 1052px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.sect-common {
+	box-sizing: border-box;
+	width: 1052px;
+	height: 450px;
+}
+
+.sect-finder {
+	width: 1052px;
+	background: #333;
+	float: left;
+}
+
+.section-f {
+	clear: both;
+	width: 100%;
+}
+
+#searchtext {
+	width: 400px;
+	height: 25px;
+}
+
+.sect-finder table {
+	width: 1050px;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 13px;
+}
+
+.section-f h3 {
+	text-align: center;
+	vertical-align: middle;
+}
+
+.section-f table th {
+	background: #999;
+}
+
+.section-f table td {
+	width: 940px;
+	background: #999;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.section-f table td ul {
+	width: 900px;
+	float: left;
+	text-decoration: none;
+}
+
+/* .section-f table td ul li:nth-child(1) {
+	width: 100%;
+	float: left;
+} */
+.section-f table td ul li.collage {
+	width: 100%;
+	float: left;
+}
+
+.section-f table td ul li {
+	width: 14%;
+	float: left;
+	margin: 0;
+}
+
+.sect-finder li {
+	list-style: none;
+}
+
+.sect-finder input, select {
+	vertical-align: middle;
+}
+
+.sect-finder select {
+	margin-left: 40px;
+	margin-right: 10px;
+	height: 25px;
+}
+
+.sect-finder td label {
+	display: inline-block;
+	padding: 1px 0;
+}
+
+#slider-range {
+	width: 380px;
+	margin-left: 40px;
+	margin-right: 34px;
+	margin-top: 8px;
+	float: left;
+	vertical-align: middle;
+}
+
+#year_start, #year_end {
+	text-align: center;
+	height: 30px;
+	width: 50px;
+}
+
+.secion-f input[type="reset"] {
+	margin: 10px;
+	width: 67px;
+}
+
+.secion-f input[type="submit"] {
+	margin: 10px;
+	width: 50px;
+}
+/* ----------Top of top----------------------------- */
+.contents h1 {
+	height: 80px;
+}
+
+.movieChart_index {
+	height: 80px;
+	width: 1052px;
+}
+
+.movieChart {
+	float: left;
+	width: 1052px;
+}
+
+.movieChart_hr {
+	/* color: black; */
+	/* background-color: black; */
+	width: 1052px;
+	height: 3px;
+	margin-top: -34px;
+}
+
+.submenu {
+	float: right;
+	text-align: center;
+	width: 1052px;
+	height: 10px;
+}
+
+.submenu a {
+	width: 100%;
+	text-decoration: none;
+	color: black;
+}
+
+.submenu ui {
+	list-style: none;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.submenu li {
+	list-style: none;
+	float: right;
+	width: 11%;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+.movieChart_selectOption {
+	width: 1025px;
+	height: 15px;
+}
+
+/* ------------Contents form----------------------------- */
+#MovieSet1, #MovieSet2 {
+	float: left;
+	width: 1052px;
+	height: auto;
+	font-size: 14px;
+	margin-left: 20px;
+}
+
+.boxoffice_moviePoster {
+	width: 185px;
+	height: 260px;
+}
+
+#movieN {
+	float: left;
+	margin: 31px;
+	width: 19%;
+}
+
+#movieN .* {
+	float: left;
+	width: 5px;
+	height: 5px;
+	margin: 30px;
+}
+
+#movieN2 {
+	float: left;
+	margin: 31px;
+	width: 18%;
+	position: relative;
+}
+
+#movieN2 .* {
+	float: left;
+	width: 5px;
+	height: 5px;
+	margin: 30px;
+}
+
+/* -----------------------------Movie Chart(API)----------------------------- */
+.thumb-image {
+	display: block;
+	position: relative;
+	border: 4px solid #4b464c;
+	height: 268px;
+	width: 193px;
+}
+
+.boxoffice_agelim {
+	position: absolute;
+}
+
+.rank2 {
+	display: block;
+	width: 185px;
+	height: 28px;
+	margin-bottom: 4px;
+	border: 4px solid #4b464c;
+	background: #333333;
+	color: #ffffff;
+	font-size: 19px;
+	text-align: center;
+	line-height: 28px;
+}
+
+.rank {
+	display: block;
+	width: 185px;
+	height: 28px;
+	margin-bottom: 4px;
+	border: 4px solid #282828;
+	background: #f9ac1e;
+	color: #282828;
+	font-size: 19px;
+	text-align: center;
+	line-height: 28px;
+}
+
+.nowshow {
+	float: left;
+}
+
+.order {
+	float: right;
+}
+
+.hidden {
+	font: 0/0 a;
+	height: 0;
+	overflow: hidden;
+	position: absolute;
+	visibility: hidden;
+	width: 0;
+	zoom: 1;
+}
+
+.boxoffice_movieNm {
+	font-weight: bold;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.boxoffice_heart {
+	float: left;
+	width: 28px;
+}
+
+.grey_heart {
+	margin-top: 10px;
+	width: 20px;
+	height: auto;
+	cursor: pointer;
+}
+
+.movie_likeit {
+	width: 45px;
+	height: 20px;
+	flaot: left;
+	margin-top: 7px;
+	border: 1px solid grey;
+	/* margin-left: 22px; */
+	border-radius: 4px;
+	font-size: 12px;
+	float: left;
+	text-align: center;
+}
+
+.buyTicket_icon {
+	float: left;
+	width: 70px;
+	height: auto;
+	margin-top: 2px;
+	margin-left: 40px;
+}
+
+.buyTicket_icon button {
+	border: none;
+	background-color: #e7e4df;
+	outline: none;
+}
+
+.ticketIcon {
+	float: left;
+	width: 70px;
+	cursor: pointer;
+}
+
+/* -----------------------------Advertise----------------------------- */
+#adimg { /* 무비차트 3위 오른편에 있는 광고 */
+	width: 190px;
+	margin-left: 30px;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+/* 하단광고 */
+.ad02 {
+	width: 1052px;
+	height: 150px;
+	float: left;
+}
+
+.adimg02 {
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.ad03 {
+	width: 1052px;
+	height: 300px;
+	float: left;
+}
+
+.adimg03 {
+	width: 1052px;
+	height: auto;
+	cursor: pointer;
+}
+
+/* ------------ searchResult ------------*/
+h3.sub {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* ------------- 검색 조건 --------------------*/
+.sub>span {
+	display: block;
+	margin-top: 3px;
+	background-position: 0 17px;
+	font-size: 17px;
+	color: #333333;
+}
+
+.search_result_textbox {
+	width: 1052px;
+	height: 165px;
+	background: #c4c1bc;
+}
+
+.spec {
+	width: 900px;
+	height: 165px;
+	color: #333333;
+}
+
+.spec_Left_Div {
+	width: 120px;
+	height: auto;
+	float: left;
+}
+
+.spec_Left_Div li {
+	margin-top: 5px;
+}
+
+.spec_Right_Div {
+	width: 500px;
+	height: auto;
+	float: left;
+	margin-left: 100px;
+}
+
+.spec_Right_Div li {
+	margin-top: 5px;
+}
+
+.spec_Right_Div ul li {
+	width: 775px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/* --------------페이징 처리  -------------*/
+.movieSelectPaging {
+	float: left;
+	width: 1052px;
+	height: auto;
+	font-size: 20px;
+	margin-left: 20px;
+	text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.movieSelectPaging a:hover {
+    text-decoration: underline;
+    color: #ecac1e;
+}
+.movieSelectPaging a {
+    font-weight: bold;
+    color: black;
+}
+
+
+/*---------------하단광고-----------------*/
+
+/* 하단광고 */
+.ad02 {
+	width: 1052px;
+	height: 150px;
+	float: left;
+}
+
+.adimg02 {
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	cursor: pointer;
+}
+
+.ad03 {
+	width: 1052px;
+	height: 300px;
+	float: left;
+}
+
+.adimg03 {
+	width: 1052px;
+	height: auto;
+	cursor: pointer;
+}

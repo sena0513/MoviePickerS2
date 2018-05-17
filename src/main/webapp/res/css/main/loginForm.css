@@ -1,0 +1,202 @@
+@charset "UTF-8";
+
+#bodyWrapper{
+   width: 100%;
+   height: auto;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.helpCenterIndexNavi {
+   width: 100%;
+   height: 37px;
+   background-color: #e3e3da;
+}
+
+.helpCenterIndexNavi a {
+   color: black;
+   text-decoration: none;
+   display: block;
+}
+
+.helpCenterIndexMenuDiv {
+   width: 1052px;
+   height: 37px;
+   margin: 0 auto;
+}
+
+.helpCenterIndexImageDiv {
+   float: left;
+   width: 20px;
+   height: 18px;
+   margin-top: 11px;
+}
+
+.helpCenterIndexImageDiv img {
+   width: 17px;
+   height: 15px;
+}
+
+.helpCenterIndexNaviSecondDiv {
+   float: left;
+   width: 90px;
+   height: 22px;
+   margin-top: 10px;
+   margin-left: 15px;
+   font-size: 13px;
+}
+
+.helpCenterIndexNaviThirdDiv {
+   float: left;
+   width: 70px;
+   height: 22px;
+   margin-top: 10px;
+   font-size: 13px;
+}
+
+/* ----------------실질적인 컨텐츠 부분----------------*/
+
+.loginTotalWrapper{
+   width: 1052px;
+   height: 420px;
+   margin: 0 auto;
+   margin-top: 50px;
+}
+
+.loginContentsWrapper{
+   width: 465px;
+   height: 500px;
+   margin: 0px auto;
+   margin-top: 25px;
+}
+
+
+.loginContentsImage{
+   width: 465px;
+   height: 80px;
+   float: left;
+   text-align: center;
+}
+
+   .loginContentsImage img{
+      width: 270px;
+      height: auto;
+   }
+
+.inputIdDiv{
+   width: 465px;
+   height: 56px;
+   float: left;
+}
+
+   .inputIdTextImageDiv{
+      width: 100px;
+      height: 54px;
+      float: left;
+      padding-top: 2px;
+   }
+   
+      .inputIdTextImageDiv img{
+      width: 80px;
+      height: auto;
+   }
+   
+   .inputIdTextDiv{
+      width: 365px;
+      height: 52px;
+      float: left;
+   }
+   
+      .inputIdTextDiv input[type="text"]{
+         width: 360px;
+         height: 50px;
+      }
+   
+   
+.inputPwDiv{
+   width: 465px;
+   height: 56px;
+   margin-top: 30px;
+   float: left;
+}
+
+   .inputPwTextImageDiv{
+      width: 100px;
+      height: 54px;
+      float: left;
+      padding-top: 2px;
+   }
+   
+   .inputPwTextImageDiv img{
+      width: 80px;
+      height: auto;
+   }
+   
+   .inputPwTextDiv{
+      width: 365px;
+      height: 52px;
+      float: left;
+   }
+   
+      .inputPwTextDiv input[type="password"]{
+         width: 360px;
+         height: 50px;
+      }
+   
+.loginButtonDiv{
+   width: 465px;
+   height: 55px;
+   margin-top: 30px;
+   float: left;
+}
+
+   .loginButtonDiv .loginButton{
+      width: 452px;
+      height: 52px;
+      background-color: #282828;
+      color: white; 
+      border-radius: 8px; 
+      outline: none; 
+      font-weight: bold;
+      font-size: 23px;
+      border: 0px;
+      cursor: pointer;
+   }
+
+.loginSubContentsDiv{
+   width: 465px;
+   height: 64px;
+   margin-top: 10px;
+   float: left;
+}
+
+.loginSubContentsDiv a:link { 
+	color: #282828; 
+	text-decoration: none;
+	}
+
+.loginSubContentsDiv a:visited { 
+	color: #282828; 
+	text-decoration: none;
+	}
+	
+.loginSubContentsDiv a:hover { 
+	color: #f9ac1e; 
+	text-decoration: underline;
+	cursor: pointer;
+	}
+
+   .searchIdDiv{
+      width: 105px;
+      height: auto;
+      float: left;
+      margin-left: 110px;
+   }
+   
+   .searchPwDiv{
+      width: 120px;
+      height: auto;
+      float: left;
+      margin-left: 25px;
+   }   

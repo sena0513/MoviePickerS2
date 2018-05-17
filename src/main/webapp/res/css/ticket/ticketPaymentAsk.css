@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+body {
+   background-color: white; important!
+}
+.bodyWrapper{
+   width: 100%;
+   float: left;
+}
+/*----------------navi----------------------*/
+.ticketingNavi{
+      width: 100%;
+      height: 37px;
+      background-color: #e3e3da;
+   }
+   
+      .ticketingNavi a{
+         color: black;
+         text-decoration: none;
+         display: block;
+      }
+   
+      .ticketingMenuDiv{
+         width: 1052px;
+         height: 37px;
+         margin: 0 auto;
+      }
+   
+
+      .ticketingImageDiv{
+         float: left;
+		 width: 20px;
+		 height: 18px;
+		 margin-top: 11px;
+      }
+   
+         .ticketingImageDiv img{
+            width: 17px;
+   			height: 15px;
+         }
+      
+      .ticketingSecondDiv{
+         float: left;
+         width: 47px;
+         height: 22px;
+         margin-top: 10px;
+         margin-left: 15px;
+         font-size: 13px;
+      }
+      
+      .ticketingThirdDiv{
+         float: left;
+         width: 100px;
+         height: 22px;
+         margin-top: 10px;
+         font-size: 13px;
+      }
+
+
+/* ---------------------------------- */
+.ticketPaymentAskWrapper {
+   width: 1052px;
+   margin: 0 auto;
+}
+
+.ticketPaymentAskWrapper .ticketingContents {
+   margin-top: 20px;
+}
+
+/* ------------------------------- paymentAskHead */
+.paymentAskHead {
+   width: 1052px;
+   height: 35px;
+   background: #282828;
+}
+.paymentAskHead .paymentAskHead-text {
+   height: 25px;
+   line-height: 35px;
+   margin-left: 10px;
+   color: white;
+}
+
+
+/* ------------------------------- paymentAskBody */
+.paymentAskBody {
+   width: 1052px;
+   height: 600px;
+   background: #fcfcf0;
+}
+
+.paymentAskBody .movieAndPaymentConfirmSection {
+   width: 1052px;
+   height: 320px;   
+}
+
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection {
+   width: 510px;
+   height: 280px;   
+   margin-top: 20px;
+   float: left;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection {
+   width: 526px;   
+   height: 280px;
+   margin-top: 20px;
+   float: left;
+}
+
+
+/* ------------------------------- paymentAskBody - 왼쪽, movieConfirmHead */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmHead {
+   width: 526px;
+   height: 25px;
+}   
+
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmHead .movieConfirmHead-text {
+   width: 526px;
+   height: 25px;
+   line-height: 25px;
+   font-weight: bold;
+}   
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmHead .movieConfirmHead-text .movieConfirmHead-text-title {
+   width: 85px;
+   margin-left: 20px;
+   font-size: 17px;
+   float: left;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmHead .movieConfirmHead-text .movieConfirmHead-text-info {
+   width: 310px;
+   float: left;
+   margin-left: 9px;
+   font-size: 13px;
+   color: #b5b5b5;
+}   
+
+/* ------------------------------- paymentAskBody - movieConfirmBody */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody {
+   margin-top: 20px;
+   margin-left: 10px;
+   width: 500px;
+   height: 255px;
+   border-right: 2px solid #e3e3da;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .poster {
+   
+   width: 130px;
+   height: 250px;
+   float: left;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .poster img {
+   width: 110px;
+   height: 158px;
+   line-height: 158px;
+   margin-left: 20px;
+
+}
+
+
+/* -------------------------------------------- movieInfoWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper {
+   width: 323px;
+   height: 250px;
+   float: left;
+}
+
+
+/* -------------------------------------------- movieNameWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieNameWrapper {
+   width: 365px;
+   height: 26px;
+   line-height: 18px;
+   padding: 2px;
+}
+
+.movieName{
+   width: 275px;
+   height: inherit;
+   float: left;   
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieNameWrapper .movieNameLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieNameWrapper .movieNameLabel
+.movieName {
+   width: 275px;
+   height: inherit;
+   float: left;
+   line-height: inherit;
+   text-align: left;
+   background: none;
+}
+
+/* -------------------------------------------- movieGradeWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieGradeWrapper {
+   width: 365px;
+   height: 26px;
+   line-height: 18px;
+   padding: 2px;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieGradeWrapper .movieGradeLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieGradeWrapper .movieGrade {
+   width: 300px;
+   height: inherit;
+   float: left;
+   line-height: inherit;
+   text-align: left;
+   background: none;
+}
+
+/* -------------------------------------------- movieBranchWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieBranchWrapper {
+   width: 365px;
+   height: 26px;
+   line-height: 18px;
+   padding: 2px;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieBranchWrapper .movieBranchLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieBranchWrapper .movieBranch {
+   width: 275px;
+   height: inherit;
+   line-height: inherit;
+   text-align: left;
+   background: none;
+   float: left;
+}
+
+/* -------------------------------------------- movieScreenWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieScreenWrapper {
+   width: 365px;
+   height: 26px;
+   line-height: 18px;
+   padding: 2px;
+   
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieScreenWrapper .movieScreenLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieScreenWrapper .movieScreen {
+   width: 275px;
+   height: inherit;
+   line-height: inherit;
+   text-align: left;
+   background: none;
+   float: left;
+}
+
+/* -------------------------------------------- movieDateWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieDateWrapper {
+   width: 365px;
+   height: 26px;
+   line-height: 18px;
+   padding: 2px;
+   
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieDateWrapper .movieDateLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieDateWrapper .movieDate {
+   width: 275px;
+   height: inherit;
+   line-height: inherit;
+   text-align: left;
+   float: left;
+}
+
+
+/* -------------------------------------------- moviePeopleWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .moviePeopleWrapper {
+   width: 365px;
+   height: 26px;
+   line-height: 18px;
+   padding: 2px;
+   
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .moviePeopleWrapper .moviePeopleLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .moviePeopleWrapper .moviePeople {
+   width: 275px;
+   height: inherit;
+   line-height: inherit;
+   text-align: left;
+   background: none;
+   float: left;
+}
+
+/* -------------------------------------------- movieSeatWrapper --- */
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieSeatWrapper {
+   width: 365px;
+   height: 26px;
+   line-height: 18px;
+   padding: 2px;
+
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieSeatWrapper .movieSeatLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 10px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .movieConfirmSection
+.movieConfirmBody .movieInfoWrapper .movieSeatWrapper .movieSeat {
+   width: 275px;
+   height: inherit;
+   line-height: inherit;
+   text-align: left;
+   background: none;
+   float: left;
+}
+
+
+/* ------------------------------ paymentConfirmSection - paymentConfirmHead */
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmHead {
+   width: 526px;
+   height: 25px;
+}   
+
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmHead .paymentConfirmHead-text {
+   width: 526px;
+   height: 25px;
+   line-height: 25px;
+   font-weight: bold;
+}   
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmHead .paymentConfirmHead-text .paymentConfirmHead-text-title {
+   width: 85px;
+   margin-left: 40px;
+   font-size: 17px;
+   float: left;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmHead .paymentConfirmHead-text .paymentConfirmHead-text-info {
+   width: 300px;
+   float: left;
+   margin-left: 9px;
+   font-size: 13px;
+   color: #b5b5b5;
+}
+
+/* ------------------------------- paymentConfirmSection - 오른쪽, paymentConfirmBody */
+
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmBody {
+   margin-top: 20px;
+   margin-left: 15px;
+   width: 500px;
+   height: 255px;
+   border: none;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmBody .paymentConfirmBody-text {
+   height: 18px;
+   line-height: 18px;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmBody .paymentConfirmBody-text .moviePriceLabel {
+   width: 80px;
+   height: 26px;
+   text-align: left;
+   float: left;
+   margin-left: 38px;
+   font-weight: bold;
+}
+.paymentAskBody .movieAndPaymentConfirmSection .paymentConfirmSection
+.paymentConfirmBody .paymentConfirmBody-text .moviePrice {
+   width: 260px;
+   height: inherit;
+   line-height: inherit;
+   text-align: left;
+   background: none;
+   float: left;
+}
+
+
+/* ------------------------------- paymentAskBody - paymentInfoSection */
+.paymentAskBody .paymentInfoSection {
+   width: 1052px;
+   height: 75px;
+}
+
+.paymentAskBody .paymentInfoSection .paymentInfo {
+   width: 1000px;
+   margin-top: 50px;
+}
+.paymentAskBody .paymentInfoSection .paymentInfo .paymentInfo-text {
+   margin-left: 20px;
+   height: 18px;
+   line-height: 18px;
+   font-size: 12px;
+}
+
+
+/* ------------------------------- paymentAskBody - paymentCheckSection */
+.paymentAskBody .paymentCheckSection {
+   width: 1052px;
+   height: 30px;
+}
+
+.paymentAskBody .paymentCheckSection .paymentCheck {
+   width: 1000px;
+   height: 30px;
+   margin-left: 15px;
+}
+.paymentAskBody .paymentCheckSection .paymentCheck .paymentCheck-text {
+   width: 300px;
+   height: 18px;
+   line-height: 18px;
+   font-size: 14px;
+   font-weight: bold;
+   margin-left: 10px;
+   margin-top: 2px;
+   float: left;
+}
+
+
+/* ------------------------------- paymentAskBody - paymentButtonsSection */
+.paymentAskBody .paymentButtonsSection {
+   width: 1052px;
+   height: 70px;
+}
+
+.paymentAskBody .paymentButtonsSection .paymentButtons {
+   width: 1052px;
+   height: 60px;
+   text-align: center;
+   margin-top: 52px;
+   background: none;
+   cursor: pointer;
+}
+.paymentAskBody .paymentButtonsSection .paymentButtons button {
+   border: none;
+   text-align: center;
+   outline: none;
+   margin: 0;
+   background: none;
+}   
+   

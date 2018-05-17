@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+#wrapper {
+   width: 100%;
+   height: auto;
+}
+
+.bodyWrapper {
+   width: 100%;
+   height: auto;
+   float: left;
+   background-color: #fcfcf0;
+}
+
+/*----------------네비게이션 css-------------------*/
+.helpCenterIndexNavi {
+   width: 100%;
+   height: 37px;
+   background-color: #e3e3da;
+}
+
+.helpCenterIndexNavi a {
+   color: black;
+   text-decoration: none;
+   display: block;
+}
+
+.helpCenterIndexMenuDiv {
+   width: 1052px;
+   height: 37px;
+   margin: 0 auto;
+}
+
+.helpCenterIndexImageDiv {
+   float: left;
+   width: 20px;
+   height: 18px;
+   margin-top: 11px;
+}
+
+.helpCenterIndexImageDiv img {
+   width: 17px;
+   height: 15px;
+}
+
+.helpCenterIndexNaviSecondDiv {
+   float: left;
+   width: 120px;
+   height: 22px;
+   margin-top: 10px;
+   margin-left: 15px;
+   font-size: 13px;
+}
+
+.helpCenterIndexNaviThirdDiv {
+   float: left;
+   width: 130px;
+   height: 22px;
+   margin-top: 10px;
+   font-size: 13px;
+}
+
+/* --------------컨텐츠------------------- */
+.contents {
+   width: 1052px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+.regi_title h1 {
+   text-align: center;
+}
+
+.regi_title p {
+   text-align: center;
+}
+
+h3.regi_title {
+   font-size: 22px;
+   margin: 0;
+}
+
+.table_header {
+   width: 1052px;
+   height: auto;
+}
+
+.table_area table {
+   width: 100%;
+   border-collapse: collapse;
+}
+
+.table_area tr th {
+   text-align: left;
+   padding: 23px 20px 21px 20px;
+   border-bottom: 1px solid;
+   vertical-align: top;
+}
+
+.table_area tr td {
+   padding: 15px 20px;
+   border-bottom: 1px solid;
+   vertical-align: top;
+}
+
+.table_area input[type="text"] {
+   width: 218px;
+   height: 34px;
+   vertical-align: top;
+   padding: 0 15px;
+   font-size: 15px;
+}
+
+.idlabel{
+   margin-top: 5px;
+   
+}
+
+.inputPasswordDiv input[type="password"]{
+   width: 218px;
+      height: 34px;
+      vertical-align: top;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.oneMorePasswordDiv input[type="password"]{
+   width: 218px;
+      height: 34px;
+      vertical-align: top;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.changeNameButton{
+    background-color: #232323;
+    color:  white;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 15px;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 34px;
+    min-width: 78px;
+    border: 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p.id_info {
+   padding-top: 7px;
+   font-size: 12px;
+   color: red;
+   line-height: 20px;
+}
+
+p.pwd_info {
+   padding-top: 7px;
+   font-size: 12px;
+   color: red;
+   line-height: 20px;
+}
+
+input#year, input#month, input#day {
+   width: 100px;
+}
+
+span.symbol {
+   display: inline-block;
+   padding: 0 18px 0 4px;
+   line-height: 34px;
+}
+
+select#phone1 {
+   width: 75px;
+   height: 34px;
+}
+
+input#phone2, input#phone3 {
+   width: 75px;
+}
+
+.table_area input[type=number]{
+    height: 34px;
+    vertical-align: top;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.btn_select {
+    margin-top:  40px;
+    text-align:  center;
+}
+
+button.btn_cancle {
+    background-color: white;
+    color:  #232323;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 15px;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 34px;
+    min-width: 78px;
+    border: 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+button.btn_submit {
+    background-color: #232323;
+    color:  white;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 15px;
+    border-radius: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 34px;
+    min-width: 78px;
+    border: 0px;
+    font-size: 15px;
+    font-weight: bold;
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+   <!-- 영화  -->
+   <context:component-scan base-package="client.movies.bean"/>
+   <context:component-scan base-package="client.moviepoint.dao"/>
+   <context:component-scan base-package="client.moviefinder.dao"/>
+   <context:component-scan base-package="client.movieChart.dao"/>
+   <context:component-scan base-package="client.movieDetail.dao"/>
+   
+   <!-- 고객 센터  -->
+   <context:component-scan base-package="client.helpCenter.bean"/>
+   <context:component-scan base-package="client.helpCenter.dao"/>
+   
+   <!-- 회원 (Mypage 포함) -->
+   <context:component-scan base-package="client.member.bean" />
+   <context:component-scan base-package="client.member.dao" />
+   
+   <!-- (사용자 포인트 관련)  -->
+   <context:component-scan base-package="client.usagehistory.dao"/>
+   
+   <!-- (위시리스트)(공용!!)  -->
+   <context:component-scan base-package="client.wishList.bean"/>
+   
+   <!-- 예매  -->
+   <context:component-scan base-package="client.ticket.dao"/>
+   <context:component-scan base-package="client.ticket.bean"/>
+   
+   <!-- 극장  -->
+   <context:component-scan base-package="client.theaters.dao"/>
+   <context:component-scan base-package="client.theaters.bean"/>
+   
+   
+   <!-- 어드민 쪽 dao & bean component-scan  -->
+   <context:component-scan base-package="admin.dao"/>
+   <context:component-scan base-package="admin.bean"/>
+   
+   <context:component-scan base-package="admin.movie.dao"/>
+   <context:component-scan base-package="admin.maincategory.dao"/>
+   <context:component-scan base-package="admin.timeschedule.dao"/>
+   
+   <context:component-scan base-package="admin.notice.dao"/>
+   <context:component-scan base-package="admin.notice.bean"/>
+   
+   <context:component-scan base-package="admin.QnA.dao"/>
+   <context:component-scan base-package="admin.QnA.bean"/>
+   
+   <context:component-scan base-package="admin.report.dao"/>
+   <context:component-scan base-package="admin.report.bean"/>
+   
+   
+   <!-- Connection Pool & DataSource -->
+	
+	<bean id="dataSource" 
+		  class="org.apache.commons.dbcp2.BasicDataSource"
+		  p:driverClassName="oracle.jdbc.driver.OracleDriver"
+		  p:url="jdbc:oracle:thin:@localhost:1521:xe"
+		  p:username="mvproject"
+		  p:password="mvproject"
+		  p:maxTotal="20"
+		  p:maxIdle="3"/>
+		
+		<!-- SqlSessionFactory -->
+		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+			<property name="dataSource" ref="dataSource"/>
+			<property name="configLocation" value="classpath:spring/mybatis-config.xml"/>
+			<property name="mapperLocations">
+				<list>
+					<value>classpath:*/dao/*Mapper.xml</value>
+					<value>classpath:*/*/dao/*Mapper.xml</value> 
+				</list>
+				</property>
+		</bean>
+
+		<!-- SqlSession -->
+		<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+			<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+		</bean>
+
+		<!-- transaction -->
+		<bean id="transactionManager"
+			  class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+			  <property name="dataSource" ref="dataSource"/>  <!-- setter 값으로 데이터소스를 전달! -->
+		</bean>
+   	
+   
+    <!-- Uncomment and add your base-package here:
+         <context:component-scan
+            base-package="org.springframework.samples.service"/>  -->
+
+</beans>

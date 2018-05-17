@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="MemberSQL">
+	<select id="MemberView" resultType="MemberDTO">
+		select * from member where id
+		= #{id}
+	</select>
+
+	<insert parameterType="memberDTO" id="register">
+		insert into member (id, pw,
+		name, birthyear, birthmonth, birthday, phone1,
+		phone2, phone3,
+		email1,
+		email2)
+		values(#{id}, #{pw}, #{name}, #{birthyear}, #{birthmonth},
+		#{birthday},
+		#{phone1} ,#{phone2} ,#{phone3}
+		,#{email1}, #{email2} )
+	</insert>
+
+	<select id="login" parameterType="java.util.Map" resultType="memberDTO">
+		select * from member where id=#{id} and pw=#{pw}
+	</select>
+
+	<update id="updateMember" parameterType="java.util.Map">
+		update member set
+		pw =
+		#{memberDTO.pw},
+		name = #{memberDTO.name},
+		birthyear =
+		#{memberDTO.birthyear},
+		birthmonth = #{memberDTO.birthmonth},
+		birthday =
+		#{memberDTO.birthday},
+		phone1 = #{memberDTO.phone1},
+		phone2 =
+		#{memberDTO.phone2},
+		phone3 = #{memberDTO.phone3},
+		email1 =
+		#{memberDTO.email1},
+		email2 = #{memberDTO.email2}
+		WHERE id = #{id}
+	</update>
+
+	<delete id="deleteMember">
+		delete member where id=#{id}
+	</delete>
+
+	<!--아이디 찾기 -->
+	<select id="idSearch" parameterType="java.util.Map" resultType="String">
+		select id from member where name=#{name} and birthyear=#{birth1} and
+		birthmonth=#{birth2} and birthday=#{birth3}
+		and phone1=#{rphone1} and
+		phone2=#{rphone2} and phone3=#{rphone3}
+	</select>
+
+	<!--전화번호 가져오기 (비밀번호찾기기능) -->
+	<select id="numberSearch" parameterType="String" resultType="memberDTO">
+		select phone1,phone2,phone3 from member where id = #{id}
+	</select>
+
+	<!--비밀번호찾기 -->
+	<select id="getPw" parameterType="String" resultType="memberDTO">
+		select *
+		from member where id = #{id}
+	</select>
+
+	<!--회원정보 -->
+	<select id="memberData" parameterType="String" resultType="memberDTO">
+		select * from member where id=#{id}
+	</select>
+
+	<!--프로파일이미지 수정 -->
+	<update id="updateProfileImage" parameterType="java.util.Map">
+		update member set
+		profileImage = #{fileName}, nickName = #{nickName} where id=#{id}
+	</update>
+
+	<!--닉네입 중복체크 -->
+	<select id="nicknameCheck" parameterType="String" resultType="memberDTO">
+		select * from member where nickName = #{nickName}
+	</select>
+
+	<!--닉네임 아이디 중복체크 -->
+	<select id="nickname_idCheck" parameterType="java.util.Map"
+		resultType="memberDTO">
+		select * from member where id=#{id} and
+		nickName=#{nickName}
+	</select>
+
+	<!-- 비밀번호 수정 -->
+	<update id="updatePw" parameterType="java.util.Map">
+		update member set pw = #{pw}
+		WHERE id = #{id}
+	</update>
+
+	<select id="getMovieInfoForMovielog" parameterType="String"
+		resultType="movieDTO">
+		select seq, MOVIENAMEFORKR, MOVIENAMEFORENG, MOVIEGENRE, movieagelimit, to_char(moviedate, 'YYYY-MM-DD') as moviedate, moviepostimg from adminmovie where movienameforkr=#{movieNameforKr}
+	</select>
+
+	<select id="getWishlist" parameterType="String" resultType="wishlistDTO">
+		select seq, id, MOVIENAMEFORKR, to_char(wishdate, 'YYYY-MM-DD') as WISHDATE from wishlist where id=#{id}
+	</select>
+
+	<select id="getWishlistCount" parameterType="String" resultType="int">
+		SELECT COUNT(*) FROM WISHLIST where id=#{id}
+	</select>
+
+	<select id="getMovielogCount" parameterType="String" resultType="int">
+		SELECT COUNT(*) FROM USAGEHISTORY where id=#{id}
+	</select>
+
+	<select id="getMovielogList" parameterType="java.util.Map"
+		resultType="usage">
+      <![CDATA[
+         select * from (select rownum rn, tt.* from (select * from USAGEHISTORY where id=#{id} order by ticketmoviedate asc) tt)
+         where rn>=#{startNum} and rn<=#{endNum}     
+      ]]>
+	</select>
+
+	<insert id="insertWishList" parameterType="java.util.Map">
+		insert into wishlist
+		values(wishlist_seq.nextval, #{id},
+		#{movienameforkr}, sysdate)
+	</insert>
+
+	<delete id="deleteWishList" parameterType="java.util.Map">
+		delete from wishlist
+		where id=#{id} and movienameforkr=#{movienameforkr}
+	</delete>
+
+
+	<select id="profileImgName" resultType="String">
+		select PROFILEIMAGE from
+		member where id = #{id}
+	</select>
+
+	<update id="deleteProfileImg" parameterType="java.util.Map">
+		update member set
+		profileImage = #{fileName} where id=#{id}
+	</update>
+
+	<update id="updateNickName" parameterType="java.util.Map">
+		update member set NICKNAME = #{nickName} where id=#{id}
+	</update>
+	
+	<select id="getHeartInfoForWishlist" parameterType="String" resultType="moviePoint">
+      select heart from moviepoint where movienameforkr=#{movienameforkr}
+   </select>
+
+<select id="getReviewInfoForMovielog" parameterType="java.util.Map" resultType="review">
+      select * from moviereview where id=#{id} and movienameforkr=#{movienameforkr}
+   </select>
+   
+   <select id="getWishlist02" parameterType="java.util.Map" resultType="wishlistDTO">
+      <![CDATA[
+         select * from (select rownum rn, tt.* from 
+         (select * from wishlist where id=#{id} order by wishdate asc) tt)
+         where rn>=#{startNum} and rn<=#{endNum}
+      ]]>
+   </select>
+	
+	<!-- Ticket Mypage  -->
+	<select id="getSelectedMovieInfo" parameterType="String" resultType="ticketDTO">
+      select * from ticketreservation where ticketmoviecode=#{ticketmoviecode}
+   </select>
+
+
+   <select id="getUserPoint" parameterType="string" resultType="string">
+   select memberpoint from member where id=#{id}
+   </select>
+   
+   <update id="returnPoint" parameterType="java.util.Map" >
+   update member set memberpoint=memberpoint-${getPlusedPoint}+${cancelUsedPoint} where id=#{id}
+   </update>
+
+
+   <delete id="deleteTicketInfo" parameterType="String">
+   delete ticketreservation where ticketmoviecode=#{ticketmoviecode}
+   </delete>
+   
+
+   <select id="getTicketInfo" parameterType="String" resultType="ticketDTO">
+   <![CDATA[
+   select * from ticketreservation where id=#{id} and (to_char(sysdate, 'YYYY/MM/DD(Dy)HH24:MI') <= to_char(ticketmoviedate, 'YYYY/MM/DD(Dy)HH24:MI'))
+   order by to_char(ticketmoviedate, 'YYYY/MM/DD(Dy)HH24:MI') asc
+   ]]>
+   </select>
+
+
+   <update id="resetSeats1" parameterType="java.util.Map">
+      update timeschedule set ${movieSeat1}=0,totalseat=(totalseat+${moviePeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="resetSeats2" parameterType="java.util.Map">
+      update timeschedule set ${movieSeat1}=0,${movieSeat2}=0,totalseat=(totalseat+${moviePeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="resetSeats3" parameterType="java.util.Map">
+      update timeschedule set ${movieSeat1}=0,${movieSeat2}=0,${movieSeat3}=0,totalseat=(totalseat+${moviePeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="resetSeats4" parameterType="java.util.Map">
+      update timeschedule set ${movieSeat1}=0,${movieSeat2}=0,${movieSeat3}=0,${movieSeat4}=0,totalseat=(totalseat+${moviePeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+   <update id="resetSeats5" parameterType="java.util.Map">
+      update timeschedule set ${movieSeat1}=0,${movieSeat2}=0,${movieSeat3}=0,${movieSeat4}=0,${movieSeat5}=0,totalseat=(totalseat+${moviePeople}) where seq=#{ticketselectMovieSeq}
+   </update>
+
+
+   <select id="getUsageInfo" parameterType="java.util.Map" resultType="int">
+   select pointused from usagehistory where id=#{id} and moviename=#{moviename} and ticketmoviecode=#{ticketmoviecode}
+   </select>
+   
+   <select id="getSelectedMovieSeq" parameterType="java.util.Map" resultType="int">
+   select seq from timeschedule where playingmovie=#{moviename} and theaterbranch=#{moviebranch} and theaterscreen=#{moviescreen} and to_char(theaterdate,'YYYY-MM-DD HH24:MI')=#{moviedate}
+   </select>
+   
+   <delete id="deleteUsagehistory" parameterType="String" >
+   delete from usagehistory where ticketmoviecode=#{ticketmoviecode}
+   </delete>
+	
+	
+	
+</mapper>
